@@ -5,6 +5,7 @@ import org.grobid.core.data.Table;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.exceptions.GrobidException;
+import org.grobid.core.layout.BoundingBox;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.tokenization.TaggingTokenClusteror;
@@ -16,6 +17,8 @@ import org.slf4j.LoggerFactory;
 
 import org.apache.commons.lang3.tuple.Pair;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
@@ -34,7 +37,7 @@ public class TableParser extends AbstractParser {
     /**
      * The processing here is called from the full text parser in cascade.
      */
-    public Table processing(List<LayoutToken> tokenizationTable, String featureVector) {
+    public Table processing(List<LayoutToken> tokenizationTable, String featureVector, File pdfFile) {
         String res;
         try {
             res = label(featureVector);
@@ -46,12 +49,20 @@ public class TableParser extends AbstractParser {
             return null;
         }
 //        List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(res);
-        return getExtractionResult(tokenizationTable, res);
+        return getExtractionResult(tokenizationTable, res, pdfFile);
     }
 
-    private Table getExtractionResult(List<LayoutToken> tokenizations, String result) {
+    private Table getExtractionResult(List<LayoutToken> tokenizations, String result, File pdfFile) {
         Table table = new Table();
-        table.setTextArea(Collections.singletonList(BoundingBoxCalculator.calculateOneBox(tokenizations, true)));
+        BoundingBox bbox = BoundingBoxCalculator.calculateOneBox(tokenizations, true);
+        table.setTextArea(Collections.singletonList(bbox));
+
+        // Set coordinates of the table for tabula
+        table.setPage(bbox.getPage());
+        table.setX(bbox.getX());
+        table.setY(bbox.getY());
+        table.setWidth(bbox.getWidth());
+        table.setHeight(bbox.getHeight());
 
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.TABLE, result, tokenizations);
         List<TaggingTokenCluster> clusters = clusteror.cluster();
@@ -84,6 +95,15 @@ public class TableParser extends AbstractParser {
                 table.getContentTokens().addAll(tokens);
             } else {
                 LOGGER.error("Warning: unexpected table model label - " + clusterLabel + " for " + clusterContent);
+            }
+
+            if (pdfFile != null) {
+                try {
+                    table.tabulaExtract(pdfFile);
+                } catch (IOException e) {
+                    LOGGER.error("Warning: can't extract with tabula - " + e.getMessage());
+                }
+
             }
 
         }     

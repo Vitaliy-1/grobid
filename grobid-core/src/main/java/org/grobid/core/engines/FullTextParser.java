@@ -251,7 +251,7 @@ public class FullTextParser extends AbstractParser {
                     }
                 }
 
-				tables = processTables(rese, layoutTokenization.getTokenization(), doc);
+				tables = processTables(rese, layoutTokenization.getTokenization(), doc, documentSource.getPdfFile());
                 // further parse the caption
                 for(Table table : tables) {
                     if ( (table.getCaptionLayoutTokens() != null) && (table.getCaptionLayoutTokens().size() > 0) ) {
@@ -1953,7 +1953,8 @@ public class FullTextParser extends AbstractParser {
      */
     private List<Table> processTables(String rese,
 									List<LayoutToken> tokenizations,
-									Document doc) {
+									Document doc,
+									File pdfFile) {
 		List<Table> results = new ArrayList<>();
 		TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, rese, tokenizations, true);
 
@@ -1962,7 +1963,8 @@ public class FullTextParser extends AbstractParser {
 			List<LayoutToken> tokenizationTable = cluster.concatTokens();
 			Table result = parsers.getTableParser().processing(
 					tokenizationTable,
-					cluster.getFeatureBlock()
+					cluster.getFeatureBlock(),
+					pdfFile
 			);
 
 			SortedSet<Integer> blockPtrs = new TreeSet<>();
