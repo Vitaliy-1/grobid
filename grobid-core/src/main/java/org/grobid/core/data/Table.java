@@ -19,8 +19,11 @@ import org.grobid.core.utilities.KeyGen;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.engines.label.TaggingLabel;
 
+import java.awt.geom.Arc2D;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -129,7 +132,8 @@ public class Table extends Figure {
 
 
 		Element contentEl = XmlBuilderUtils.teiElement("table");
-		contentEl.appendChild(LayoutTokensUtil.toText(getContentTokens()));
+		//contentEl.appendChild(LayoutTokensUtil.toText(getContentTokens()));
+		processTableCells(contentEl);
 		if ((config.getGenerateTeiCoordinates() != null) && (config.getGenerateTeiCoordinates().contains("figure"))) {
 			XmlBuilderUtils.addCoords(contentEl, LayoutTokensUtil.getCoordsStringForOneBox(getContentTokens()));
 		}
@@ -179,6 +183,166 @@ public class Table extends Figure {
 
     private String cleanString(String input) {
     	return input.replace("\n", " ").replace("  ", " ").trim();
+    }
+
+    private void processTableCells(Element elContent) {
+		List<LayoutToken> tokens = contentTokens;
+		List<Cell> cells = new ArrayList<>();
+		LayoutToken lastToken = null;
+	    LayoutToken lastTextToken = null;
+		Cell currentCell = null;
+
+	    Map<Integer, Double> possibleRowDistances = getPossibleRowDistances(tokens);
+
+	    // Determine cells
+		for (int y = 0; y < tokens.size(); y++) {
+			LayoutToken token = tokens.get(y);
+			if (isNewCell(lastToken, token, lastTextToken, cells, possibleRowDistances, y)) {
+				Cell cell = new Cell();
+				currentCell = cell;
+				cells.add(cell);
+			}
+
+			if (token.getX() != -1.0) {
+				System.out.println(token.getX() + " " + token.getWidth() + " " + token.getY() + " " + token.getHeight() + " " + token.getText());
+				lastTextToken = token;
+			}
+
+			currentCell.addToken(token);
+			lastToken = token;
+		}
+
+		// Write cells to the XML; check for rows
+
+	    Element currentRowNode = null;
+	    for (int i = 0; i<cells.size(); i++) {
+	    	Cell cell = cells.get(i);
+
+	    	if (i == 0) {
+			    Element rowNode = XmlBuilderUtils.teiElement("row");
+			    elContent.appendChild(rowNode);
+			    currentRowNode = rowNode;
+		    }
+
+		    Element cellNode = XmlBuilderUtils.teiElement("cell");
+		    cellNode.appendChild(cell.getText());
+
+		    currentRowNode.appendChild(cellNode);
+
+	    	if (cell.isRowEnd()) {
+	    		Element rowNode = XmlBuilderUtils.teiElement("row");
+	    		elContent.appendChild(rowNode);
+	    		currentRowNode = rowNode;
+		    }
+
+	    }
+    }
+
+	private Map<Integer, Double> getPossibleRowDistances(List<LayoutToken> tokens) {
+		Map<Integer, Double> possibleRowDistances = new HashMap<>();
+		LayoutToken lastRowTextToken = null;
+
+		for (int i = 0; i < tokens.size(); i++) {
+
+			LayoutToken rowToken = tokens.get(i);
+
+			if (rowToken.getY() > 0 && lastRowTextToken == null) {
+				lastRowTextToken = rowToken;
+			}
+
+			if (rowToken.getY() > 0 && lastRowTextToken != null) {
+				double distance = Math.abs(rowToken.getY() - lastRowTextToken.getY());
+				if (distance > lastRowTextToken.getHeight()) {
+					possibleRowDistances.put(i, distance);
+				}
+
+				lastRowTextToken = rowToken;
+			}
+		}
+
+		return possibleRowDistances;
+	}
+
+	private boolean isNewCell(LayoutToken lastToken, LayoutToken currentToken, LayoutToken lastTextToken, List<Cell> cells, Map<Integer, Double> possibleRowDistances, int tokenNumber) {
+
+	    if (cells.isEmpty()) {
+		    return true;
+	    }
+
+	    if (lastToken.getText().equals("\n") && currentToken.getX() != -1.0) {
+
+	    	// New line is not always pointing at a start of a new cell; check the right margin of previous tokens (not ideal algorithm)
+
+		    /*
+		    if ((Double.compare(currentCell.getLeftMargin(), currentToken.getX()) < 0 && Double.compare(currentCell.getRightMargin(), currentToken.getX()) > 0) ||
+				    (Double.compare(currentCell.getLeftMargin(), currentToken.getX()) > 0) && Double.compare(currentCell.getLeftMargin(), currentToken.getX() + currentToken.getWidth()) < 0) {
+			*/
+
+		    Cell currentCell = cells.get(cells.size()-1);
+		    if (Double.compare(currentCell.getRightMargin(), currentToken.getX()) > 0 && cells.size() > 1) {
+
+			    // it's a current multi-line cell or the next row; check right margin of a previous cell
+			    Cell previousCell = cells.get(cells.size()-2);
+			    if (Double.compare(previousCell.getRightMargin(), currentToken.getX()) > 0) {
+				    currentCell.setRowEnd(true);
+				    System.out.println("!!!Cell!!!<<<<<<RowEnd" + " >> " + previousCell.getRightMargin());
+			    	return true;
+			    } else {
+			    	currentCell.setMultiLine(true);
+				    System.out.println("<<<MultiLine");
+				    return false;
+			    }
+			// If we don't have previous cell to compare with, rely on previous token
+		    } else if(Double.compare(currentCell.getRightMargin(), currentToken.getX()) > 0 && cells.size() == 1) {
+			    System.out.println("<<<<" + " " + currentCell.getTokenList().get(0).getY() + " " + currentToken.getY());
+			    double firstY = currentCell.getTokenList().get(0).getY();
+			    double currentY = currentToken.getY();
+
+			    // If there are several cells in the row, the next token with the same vertical position indicates the new cell; may require approximation of height
+			    if (Double.compare(firstY, currentY) != 0) {
+			    	// Try to extract the distance between new lines, if the next is 10% bigger than previous, assume it's a new Cell in the next Row
+				    double currentRowDistance = 0.0;
+				    double nextRowDistance = 0.0;
+			    	if (possibleRowDistances.get(tokenNumber) != null) {
+					    currentRowDistance = possibleRowDistances.get(tokenNumber);
+
+					    for (Map.Entry<Integer, Double> key: possibleRowDistances.entrySet()) {
+					    	if (key.getKey() > tokenNumber) {
+					    		nextRowDistance = key.getValue();
+					    		break;
+						    }
+					    }
+					    System.out.println("---> " + currentRowDistance + " : " + nextRowDistance);
+				    }
+
+
+				    //double nextRowDistance = possibleRowDistances.get(currentCell.getLineCounter()+1);
+				    // If it's the only cell in the row
+				    /*
+				    System.out.println( " >>>>" + possibleRowDistances.get(currentCell.getLineCounter()) + " " + (possibleRowDistances.get(currentCell.getLineCounter()+1) - possibleRowDistances.get(currentCell.getLineCounter()+1)/10) + " <<<< ");
+					if (Double.compare(currentRowDistance, nextRowDistance - nextRowDistance/10) < 0) {
+						return true;
+					}
+					*/
+				    if (currentRowDistance != 0.0 && nextRowDistance != 0.0 && Double.compare(currentRowDistance, nextRowDistance - nextRowDistance/10) < 0) {
+				    	System.out.println("----> New Cell in the next Row");
+				    	return true;
+				    }
+
+				    currentCell.setMultiLine(true);
+				    return false;
+		        } else {
+				    System.out.println("!!!Cell!!!");
+				    return true;
+			    }
+
+		    } else {
+			    System.out.println("!!!Cell!!!");
+			    return true;
+		    }
+	    }
+
+	    return false;
     }
 
 
