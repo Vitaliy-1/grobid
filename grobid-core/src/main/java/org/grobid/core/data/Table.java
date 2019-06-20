@@ -198,8 +198,8 @@ public class Table extends Figure {
 		technology.tabula.Page page = objectExtractor.extract(getPage());
 		technology.tabula.Page pageArea = page.getArea((float)getY(), (float)getX(), (float)(getY()+getHeight()), (float)(getX()+getWidth()));
 
-		SpreadsheetExtractionAlgorithm nda = new SpreadsheetExtractionAlgorithm();
-		List<technology.tabula.Table> tables = nda.extract(pageArea);
+		SpreadsheetExtractionAlgorithm sea = new SpreadsheetExtractionAlgorithm();
+		List<technology.tabula.Table> tables = sea.extract(pageArea);
 
 		technology.tabula.Table table;
 		if (tables.size() > 0) {
