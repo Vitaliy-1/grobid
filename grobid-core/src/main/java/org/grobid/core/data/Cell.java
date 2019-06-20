@@ -17,6 +17,9 @@ public class Cell {
 	private boolean rowEnd = false;
 	private boolean multiLine = false;
 	private int lineCounter;
+	private boolean acceptTokens = true;
+	private boolean nextCellRightToLeft = false;
+	private boolean rightToLeft = false;
 
 	void addToken (LayoutToken layoutToken) {
 
@@ -82,6 +85,30 @@ public class Cell {
 
 	public int getLineCounter() {
 		return lineCounter;
+	}
+
+	public void setAcceptTokens(boolean acceptTokens) {
+		this.acceptTokens = acceptTokens;
+	}
+
+	public boolean isAcceptTokens() {
+		return acceptTokens;
+	}
+
+	public boolean isNextCellRightToLeft() {
+		return nextCellRightToLeft;
+	}
+
+	public void setRightToLeft(boolean rightToLeft) {
+		this.rightToLeft = rightToLeft;
+	}
+
+	public boolean isRightToLeft() {
+		return rightToLeft;
+	}
+
+	public void setNextCellRightToLeft(boolean nextCellRightToLeft) {
+		this.nextCellRightToLeft = nextCellRightToLeft;
 	}
 
 	public String getText() {
