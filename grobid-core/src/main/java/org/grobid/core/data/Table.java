@@ -186,7 +186,6 @@ public class Table extends Figure {
 		List<LayoutToken> tokens = contentTokens;
 		List<Cell> cells = new ArrayList<>();
 		LayoutToken lastToken = null;
-		LayoutToken lastTextToken = null;
 		Cell currentCell = null;
 
 		Map<Integer, Double> possibleRowDistances = getPossibleRowDistances(tokens);
@@ -194,18 +193,13 @@ public class Table extends Figure {
 		// Determine cells
 		for (int y = 0; y < tokens.size(); y++) {
 			LayoutToken token = tokens.get(y);
-			if (isNewCell(lastToken, token, lastTextToken, cells, possibleRowDistances, y, tokens)) {
+			if (isNewCell(lastToken, token, cells, possibleRowDistances, y, tokens)) {
 				Cell cell = new Cell();
 
 				if (currentCell != null && currentCell.isNextCellRightToLeft()) cell.setRightToLeft(true);
 
 				currentCell = cell;
 				cells.add(cell);
-			}
-
-			if (token.getX() != -1.0) {
-				System.out.println(token.getX() + " " + token.getWidth() + " " + token.getY() + " " + token.getHeight() + " " + token.getText());
-				lastTextToken = token;
 			}
 
 			currentCell.addToken(token);
@@ -264,7 +258,7 @@ public class Table extends Figure {
 		return possibleRowDistances;
 	}
 
-	private boolean isNewCell(LayoutToken lastToken, LayoutToken currentToken, LayoutToken lastTextToken, List<Cell> cells, Map<Integer, Double> possibleRowDistances, int tokenNumber, List<LayoutToken> tokens) {
+	private boolean isNewCell(LayoutToken lastToken, LayoutToken currentToken, List<Cell> cells, Map<Integer, Double> possibleRowDistances, int tokenNumber, List<LayoutToken> tokens) {
 
 		if (cells.isEmpty()) {
 			return true;
@@ -273,12 +267,6 @@ public class Table extends Figure {
 		if (lastToken.getText().equals("\n") && currentToken.getX() != -1.0) {
 
 			// New line is not always pointing at a start of a new cell; check the right margin of previous tokens (not ideal algorithm)
-
-		    /*
-		    if ((Double.compare(currentCell.getLeftMargin(), currentToken.getX()) < 0 && Double.compare(currentCell.getRightMargin(), currentToken.getX()) > 0) ||
-				    (Double.compare(currentCell.getLeftMargin(), currentToken.getX()) > 0) && Double.compare(currentCell.getLeftMargin(), currentToken.getX() + currentToken.getWidth()) < 0) {
-			*/
-
 			Cell currentCell = cells.get(cells.size() - 1);
 
 			if (!currentCell.isAcceptTokens()) {
@@ -290,20 +278,16 @@ public class Table extends Figure {
 				// it's a current multi-line cell or the next row; check right margin of a previous cell
 				Cell previousCell = cells.get(cells.size() - 2);
 				if (currentCell.isRightToLeft()) {
-					System.out.println("Left to right");
 				}
 				if (Double.compare(previousCell.getRightMargin(), currentToken.getX()) > 0 && !currentCell.isRightToLeft()) {
 					currentCell.setRowEnd(true);
-					System.out.println("!!!Cell!!!<<<<<<RowEnd" + " >> " + previousCell.getRightMargin());
 					return true;
 				} else {
 					currentCell.setMultiLine(true);
-					System.out.println("<<<MultiLine");
 					return false;
 				}
 				// If we don't have previous cell to compare with, rely on previous token
 			} else if (Double.compare(currentCell.getRightMargin(), currentToken.getX()) > 0 && cells.size() == 1) {
-				System.out.println("<<<<" + " " + currentCell.getTokenList().get(0).getY() + " " + currentToken.getY());
 				double firstY = currentCell.getTokenList().get(0).getY();
 				double currentY = currentToken.getY();
 
@@ -323,11 +307,9 @@ public class Table extends Figure {
 								break;
 							}
 						}
-						System.out.println("---> " + currentRowDistance + " : " + nextRowDistance + " : " + tokenNumber + " : " + nextTokenKey);
 					}
 
 					if (currentRowDistance != 0.0 && nextRowDistance != 0.0 && Double.compare(currentRowDistance, nextRowDistance - nextRowDistance / 10) < 0) {
-						System.out.println("----> New Cell in the next Row");
 						currentCell.setAcceptTokens(false);
 						return false;
 					}
@@ -340,12 +322,10 @@ public class Table extends Figure {
 					currentCell.setMultiLine(true);
 					return false;
 				} else {
-					System.out.println("!!!Cell!!!");
 					return true;
 				}
 
 			} else {
-				System.out.println("!!!Cell!!!");
 				return true;
 			}
 		}
@@ -354,7 +334,6 @@ public class Table extends Figure {
 	}
 
 	private boolean detectCellRecursively(Cell currentCell, LayoutToken currentToken, List<LayoutToken> tokens, int tokenNumber) {
-		System.out.println("----> Recursion " + tokenNumber + " " + currentToken.getText() + " | " + (tokenNumber + 1) + " " + tokens.get(tokenNumber + 1).getText());
 
 		LayoutToken nextToken = null;
 		if (tokens.size() > tokenNumber + 1) {
@@ -372,11 +351,9 @@ public class Table extends Figure {
 
 		// Determine if next line represents next row
 		if (Double.compare(currentCell.getLeftMargin(), currentToken.getX() + currentToken.getWidth()) > 0) {
-			System.out.println("-> True <-");
 			currentCell.setNextCellRightToLeft(true);
 			return true;
 		} else {
-			System.out.println(currentCell.getLeftMargin() + " : " + currentToken.getX() + " " + currentToken.getWidth());
 			return false;
 		}
 	}
