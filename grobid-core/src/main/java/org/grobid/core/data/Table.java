@@ -31,8 +31,7 @@ import nu.xom.Node;
 import nu.xom.Text;
 import technology.tabula.ObjectExtractor;
 import technology.tabula.RectangularTextContainer;
-import technology.tabula.detectors.SpreadsheetDetectionAlgorithm;
-import technology.tabula.extractors.SpreadsheetExtractionAlgorithm;
+import technology.tabula.extractors.BasicExtractionAlgorithm;
 
 import static org.grobid.core.document.xml.XmlBuilderUtils.teiElement;
 import static org.grobid.core.document.xml.XmlBuilderUtils.addXmlId;
@@ -198,15 +197,8 @@ public class Table extends Figure {
 		technology.tabula.Page page = objectExtractor.extract(getPage());
 		technology.tabula.Page pageArea = page.getArea((float)getY(), (float)getX(), (float)(getY()+getHeight()), (float)(getX()+getWidth()));
 
-		SpreadsheetExtractionAlgorithm sea = new SpreadsheetExtractionAlgorithm();
-		List<technology.tabula.Table> tables = sea.extract(pageArea);
-
-		technology.tabula.Table table;
-		if (tables.size() > 0) {
-			table = tables.get(0);
-		} else {
-			return;
-		}
+		BasicExtractionAlgorithm bea = new BasicExtractionAlgorithm();
+		technology.tabula.Table table = bea.extract(pageArea).get(0);
 
 		List<List<RectangularTextContainer>> tableRows = table.getRows();
 		int maxColCount = 0;
