@@ -1,0 +1,2399 @@
+> Task :grobid-core:compileJava UP-TO-DATE
+> Task :grobid-core:processResources UP-TO-DATE
+> Task :grobid-core:classes UP-TO-DATE
+> Task :grobid-core:mainJar UP-TO-DATE
+> Task :grobid-core:jar SKIPPED
+> Task :grobid-trainer:compileJava UP-TO-DATE
+> Task :grobid-trainer:processResources UP-TO-DATE
+> Task :grobid-trainer:classes UP-TO-DATE
+
+> Task :grobid-trainer:train_segmentation
+Aug 05, 2019 8:02:11 PM org.grobid.core.main.GrobidHomeFinder getGrobidHomePathOrLoadFromClasspath
+WARNING: No Grobid property was provided. Attempting to find Grobid home in the current directory...
+Aug 05, 2019 8:02:11 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: ***************************************************************
+Aug 05, 2019 8:02:11 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: *** USING GROBID HOME: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home
+Aug 05, 2019 8:02:11 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: ***************************************************************
+Aug 05, 2019 8:02:11 PM org.grobid.core.main.GrobidHomeFinder findGrobidPropertiesOrFail
+WARNING: Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/config/grobid.properties
+Aug 05, 2019 8:02:11 PM org.grobid.core.main.LibraryLoader load
+INFO: Loading external native sequence labelling library
+Aug 05, 2019 8:02:11 PM org.grobid.core.main.LibraryLoader load
+INFO: Loading Wapiti native library...
+Aug 05, 2019 8:02:11 PM org.grobid.core.main.LibraryLoader load
+INFO: Native library for sequence labelling loaded
+Aug 05, 2019 8:02:11 PM org.grobid.core.lexicon.Lexicon initDictionary
+INFO: Initiating dictionary
+Aug 05, 2019 8:02:11 PM org.grobid.core.lexicon.Lexicon initDictionary
+INFO: End of Initialization of dictionary
+Aug 05, 2019 8:02:11 PM org.grobid.core.lexicon.Lexicon initNames
+INFO: Initiating names
+Aug 05, 2019 8:02:11 PM org.grobid.core.lexicon.Lexicon initNames
+INFO: End of initialization of names
+Aug 05, 2019 8:02:12 PM org.grobid.core.lexicon.Lexicon initCountryCodes
+INFO: Initiating country codes
+Aug 05, 2019 8:02:12 PM org.grobid.core.lexicon.Lexicon initCountryCodes
+INFO: End of initialization of country codes
+sourceTEIPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/segmentation/corpus/tei
+sourceRawPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/segmentation/corpus/raw
+trainingOutputPath: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/tmp/segmentation13670101187025523789.train
+evalOutputPath: null
+535 tei files
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20218-76797-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17469-52685-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 17469-52685-3-RV.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1001._0908.0054.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Mori_et_al_Bone.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15315-44533-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: jep0016-1301.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19254-71104-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7986-24858-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: French_in_Auvergne.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17163-50171-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18637-60552-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19157-77412-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4633-7993-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20258-77332-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17195-54253-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: P98-2139.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 104.v84-299.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 104.v84-299.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: ims.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6366-17296-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20498-81129-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20530-81353-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 550._10.1.1.47.7508.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 12862_2014_Article_245.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18838-66143-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5962-15853-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: J90-2003.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5380-11143-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4862-8461-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC3390076.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7241-21759-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:12 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1109.6760v3.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC4822088.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5997-16067-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5981-18538-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC4104102.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19891-73565-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 9468-32082-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: sxd0004-0213.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15885-47233-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: SAM-P6_Dantan_revised_version_3.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11511-42258-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 14409-42195-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC2808884.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 124.v83-410.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18980-64681-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: ele0017-1464.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Chirouze_HESS2014gilles.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4853-8393-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: J11-1004.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1105.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Manuscript_141015b.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1958-3686-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18615-60217-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20325-78073-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20259-77338-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18642-60600-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19007-64567-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Faraday-discuss-post-ref.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17.v88-048.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5253-10409-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8087-27130-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17314-51812-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18636-67025-3-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20123-76609-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4644-8049-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: ad2004.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC5462700.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20157-81103-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19870-73774-3-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19961-75036-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8489-27548-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:13 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2033-4323-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20470-79873-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20092-79318-5-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20458-79662-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5934-15375-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: W12-4305.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18867-65990-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8.v89-145.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: lrec08b.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20495-80423-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19299-69543-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5566-14438-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 16744-48271-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19766-71799-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8225-28173-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5872-14819-3-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18959-63620-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15884-47230-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 60.v85-592.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 60.v85-592.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20095-75399-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4637-8014-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8486-29316-3-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Wang-paperAVE2008.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Amilhat_Parinas.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7780-23939-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5544-12628-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18977-64082-3-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2107-4855-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5414-15755-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18594-59822-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18424-60401-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Duguet_12279.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19541-69532-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC2780877.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8435-27274-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1471-2148-8-1.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18562-59548-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC4719240.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7216-20291-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8428-29536-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2.v91-008.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7118-19237-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1883-2969-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 0951-7715_24_7_004.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19785-72111-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2012150102.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1955-3671-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1471-2148-9-32.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19753-75862-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18585-59779-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11905-51532-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC4185156.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19375-81948-6-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20419-81178-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 14784-50749-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18533-59050-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6283-16863-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20671-82909-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1908-3328-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11075-36386-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18600-59966-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18558-59522-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 0070234.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19060-65099-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: AUSSANT2014INTER.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC2815316.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 40.v87-088.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 40.v87-088.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 9.v89-169.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: W04-3227.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5285-10584-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5060-11770-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC4534731.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5657-13105-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17324-51879-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19519-69349-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18563-59553-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17631-65185-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5489-11927-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17291-51450-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2086-4547-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: SSRN-id1425692-2.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1925-3935-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1905-3612-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6415-17579-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5774-14429-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5333-10869-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19690-71857-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2020-4630-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20175-78196-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: ecdl_dilia.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: HCII07-LongSteph.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7160-31947-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20295-77653-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Pancher_2015_Coexistence_of.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19159-66544-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 0807.3577.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19125-65827-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5536-12277-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 71.v85-432.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 71.v85-432.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: P98-2207.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5444-11918-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5775-14115-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC3673637.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20625-82105-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7281-20741-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18900-63204-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10358-39795-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 14870-51016-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7800-25270-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2006-149_hal.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11482-37825-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18.v88-258.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1654-2012-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5554-13060-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:14 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18154-55737-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 55000123-orginal.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 243.full.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC2804221.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1649-1978-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7478-22620-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10207-34165-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6021-16215-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5395-11934-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18833-62385-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5252-11228-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17218-64803-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PhysRevLett.119.044802.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element note: type=headnote
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element note: type=headnote
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: ipamin2014_paper4.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5458-11842-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20072-75240-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5899-16974-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5052-9016-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7783-23995-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5266-10466-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: W09-1417.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 55000120-orginal.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17508-61154-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18577-59651-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1471-2407-8-288.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC1933159.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 31.v87-066.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 31.v87-066.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5223-10256-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC4283970.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+SEVERE: The raw file does not exist: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/segmentation/corpus/raw/PMC4283970.training.segmentation
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5779-14165-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18579-59662-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20389-79085-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20069-75242-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5201-10147-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5731-14474-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20240-76945-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19228-67627-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2065-4718-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17294-51467-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2075-4462-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20333-79094-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18968-63868-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: sdarticle02.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: pone.0003353.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 265.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10663-35015-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: D08-1073.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7342-21743-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5982-15908-1-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 55005111.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18482-58409-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15748-58337-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 12236-39909-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1899-3121-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19182-67652-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Tarrade_11262.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2057-4715-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7283-20911-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19086-65359-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4634-7998-4-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20008-74581-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8482-35514-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 01198988.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Ayers_2015_Six_questions_on.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: C02-1051.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: E14-1075.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15366-56374-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19713-71392-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8447-43585-4-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 55000124-orginal.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4639-8020-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: jcp062760.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1678-7757-jaos-16-06-0380.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 12.v88-171.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7110-19160-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19909-73614-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20676-82914-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20228-76880-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2123-5025-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8293-31977-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 12889_2015_Article_2574.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2143-8053-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4852-8388-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7135-19365-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: AnalysisCornea.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7802-25272-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Biometrics_2006_62_3_PCouteron.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7797-24749-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 55005080.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20644-82910-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10888-35745-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Bioinformatics-2007-Rivals-401-7.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18982-64141-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20169-76684-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5245-10381-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19139-66125-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6287-19169-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5282-10572-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4629-7973-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1471-2229-8-14.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: EJM_CavitationModelsComparison.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20593-83931-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 12970_2015_Article_108.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17258-50947-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4635-8004-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 9911409.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5236-10331-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7206-19904-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4620-7929-4-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19960-74401-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5203-10149-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18985-64193-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17276-51376-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10494-34636-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7208-19924-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:15 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4275-7564-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19882-73332-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5969-15818-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19008-64574-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19037-65173-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1512.00014.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20503-80679-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7371-24208-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5071-9210-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8312-26343-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element div: type=acknowledgements
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element div: type=acknowledgements
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5334-10874-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5654-15100-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7041-18796-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6307-16720-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6433-19596-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15693-47246-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Bouvet_12129.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: RR-8661.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18909-66129-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18981-75474-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19223-69956-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: J11-3009.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7252-21389-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 16145-53256-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11584-47256-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17361-52215-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7265-20440-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2017-4329-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: pgen.1002065.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7801-25271-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15896-57002-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC3114242.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5762-16234-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1974-3843-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17507-53247-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element div: type=acknowledgment
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18436-57930-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20494-80413-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5780-14170-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7217-20668-3-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18081-55440-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7200-21760-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7246-20310-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18148-59273-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6336-19171-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7126-19277-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 3.v90-330.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5862-14779-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7796-24748-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 130606_Jouhet_et_al_2006_Progress_in_Lipid_research.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: W09-1206.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5123-9679-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19893-73567-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7795-24732-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11-s0217751x17501329.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: W09-1403.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18754-67741-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18584-59769-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5056-9055-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8865-29162-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18-1708.00469.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17217-50465-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7129-19297-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 55000122-orginal.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC5147388.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: ei2015_cotret.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19178-67462-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7331-22189-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5760-14492-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1309.7222.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10674-35087-6-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 05_-_PMID_17035732.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20443-79509-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19281-70091-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7169-21193-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC4852604.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5755-13862-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5964-15795-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: exception-analysis-resilience-ist.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8410-31758-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19739-71587-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20513-84454-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19231-79728-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC3357243.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11105-36542-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18588-59793-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18712-63573-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18701-63288-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18204-56301-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5826-15021-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4847-8564-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15761-53375-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 50.v86-097.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 50.v86-097.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5978-17739-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18191-58929-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4859-8892-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4879-8591-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC5221852.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 100.v84-264.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 100.v84-264.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5230-10321-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18376-56937-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5719-14047-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7132-39061-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Briere_Plant_Cell_Physiol_2003.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5329-14069-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20241-76952-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: C12-1005.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4884-8655-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5693-13609-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20326-78048-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Hadbi_11990.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15895-46314-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20214-76770-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18586-59784-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4276-7570-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4.v90-043.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6359-17247-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6373-17346-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4857-8414-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11513-37906-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11512-37904-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:16 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: J09-3003.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20262-77354-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 14919-43580-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5122-9761-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19000-70021-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6420-17696-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PatternV12014.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4902-9064-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18848-63120-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: fermeture.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1882-10716-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7611-23220-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 12169-49963-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19769-74354-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17391-59621-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: pcbi.1000473.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18820-62235-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1512.00002.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11589-38160-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 119.v83-444.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7042-19458-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: E14-1007.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20108-78952-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Boto_2015_The_role_of.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10611-55310-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10.v89-170.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 10.v89-170.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1821-2390-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19064-65118-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7137-19383-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC3905510.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7188-20299-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 55000126-orginal.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6325-16794-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18567-59568-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5639-25599-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20125-78134-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18578-59656-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: C12-1051.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19703-79895-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19295-68000-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7919-24612-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7186-20293-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19481-71713-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: C02-1160.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4654-8110-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: sdarticle01.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: FrClassTSNM.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5140-9746-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19081-65498-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: nihms57062.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4848-8366-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 117.v83-349.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18972-63923-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 18972-63923-2-RV.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18842-62462-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18912-63447-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20150-76776-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7030-19199-5-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5653-13988-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19167-66708-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5524-12188-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 27.v87-316.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8449-27203-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19647-70646-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19837-72822-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC2808580.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 55005187.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5294-10625-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18514-58705-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15-s0217732317501371.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5768-14004-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18645-60626-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5298-10650-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7815-25273-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20354-78538-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19123-65806-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC4317227.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19797-72196-4-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: stokes_ddfv_omnes_hal_v2.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20323-78020-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6603563a.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: ddn286.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7220-20052-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18152-60221-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19898-73570-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5705-13674-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5743-13863-1-AT.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5845-14573-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10961-36032-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4880-8603-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC5442078.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8443-27214-2-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: RelaxationPST_Arxiv.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17206-50385-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18381-62869-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: W00-0734.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Y05-1024.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18643-60607-2-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: square.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 101.v84-254.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 101.v84-254.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5167-9968-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2144-5349-3-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18691-61179-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:17 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5.v90-002.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: euzenat2006c.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4901-9066-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: art_fin.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1755-8166-2-3.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7140-22172-1-ED.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18447-57991-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18714-63879-2-RV.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17718-58673-1-CE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18414-57398-1-LE.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: PMC5426865.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: MNRAS-2015-Richard-L16-20.training.segmentation.tei.xml
+Aug 05, 2019 8:02:18 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 12985_2015_Article_447.training.segmentation.tei.xml
+	epsilon: 1.0E-7
+	window: 50
+	nb max iterations: 1000
+	nb threads: 12
+* Load patterns
+* Load training data
+* Initialize the model
+* Summary
+    nb train:    523
+    nb labels:   21
+    nb blocks:   1246386
+    nb features: 26174526
+* Train the model with l-bfgs
+  [   1] obj=608151.89  act=2979842  err=23.63%/100.00% time=14.84s/14.84s
+  [   2] obj=448846.06  act=2757672  err=23.63%/100.00% time=9.01s/23.85s
+  [   3] obj=335813.43  act=1927023  err=23.63%/100.00% time=22.98s/46.83s
+  [   4] obj=321502.11  act=1981446  err=23.63%/100.00% time=24.21s/71.04s
+  [   5] obj=312148.98  act=2078954  err=23.63%/100.00% time=18.30s/89.35s
+  [   6] obj=310819.51  act=2006264  err=23.63%/100.00% time=17.74s/107.09s
+  [   7] obj=305071.30  act=2078729  err=23.63%/100.00% time=41.43s/148.52s
+  [   8] obj=292579.92  act=1963893  err=23.55%/100.00% time=10.11s/158.64s
+  [   9] obj=272659.72  act=2006024  err=23.63%/100.00% time=12.63s/171.27s
+  [  10] obj=266111.65  act=1943421  err=23.63%/100.00% time=10.23s/181.50s
+  [  11] obj=250232.60  act=1849406  err=23.63%/100.00% time=10.11s/191.61s
+  [  12] obj=242622.38  act=1717238  err=19.35%/100.00% time=10.02s/201.63s
+  [  13] obj=215277.91  act=1922044  err=23.63%/100.00% time=19.63s/221.26s
+  [  14] obj=199011.33  act=1827784  err=16.47%/100.00% time=12.08s/233.35s
+  [  15] obj=195485.25  act=1976779  err=23.55%/100.00% time=10.89s/244.23s
+  [  16] obj=164074.07  act=1901672  err=16.77%/100.00% time=10.65s/254.88s
+  [  17] obj=150423.86  act=1942974  err=16.70%/100.00% time=10.20s/265.08s
+  [  18] obj=132627.58  act=1868440  err=15.68%/100.00% time=12.25s/277.32s
+  [  19] obj=123269.34  act=1705528  err=21.76%/100.00% time=11.02s/288.34s
+  [  20] obj=110847.00  act=2121179  err=16.85%/100.00% time=10.61s/298.95s
+  [  21] obj=89514.92   act=2020664  err=12.15%/100.00% time=10.84s/309.79s
+  [  22] obj=84453.71   act=1910033  err=10.37%/100.00% time=11.43s/321.21s
+  [  23] obj=81772.48   act=1821624  err=10.11%/100.00% time=10.47s/331.69s
+  [  24] obj=77902.45   act=1731616  err= 9.86%/100.00% time=12.31s/344.00s
+  [  25] obj=67267.94   act=1476018  err= 9.57%/100.00% time=10.65s/354.65s
+  [  26] obj=62364.15   act=1486605  err= 9.43%/100.00% time=10.92s/365.58s
+  [  27] obj=56309.99   act=1439549  err= 8.06%/100.00% time=18.82s/384.40s
+  [  28] obj=52147.67   act=1381352  err= 8.27%/100.00% time=10.87s/395.26s
+  [  29] obj=49779.41   act=1344922  err= 8.32%/99.62% time=19.11s/414.37s
+  [  30] obj=45511.33   act=1327306  err= 8.02%/98.47% time=11.63s/426.00s
+  [  31] obj=40998.77   act=1293956  err= 7.47%/97.90% time=21.14s/447.14s
+  [  32] obj=37191.23   act=1269696  err= 7.13%/97.13% time=11.43s/458.57s
+  [  33] obj=34232.10   act=1256061  err= 6.23%/95.22% time=22.69s/481.26s
+  [  34] obj=31310.11   act=1261329  err= 5.90%/93.88% time=10.71s/491.97s
+  [  35] obj=28072.28   act=1155331  err= 6.91%/94.65% time=10.39s/502.36s
+  [  36] obj=24407.15   act=1139498  err= 5.03%/90.63% time=10.28s/512.64s
+  [  37] obj=23397.83   act=1020137  err= 6.95%/93.50% time=12.53s/525.17s
+  [  38] obj=19761.11   act=1073567  err= 4.32%/88.53% time=10.79s/535.96s
+  [  39] obj=19742.08   act=1016798  err= 6.25%/90.25% time=11.02s/546.98s
+  [  40] obj=17024.73   act=1033128  err= 3.95%/85.66% time=10.86s/557.83s
+  [  41] obj=16182.72   act=967027   err= 4.56%/87.57% time=12.54s/570.37s
+  [  42] obj=14796.04   act=966424   err= 3.23%/83.37% time=11.32s/581.69s
+  [  43] obj=13943.57   act=917260   err= 4.16%/83.94% time=13.31s/595.01s
+  [  44] obj=12574.09   act=904928   err= 2.75%/81.45% time=11.61s/606.62s
+  [  45] obj=11988.51   act=830799   err= 3.63%/82.22% time=11.76s/618.38s
+  [  46] obj=10805.76   act=823220   err= 2.30%/78.78% time=10.79s/629.17s
+  [  47] obj=10388.81   act=751471   err= 3.06%/80.69% time=12.30s/641.47s
+  [  48] obj=9522.15    act=743390   err= 1.90%/77.44% time=10.69s/652.16s
+  [  49] obj=8953.17    act=690850   err= 2.03%/76.48% time=10.26s/662.41s
+  [  50] obj=8115.32    act=624773   err= 1.59%/73.42% time=10.13s/672.55s
+  [  51] obj=7461.08    act=562078   err= 1.52%/72.47% time=10.18s/682.72s
+  [  52] obj=6989.19    act=543719   err= 1.20%/68.45% time=12.24s/694.96s
+  [  53] obj=6558.86    act=481821   err= 1.09%/66.54% time=11.26s/706.22s
+  [  54] obj=6296.37    act=429662   err= 1.06%/64.63% time=26.01s/732.23s
+  [  55] obj=5932.99    act=405198   err= 0.82%/60.99% time=11.95s/744.17s
+  [  56] obj=5637.19    act=374582   err= 0.75%/58.70% time=10.65s/754.83s
+  [  57] obj=5388.20    act=338744   err= 0.72%/56.79% time=10.87s/765.69s
+  [  58] obj=5187.11    act=311586   err= 0.54%/53.35% time=10.16s/775.85s
+  [  59] obj=4998.39    act=299806   err= 0.45%/50.67% time=12.22s/788.07s
+  [  60] obj=4733.38    act=271783   err= 0.43%/48.37% time=10.46s/798.53s
+  [  61] obj=4626.01    act=242465   err= 0.55%/43.79% time=19.18s/817.71s
+  [  62] obj=4476.64    act=248057   err= 0.45%/42.83% time=11.86s/829.57s
+  [  63] obj=4375.89    act=229228   err= 0.29%/38.43% time=10.82s/840.39s
+  [  64] obj=4257.37    act=218014   err= 0.23%/36.90% time=10.35s/850.74s
+  [  65] obj=4020.39    act=179475   err= 0.25%/28.68% time=10.62s/861.36s
+  [  66] obj=4012.70    act=179919   err= 0.17%/28.49% time=12.01s/873.37s
+  [  67] obj=3948.53    act=177918   err= 0.25%/26.96% time=10.67s/884.04s
+  [  68] obj=3874.58    act=173884   err= 0.18%/24.86% time=12.32s/896.35s
+  [  69] obj=3804.44    act=160322   err= 0.13%/22.94% time=10.77s/907.12s
+  [  70] obj=3692.66    act=144366   err= 0.14%/19.89% time=10.91s/918.03s
+  [  71] obj=3608.54    act=131491   err= 0.08%/16.83% time=12.15s/930.18s
+  [  72] obj=3540.16    act=123061   err= 0.07%/13.96% time=11.27s/941.45s
+  [  73] obj=3468.18    act=108733   err= 0.04%/11.47% time=10.77s/952.22s
+  [  74] obj=3422.86    act=102497   err= 0.08%/12.81% time=11.06s/963.28s
+  [  75] obj=3370.38    act=95453    err= 0.07%/11.85% time=13.89s/977.17s
+  [  76] obj=3316.19    act=89163    err= 0.07%/12.43% time=12.27s/989.45s
+  [  77] obj=3276.04    act=86554    err= 0.05%/11.85% time=14.10s/1003.54s
+  [  78] obj=3230.10    act=82529    err= 0.04%/12.05% time=11.20s/1014.74s
+  [  79] obj=3181.60    act=74205    err= 0.05%/13.77% time=10.79s/1025.53s
+  [  80] obj=3142.97    act=69513    err= 0.06%/14.34% time=13.71s/1039.25s
+  [  81] obj=3101.22    act=64890    err= 0.05%/12.05% time=10.68s/1049.93s
+  [  82] obj=3063.77    act=61959    err= 0.04%/12.24% time=12.53s/1062.45s
+  [  83] obj=3040.98    act=58467    err= 0.05%/ 9.75% time=11.13s/1073.58s
+  [  84] obj=3030.02    act=60181    err= 0.03%/ 7.84% time=40.58s/1114.16s
+  [  85] obj=3007.42    act=54710    err= 0.02%/ 6.31% time=10.28s/1124.44s
+  [  86] obj=2987.20    act=53428    err= 0.02%/ 5.74% time=12.26s/1136.69s
+  [  87] obj=2965.75    act=52363    err= 0.02%/ 4.40% time=10.84s/1147.53s
+  [  88] obj=2938.41    act=49944    err= 0.02%/ 4.97% time=10.77s/1158.30s
+  [  89] obj=2915.19    act=48368    err= 0.02%/ 4.59% time=10.24s/1168.54s
+  [  90] obj=2898.92    act=48100    err= 0.01%/ 4.02% time=19.12s/1187.66s
+  [  91] obj=2877.57    act=42900    err= 0.01%/ 5.35% time=10.19s/1197.85s
+  [  92] obj=2856.29    act=43253    err= 0.01%/ 4.21% time=10.56s/1208.40s
+  [  93] obj=2839.75    act=40893    err= 0.02%/ 5.35% time=12.22s/1220.62s
+  [  94] obj=2820.79    act=40841    err= 0.01%/ 4.59% time=11.50s/1232.12s
+  [  95] obj=2807.45    act=38273    err= 0.01%/ 5.16% time=10.61s/1242.73s
+  [  96] obj=2789.04    act=37650    err= 0.01%/ 4.78% time=10.65s/1253.38s
+  [  97] obj=2771.97    act=36718    err= 0.03%/ 6.88% time=10.37s/1263.75s
+  [  98] obj=2755.13    act=36638    err= 0.02%/ 5.74% time=12.27s/1276.02s
+  [  99] obj=2741.57    act=35164    err= 0.02%/ 5.74% time=10.52s/1286.54s
+  [ 100] obj=2730.75    act=35030    err= 0.01%/ 5.54% time=10.90s/1297.44s
+  [ 101] obj=2712.71    act=34608    err= 0.02%/ 5.74% time=11.57s/1309.02s
+  [ 102] obj=2706.50    act=33174    err= 0.01%/ 4.40% time=10.35s/1319.37s
+  [ 103] obj=2690.86    act=32767    err= 0.02%/ 4.21% time=12.14s/1331.51s
+  [ 104] obj=2687.68    act=33386    err= 0.01%/ 3.44% time=25.39s/1356.90s
+  [ 105] obj=2682.97    act=30669    err= 0.01%/ 3.06% time=12.60s/1369.49s
+  [ 106] obj=2674.88    act=31760    err= 0.01%/ 3.25% time=25.15s/1394.65s
+  [ 107] obj=2664.39    act=30057    err= 0.01%/ 3.06% time=10.45s/1405.10s
+  [ 108] obj=2654.55    act=29341    err= 0.01%/ 3.06% time=10.78s/1415.87s
+  [ 109] obj=2641.10    act=27399    err= 0.01%/ 3.44% time=10.03s/1425.90s
+  [ 110] obj=2630.27    act=27226    err= 0.01%/ 2.87% time=12.11s/1438.01s
+  [ 111] obj=2621.49    act=26687    err= 0.01%/ 3.82% time=10.66s/1448.67s
+  [ 112] obj=2615.19    act=26111    err= 0.01%/ 2.68% time=10.25s/1458.92s
+  [ 113] obj=2607.61    act=26318    err= 0.01%/ 3.82% time=10.00s/1468.93s
+  [ 114] obj=2600.46    act=25510    err= 0.01%/ 3.06% time=10.08s/1479.01s
+  [ 115] obj=2591.42    act=25566    err= 0.01%/ 3.82% time=12.31s/1491.32s
+  [ 116] obj=2583.97    act=25834    err= 0.01%/ 3.06% time=11.37s/1502.68s
+  [ 117] obj=2576.75    act=24911    err= 0.01%/ 3.44% time=10.23s/1512.92s
+  [ 118] obj=2573.35    act=24131    err= 0.01%/ 2.87% time=10.09s/1523.01s
+  [ 119] obj=2564.84    act=23810    err= 0.01%/ 3.44% time=12.49s/1535.50s
+  [ 120] obj=2562.66    act=23776    err= 0.01%/ 2.87% time=10.75s/1546.25s
+  [ 121] obj=2558.55    act=23027    err= 0.01%/ 3.06% time=10.54s/1556.80s
+  [ 122] obj=2555.34    act=23074    err= 0.01%/ 3.06% time=16.88s/1573.67s
+  [ 123] obj=2550.45    act=22390    err= 0.01%/ 2.68% time=10.03s/1583.71s
+  [ 124] obj=2543.57    act=21809    err= 0.01%/ 3.44% time=11.67s/1595.37s
+  [ 125] obj=2536.11    act=21442    err= 0.01%/ 3.44% time=12.21s/1607.58s
+  [ 126] obj=2530.61    act=20693    err= 0.01%/ 3.44% time=13.72s/1621.30s
+  [ 127] obj=2524.59    act=21184    err= 0.01%/ 2.29% time=13.49s/1634.80s
+  [ 128] obj=2517.25    act=21624    err= 0.01%/ 3.44% time=10.88s/1645.67s
+  [ 129] obj=2513.40    act=20777    err= 0.01%/ 3.06% time=12.19s/1657.87s
+  [ 130] obj=2510.10    act=20322    err= 0.01%/ 3.44% time=10.80s/1668.66s
+  [ 131] obj=2504.72    act=19871    err= 0.01%/ 2.87% time=11.36s/1680.02s
+  [ 132] obj=2501.46    act=19832    err= 0.00%/ 2.68% time=11.43s/1691.45s
+  [ 133] obj=2495.05    act=19692    err= 0.00%/ 2.49% time=10.99s/1702.44s
+  [ 134] obj=2492.39    act=19574    err= 0.00%/ 2.29% time=12.18s/1714.62s
+  [ 135] obj=2488.13    act=19251    err= 0.00%/ 2.10% time=10.83s/1725.45s
+  [ 136] obj=2485.99    act=19157    err= 0.00%/ 2.29% time=10.79s/1736.24s
+  [ 137] obj=2481.30    act=18949    err= 0.01%/ 3.06% time=11.17s/1747.42s
+  [ 138] obj=2478.91    act=19176    err= 0.01%/ 2.87% time=12.58s/1759.99s
+  [ 139] obj=2474.72    act=18881    err= 0.01%/ 3.06% time=11.00s/1770.99s
+  [ 140] obj=2472.99    act=18846    err= 0.01%/ 2.49% time=10.87s/1781.86s
+  [ 141] obj=2468.92    act=18459    err= 0.01%/ 3.25% time=12.01s/1793.87s
+  [ 142] obj=2467.08    act=18275    err= 0.01%/ 2.68% time=14.42s/1808.29s
+  [ 143] obj=2463.31    act=18079    err= 0.01%/ 2.49% time=10.62s/1818.91s
+  [ 144] obj=2461.89    act=17968    err= 0.01%/ 2.29% time=12.59s/1831.50s
+  [ 145] obj=2457.74    act=17784    err= 0.01%/ 2.68% time=10.97s/1842.47s
+  [ 146] obj=2456.22    act=17606    err= 0.01%/ 2.29% time=14.26s/1856.72s
+  [ 147] obj=2452.48    act=17485    err= 0.01%/ 2.49% time=11.86s/1868.59s
+  [ 148] obj=2451.47    act=17388    err= 0.01%/ 2.68% time=13.76s/1882.34s
+  [ 149] obj=2447.15    act=17222    err= 0.01%/ 3.25% time=10.93s/1893.27s
+  [ 150] obj=2446.03    act=17177    err= 0.01%/ 2.87% time=12.22s/1905.49s
+  [ 151] obj=2442.01    act=17033    err= 0.01%/ 3.06% time=10.94s/1916.43s
+  [ 152] obj=2440.60    act=16894    err= 0.01%/ 2.68% time=12.46s/1928.89s
+  [ 153] obj=2437.19    act=16679    err= 0.01%/ 2.87% time=10.85s/1939.74s
+  [ 154] obj=2436.05    act=16601    err= 0.01%/ 2.49% time=14.62s/1954.36s
+  [ 155] obj=2432.39    act=16474    err= 0.01%/ 2.87% time=11.10s/1965.46s
+  [ 156] obj=2431.41    act=16401    err= 0.01%/ 2.68% time=10.85s/1976.31s
+  [ 157] obj=2428.37    act=16250    err= 0.01%/ 2.68% time=14.28s/1990.59s
+  [ 158] obj=2427.32    act=16189    err= 0.01%/ 2.49% time=11.29s/2001.87s
+  [ 159] obj=2424.42    act=16032    err= 0.01%/ 2.49% time=10.88s/2012.76s
+  [ 160] obj=2423.54    act=15971    err= 0.01%/ 2.10% time=13.87s/2026.63s
+  [ 161] obj=2420.62    act=15799    err= 0.01%/ 2.49% time=11.10s/2037.72s
+  [ 162] obj=2419.75    act=15866    err= 0.01%/ 2.49% time=12.83s/2050.55s
+  [ 163] obj=2416.87    act=15622    err= 0.01%/ 2.49% time=11.76s/2062.31s
+  [ 164] obj=2416.19    act=15561    err= 0.01%/ 2.10% time=14.52s/2076.82s
+  [ 165] obj=2413.37    act=15467    err= 0.01%/ 2.10% time=10.89s/2087.71s
+  [ 166] obj=2412.91    act=15403    err= 0.01%/ 2.10% time=13.75s/2101.46s
+  [ 167] obj=2410.15    act=15272    err= 0.01%/ 2.29% time=13.38s/2114.84s
+  [ 168] obj=2409.57    act=15304    err= 0.01%/ 2.29% time=14.64s/2129.48s
+  [ 169] obj=2406.74    act=15150    err= 0.01%/ 2.29% time=11.55s/2141.03s
+  [ 170] obj=2406.32    act=15103    err= 0.00%/ 1.72% time=14.60s/2155.63s
+  [ 171] obj=2403.68    act=14983    err= 0.00%/ 2.10% time=11.85s/2167.47s
+  [ 172] obj=2403.23    act=15000    err= 0.00%/ 2.10% time=14.00s/2181.47s
+  [ 173] obj=2400.62    act=14851    err= 0.00%/ 2.10% time=13.60s/2195.07s
+  [ 174] obj=2400.13    act=14899    err= 0.00%/ 2.29% time=14.19s/2209.26s
+  [ 175] obj=2397.49    act=14730    err= 0.00%/ 1.91% time=12.76s/2222.01s
+  [ 176] obj=2396.98    act=14645    err= 0.00%/ 2.10% time=14.36s/2236.37s
+  [ 177] obj=2394.40    act=14555    err= 0.00%/ 1.53% time=12.47s/2248.85s
+  [ 178] obj=2393.19    act=14600    err= 0.00%/ 1.91% time=21.74s/2270.59s
+  [ 179] obj=2392.80    act=14337    err= 0.00%/ 1.72% time=14.65s/2285.24s
+  [ 180] obj=2390.40    act=14530    err= 0.00%/ 1.53% time=11.55s/2296.80s
+  [ 181] obj=2388.77    act=14336    err= 0.00%/ 1.34% time=14.42s/2311.22s
+  [ 182] obj=2387.50    act=14301    err= 0.00%/ 1.53% time=13.17s/2324.39s
+  [ 183] obj=2385.76    act=14260    err= 0.00%/ 1.72% time=14.09s/2338.47s
+  [ 184] obj=2384.67    act=14178    err= 0.00%/ 1.91% time=12.07s/2350.54s
+  [ 185] obj=2382.89    act=14050    err= 0.00%/ 1.72% time=14.75s/2365.29s
+  [ 186] obj=2382.22    act=14083    err= 0.00%/ 2.10% time=12.27s/2377.56s
+  [ 187] obj=2380.53    act=13957    err= 0.00%/ 1.72% time=13.65s/2391.21s
+  [ 188] obj=2379.04    act=14047    err= 0.00%/ 2.29% time=14.52s/2405.73s
+  [ 189] obj=2377.58    act=13871    err= 0.00%/ 1.91% time=11.75s/2417.48s
+  [ 190] obj=2376.99    act=13854    err= 0.00%/ 2.49% time=11.55s/2429.03s
+  [ 191] obj=2375.08    act=13727    err= 0.00%/ 2.29% time=14.90s/2443.94s
+  [ 192] obj=2374.70    act=13648    err= 0.00%/ 2.29% time=11.71s/2455.65s
+  [ 193] obj=2372.92    act=13602    err= 0.00%/ 2.29% time=14.66s/2470.31s
+  [ 194] obj=2372.43    act=13536    err= 0.00%/ 2.68% time=12.36s/2482.67s
+  [ 195] obj=2370.72    act=13433    err= 0.00%/ 2.29% time=14.53s/2497.20s
+  [ 196] obj=2370.30    act=13417    err= 0.00%/ 1.91% time=13.04s/2510.24s
+  [ 197] obj=2368.71    act=13326    err= 0.00%/ 1.91% time=13.49s/2523.73s
+  [ 198] obj=2368.28    act=13342    err= 0.00%/ 1.91% time=11.33s/2535.06s
+  [ 199] obj=2366.74    act=13228    err= 0.00%/ 1.72% time=13.98s/2549.04s
+  [ 200] obj=2366.20    act=13223    err= 0.00%/ 1.91% time=13.42s/2562.45s
+  [ 201] obj=2364.80    act=13106    err= 0.00%/ 1.91% time=12.10s/2574.56s
+  [ 202] obj=2364.36    act=13083    err= 0.00%/ 1.91% time=13.86s/2588.42s
+  [ 203] obj=2362.98    act=12943    err= 0.00%/ 1.91% time=11.27s/2599.69s
+  [ 204] obj=2362.58    act=12955    err= 0.00%/ 1.91% time=11.45s/2611.14s
+  [ 205] obj=2361.21    act=12887    err= 0.00%/ 1.72% time=13.78s/2624.91s
+  [ 206] obj=2360.80    act=12896    err= 0.00%/ 1.72% time=11.39s/2636.30s
+  [ 207] obj=2359.43    act=12803    err= 0.00%/ 1.72% time=11.00s/2647.30s
+  [ 208] obj=2359.01    act=12781    err= 0.00%/ 1.91% time=12.36s/2659.66s
+  [ 209] obj=2357.69    act=12671    err= 0.00%/ 1.72% time=14.22s/2673.88s
+  [ 210] obj=2357.34    act=12697    err= 0.00%/ 2.10% time=10.97s/2684.85s
+  [ 211] obj=2356.05    act=12601    err= 0.00%/ 2.10% time=10.84s/2695.69s
+  [ 212] obj=2355.66    act=12581    err= 0.00%/ 1.91% time=14.00s/2709.69s
+  [ 213] obj=2354.51    act=12502    err= 0.00%/ 2.29% time=11.40s/2721.09s
+  [ 214] obj=2354.04    act=12510    err= 0.00%/ 2.10% time=11.16s/2732.25s
+  [ 215] obj=2352.89    act=12432    err= 0.00%/ 2.29% time=12.67s/2744.92s
+  [ 216] obj=2352.52    act=12422    err= 0.00%/ 2.29% time=13.27s/2758.19s
+  [ 217] obj=2351.31    act=12340    err= 0.00%/ 2.10% time=14.29s/2772.48s
+  [ 218] obj=2350.95    act=12306    err= 0.00%/ 2.49% time=11.11s/2783.58s
+  [ 219] obj=2349.83    act=12255    err= 0.00%/ 2.29% time=13.78s/2797.36s
+  [ 220] obj=2349.40    act=12263    err= 0.00%/ 2.29% time=10.99s/2808.35s
+  [ 221] obj=2348.29    act=12194    err= 0.00%/ 2.10% time=12.63s/2820.98s
+  [ 222] obj=2347.83    act=12206    err= 0.00%/ 2.10% time=11.09s/2832.06s
+  [ 223] obj=2346.70    act=12150    err= 0.00%/ 2.49% time=11.63s/2843.70s
+  [ 224] obj=2346.33    act=12160    err= 0.00%/ 2.10% time=11.98s/2855.68s
+  [ 225] obj=2345.23    act=12107    err= 0.00%/ 2.29% time=13.84s/2869.52s
+  [ 226] obj=2345.05    act=12097    err= 0.00%/ 2.10% time=14.43s/2883.96s
+  [ 227] obj=2343.85    act=12020    err= 0.00%/ 2.10% time=11.57s/2895.53s
+  [ 228] obj=2343.47    act=12047    err= 0.00%/ 2.29% time=11.14s/2906.66s
+  [ 229] obj=2342.44    act=11990    err= 0.00%/ 2.10% time=14.10s/2920.77s
+  [ 230] obj=2342.23    act=12011    err= 0.00%/ 2.49% time=11.80s/2932.57s
+  [ 231] obj=2341.10    act=11953    err= 0.00%/ 2.10% time=13.57s/2946.14s
+  [ 232] obj=2340.92    act=11933    err= 0.00%/ 1.91% time=14.40s/2960.54s
+  [ 233] obj=2339.76    act=11901    err= 0.00%/ 1.91% time=11.63s/2972.17s
+  [ 234] obj=2339.68    act=11885    err= 0.00%/ 1.72% time=13.44s/2985.61s
+  [ 235] obj=2338.50    act=11864    err= 0.00%/ 1.53% time=14.59s/3000.20s
+  [ 236] obj=2338.42    act=11872    err= 0.00%/ 1.53% time=12.83s/3013.03s
+  [ 237] obj=2337.20    act=11844    err= 0.00%/ 1.91% time=11.08s/3024.11s
+  [ 238] obj=2337.03    act=11802    err= 0.00%/ 1.91% time=14.51s/3038.61s
+  [ 239] obj=2335.92    act=11783    err= 0.00%/ 1.91% time=11.61s/3050.23s
+  [ 240] obj=2335.92    act=11738    err= 0.00%/ 2.29% time=14.55s/3064.78s
+  [ 241] obj=2334.68    act=11697    err= 0.00%/ 1.91% time=13.31s/3078.08s
+  [ 242] obj=2334.67    act=11706    err= 0.00%/ 2.10% time=13.91s/3091.99s
+  [ 243] obj=2333.52    act=11645    err= 0.00%/ 2.10% time=11.69s/3103.68s
+  [ 244] obj=2333.38    act=11664    err= 0.00%/ 2.29% time=13.99s/3117.67s
+  [ 245] obj=2332.29    act=11609    err= 0.00%/ 2.10% time=13.93s/3131.60s
+  [ 246] obj=2332.06    act=11584    err= 0.00%/ 2.10% time=13.24s/3144.85s
+  [ 247] obj=2331.12    act=11545    err= 0.00%/ 2.10% time=11.26s/3156.10s
+  [ 248] obj=2331.10    act=11556    err= 0.00%/ 2.10% time=12.00s/3168.10s
+  [ 249] obj=2329.94    act=11529    err= 0.00%/ 2.10% time=13.38s/3181.48s
+  [ 250] obj=2329.88    act=11499    err= 0.00%/ 1.91% time=11.32s/3192.81s
+  [ 251] obj=2328.79    act=11434    err= 0.00%/ 2.10% time=14.92s/3207.73s
+  [ 252] obj=2328.66    act=11410    err= 0.00%/ 1.72% time=12.57s/3220.30s
+  [ 253] obj=2327.65    act=11371    err= 0.00%/ 2.10% time=13.61s/3233.92s
+  [ 254] obj=2327.20    act=11411    err= 0.00%/ 1.72% time=21.90s/3255.82s
+  [ 255] obj=2326.93    act=11308    err= 0.00%/ 2.10% time=14.46s/3270.28s
+  [ 256] obj=2326.19    act=11629    err= 0.00%/ 2.10% time=11.50s/3281.78s
+  [ 257] obj=2325.20    act=11489    err= 0.00%/ 2.29% time=14.03s/3295.81s
+  [ 258] obj=2325.17    act=11437    err= 0.00%/ 2.10% time=13.62s/3309.43s
+  [ 259] obj=2323.71    act=11512    err= 0.00%/ 2.49% time=13.97s/3323.40s
+  [ 260] obj=2323.52    act=11389    err= 0.00%/ 2.29% time=11.55s/3334.96s
+  [ 261] obj=2322.56    act=11417    err= 0.00%/ 2.49% time=14.09s/3349.04s
+  [ 262] obj=2322.25    act=11391    err= 0.00%/ 2.10% time=11.81s/3360.85s
+  [ 263] obj=2321.76    act=11301    err= 0.00%/ 2.10% time=10.96s/3371.81s
+  [ 264] obj=2321.14    act=11344    err= 0.00%/ 1.91% time=13.87s/3385.68s
+  [ 265] obj=2320.32    act=11276    err= 0.00%/ 2.10% time=11.81s/3397.48s
+  [ 266] obj=2320.09    act=11265    err= 0.00%/ 1.53% time=15.55s/3413.03s
+  [ 267] obj=2319.20    act=11218    err= 0.00%/ 2.10% time=13.05s/3426.08s
+  [ 268] obj=2319.03    act=11198    err= 0.00%/ 1.72% time=11.11s/3437.19s
+  [ 269] obj=2318.12    act=11159    err= 0.00%/ 1.91% time=14.39s/3451.58s
+  [ 270] obj=2317.92    act=11112    err= 0.00%/ 1.72% time=11.15s/3462.73s
+  [ 271] obj=2317.19    act=11041    err= 0.00%/ 1.72% time=11.44s/3474.17s
+  [ 272] obj=2316.93    act=11042    err= 0.00%/ 1.53% time=11.42s/3485.59s
+  [ 273] obj=2316.23    act=10993    err= 0.00%/ 1.72% time=11.10s/3496.69s
+  [ 274] obj=2315.90    act=10997    err= 0.00%/ 1.53% time=13.92s/3510.61s
+  [ 275] obj=2315.12    act=10950    err= 0.00%/ 1.72% time=11.24s/3521.85s
+  [ 276] obj=2315.10    act=10935    err= 0.00%/ 1.53% time=10.84s/3532.70s
+  [ 277] obj=2314.06    act=10918    err= 0.00%/ 1.72% time=14.82s/3547.51s
+  [ 278] obj=2313.63    act=10945    err= 0.00%/ 1.72% time=18.71s/3566.23s
+  [ 279] obj=2313.33    act=10864    err= 0.00%/ 1.53% time=10.81s/3577.04s
+  [ 280] obj=2313.17    act=10978    err= 0.00%/ 1.91% time=13.80s/3590.84s
+  [ 281] obj=2311.75    act=11010    err= 0.00%/ 2.49% time=11.12s/3601.95s
+  [ 282] obj=2311.73    act=10937    err= 0.00%/ 2.49% time=11.13s/3613.09s
+  [ 283] obj=2310.66    act=10953    err= 0.00%/ 2.29% time=14.44s/3627.53s
+  [ 284] obj=2310.46    act=10905    err= 0.00%/ 2.49% time=11.04s/3638.57s
+  [ 285] obj=2309.60    act=10887    err= 0.00%/ 2.10% time=11.23s/3649.80s
+  [ 286] obj=2309.28    act=10873    err= 0.00%/ 2.29% time=14.15s/3663.95s
+  [ 287] obj=2308.78    act=10814    err= 0.00%/ 2.10% time=11.40s/3675.35s
+  [ 288] obj=2308.54    act=10839    err= 0.00%/ 2.10% time=11.18s/3686.52s
+  [ 289] obj=2307.64    act=10818    err= 0.00%/ 2.29% time=11.38s/3697.90s
+  [ 290] obj=2307.40    act=10788    err= 0.00%/ 1.72% time=12.74s/3710.64s
+  [ 291] obj=2306.90    act=10762    err= 0.00%/ 2.68% time=11.09s/3721.74s
+  [ 292] obj=2306.46    act=10851    err= 0.00%/ 1.72% time=14.01s/3735.75s
+  [ 293] obj=2305.88    act=10745    err= 0.00%/ 2.10% time=11.06s/3746.81s
+  [ 294] obj=2305.51    act=10866    err= 0.00%/ 1.91% time=13.18s/3759.99s
+  [ 295] obj=2304.89    act=10743    err= 0.00%/ 1.91% time=11.35s/3771.34s
+  [ 296] obj=2304.63    act=10745    err= 0.00%/ 1.72% time=14.71s/3786.05s
+  [ 297] obj=2304.06    act=10694    err= 0.00%/ 1.91% time=11.88s/3797.93s
+  [ 298] obj=2303.95    act=10707    err= 0.00%/ 1.15% time=14.47s/3812.39s
+  [ 299] obj=2303.26    act=10673    err= 0.00%/ 1.91% time=13.95s/3826.34s
+  [ 300] obj=2303.09    act=10697    err= 0.00%/ 1.15% time=13.93s/3840.28s
+  [ 301] obj=2302.50    act=10628    err= 0.00%/ 1.91% time=11.85s/3852.13s
+  [ 302] obj=2302.29    act=10651    err= 0.00%/ 1.34% time=11.30s/3863.42s
+  [ 303] obj=2301.75    act=10572    err= 0.00%/ 1.91% time=14.64s/3878.06s
+  [ 304] obj=2301.61    act=10601    err= 0.00%/ 1.34% time=11.13s/3889.20s
+  [ 305] obj=2301.01    act=10523    err= 0.00%/ 2.29% time=14.06s/3903.26s
+  [ 306] obj=2300.83    act=10552    err= 0.00%/ 1.34% time=12.97s/3916.23s
+  [ 307] obj=2300.25    act=10487    err= 0.00%/ 2.10% time=11.26s/3927.49s
+  [ 308] obj=2300.10    act=10541    err= 0.00%/ 1.34% time=14.48s/3941.96s
+  [ 309] obj=2299.57    act=10487    err= 0.00%/ 1.91% time=11.89s/3953.86s
+  [ 310] obj=2299.45    act=10500    err= 0.00%/ 1.34% time=13.47s/3967.33s
+  [ 311] obj=2298.90    act=10456    err= 0.00%/ 1.72% time=14.21s/3981.53s
+  [ 312] obj=2298.79    act=10451    err= 0.00%/ 1.34% time=11.82s/3993.36s
+  [ 313] obj=2298.22    act=10396    err= 0.00%/ 1.53% time=13.95s/4007.31s
+  [ 314] obj=2298.08    act=10409    err= 0.00%/ 1.34% time=14.42s/4021.73s
+  [ 315] obj=2297.52    act=10374    err= 0.00%/ 1.53% time=13.02s/4034.75s
+  [ 316] obj=2297.48    act=10376    err= 0.00%/ 1.34% time=11.50s/4046.25s
+  [ 317] obj=2296.86    act=10339    err= 0.00%/ 1.72% time=12.46s/4058.71s
+  [ 318] obj=2296.81    act=10355    err= 0.00%/ 1.53% time=13.36s/4072.06s
+  [ 319] obj=2296.21    act=10314    err= 0.00%/ 1.91% time=11.22s/4083.29s
+  [ 320] obj=2296.07    act=10346    err= 0.00%/ 1.53% time=14.61s/4097.90s
+  [ 321] obj=2295.56    act=10294    err= 0.00%/ 1.72% time=11.82s/4109.72s
+  [ 322] obj=2295.47    act=10281    err= 0.00%/ 2.10% time=13.08s/4122.80s
+  [ 323] obj=2294.87    act=10232    err= 0.00%/ 1.91% time=13.77s/4136.57s
+  [ 324] obj=2294.79    act=10228    err= 0.00%/ 1.91% time=13.43s/4150.00s
+  [ 325] obj=2294.35    act=10188    err= 0.00%/ 2.10% time=14.00s/4164.00s
+  [ 326] obj=2294.00    act=10274    err= 0.00%/ 2.10% time=12.01s/4176.01s
+  [ 327] obj=2293.70    act=10180    err= 0.00%/ 1.72% time=13.84s/4189.85s
+  [ 328] obj=2293.33    act=10238    err= 0.00%/ 1.91% time=12.92s/4202.77s
+  [ 329] obj=2292.93    act=10147    err= 0.00%/ 1.72% time=11.48s/4214.25s
+  [ 330] obj=2292.83    act=10204    err= 0.00%/ 1.72% time=14.85s/4229.10s
+  [ 331] obj=2292.26    act=10201    err= 0.00%/ 1.53% time=11.81s/4240.91s
+  [ 332] obj=2292.07    act=10207    err= 0.00%/ 1.72% time=12.33s/4253.23s
+  [ 333] obj=2291.72    act=10148    err= 0.00%/ 1.53% time=13.73s/4266.96s
+  [ 334] obj=2291.39    act=10123    err= 0.00%/ 1.72% time=11.32s/4278.28s
+  [ 335] obj=2291.05    act=10069    err= 0.00%/ 1.53% time=14.64s/4292.92s
+  [ 336] obj=2290.73    act=10113    err= 0.00%/ 1.53% time=12.12s/4305.04s
+  [ 337] obj=2290.42    act=10040    err= 0.00%/ 1.53% time=13.17s/4318.21s
+  [ 338] obj=2290.17    act=10052    err= 0.00%/ 1.72% time=14.24s/4332.45s
+  [ 339] obj=2289.85    act=10001    err= 0.00%/ 1.53% time=12.83s/4345.28s
+  [ 340] obj=2289.59    act=10009    err= 0.00%/ 1.72% time=14.58s/4359.87s
+  [ 341] obj=2289.23    act=9975     err= 0.00%/ 1.53% time=12.88s/4372.75s
+  [ 342] obj=2288.98    act=9986     err= 0.00%/ 1.72% time=14.17s/4386.92s
+  [ 343] obj=2288.63    act=9943     err= 0.00%/ 1.53% time=11.44s/4398.35s
+  [ 344] obj=2288.47    act=9924     err= 0.00%/ 1.34% time=13.95s/4412.31s
+  [ 345] obj=2288.10    act=9901     err= 0.00%/ 1.53% time=12.89s/4425.20s
+  [ 346] obj=2287.97    act=9892     err= 0.00%/ 1.34% time=13.96s/4439.16s
+  [ 347] obj=2287.53    act=9866     err= 0.00%/ 1.53% time=11.36s/4450.52s
+  [ 348] obj=2287.38    act=9842     err= 0.00%/ 1.34% time=14.07s/4464.59s
+  [ 349] obj=2286.96    act=9819     err= 0.00%/ 1.53% time=13.13s/4477.72s
+  [ 350] obj=2286.84    act=9819     err= 0.00%/ 1.34% time=11.64s/4489.37s
+  [ 351] obj=2286.46    act=9781     err= 0.00%/ 1.91% time=13.81s/4503.18s
+  [ 352] obj=2286.32    act=9787     err= 0.00%/ 1.53% time=13.08s/4516.26s
+  [ 353] obj=2285.98    act=9750     err= 0.00%/ 1.72% time=12.02s/4528.28s
+  [ 354] obj=2285.82    act=9744     err= 0.00%/ 1.53% time=13.12s/4541.40s
+  [ 355] obj=2285.47    act=9716     err= 0.00%/ 1.72% time=11.64s/4553.04s
+  [ 356] obj=2285.32    act=9724     err= 0.00%/ 1.53% time=14.00s/4567.04s
+  [ 357] obj=2284.97    act=9709     err= 0.00%/ 1.72% time=12.77s/4579.81s
+  [ 358] obj=2284.82    act=9714     err= 0.00%/ 1.53% time=11.14s/4590.95s
+  [ 359] obj=2284.46    act=9681     err= 0.00%/ 1.72% time=14.55s/4605.50s
+  [ 360] obj=2284.36    act=9683     err= 0.00%/ 1.53% time=13.45s/4618.95s
+  [ 361] obj=2283.95    act=9675     err= 0.00%/ 1.72% time=14.22s/4633.17s
+  [ 362] obj=2283.84    act=9660     err= 0.00%/ 1.72% time=11.06s/4644.22s
+  [ 363] obj=2283.44    act=9656     err= 0.00%/ 1.53% time=14.50s/4658.72s
+  [ 364] obj=2283.31    act=9647     err= 0.00%/ 1.53% time=12.07s/4670.79s
+  [ 365] obj=2282.95    act=9631     err= 0.00%/ 1.53% time=13.90s/4684.69s
+  [ 366] obj=2282.87    act=9676     err= 0.00%/ 1.53% time=13.79s/4698.48s
+  [ 367] obj=2282.50    act=9642     err= 0.00%/ 1.53% time=13.59s/4712.06s
+  [ 368] obj=2282.21    act=9710     err= 0.00%/ 1.53% time=14.04s/4726.10s
+  [ 369] obj=2281.91    act=9683     err= 0.00%/ 1.53% time=11.42s/4737.52s
+  [ 370] obj=2281.68    act=9701     err= 0.00%/ 1.53% time=11.17s/4748.70s
+  [ 371] obj=2281.36    act=9635     err= 0.00%/ 1.72% time=14.45s/4763.15s
+  [ 372] obj=2281.22    act=9655     err= 0.00%/ 1.53% time=12.67s/4775.82s
+  [ 373] obj=2280.94    act=9624     err= 0.00%/ 1.91% time=14.93s/4790.75s
+  [ 374] obj=2280.75    act=9657     err= 0.00%/ 1.72% time=11.28s/4802.03s
+  [ 375] obj=2280.43    act=9642     err= 0.00%/ 1.91% time=11.83s/4813.86s
+  [ 376] obj=2280.19    act=9675     err= 0.00%/ 1.72% time=14.08s/4827.94s
+  [ 377] obj=2279.85    act=9643     err= 0.00%/ 1.72% time=10.91s/4838.85s
+  [ 378] obj=2279.75    act=9639     err= 0.00%/ 1.53% time=10.45s/4849.30s
+  [ 379] obj=2279.40    act=9648     err= 0.00%/ 1.91% time=10.44s/4859.74s
+  [ 380] obj=2279.31    act=9656     err= 0.00%/ 1.53% time=12.17s/4871.91s
+  [ 381] obj=2278.97    act=9637     err= 0.00%/ 1.91% time=11.37s/4883.27s
+  [ 382] obj=2278.75    act=9676     err= 0.00%/ 1.72% time=13.14s/4896.41s
+  [ 383] obj=2278.44    act=9617     err= 0.00%/ 1.53% time=11.02s/4907.43s
+  [ 384] obj=2278.35    act=9628     err= 0.00%/ 1.34% time=13.57s/4921.00s
+  [ 385] obj=2278.02    act=9618     err= 0.00%/ 2.10% time=10.81s/4931.81s
+  [ 386] obj=2277.92    act=9611     err= 0.00%/ 1.53% time=10.56s/4942.37s
+  [ 387] obj=2277.56    act=9578     err= 0.00%/ 1.91% time=11.13s/4953.50s
+  [ 388] obj=2277.40    act=9602     err= 0.00%/ 1.34% time=12.57s/4966.07s
+  [ 389] obj=2277.09    act=9573     err= 0.00%/ 1.72% time=10.74s/4976.81s
+  [ 390] obj=2277.00    act=9548     err= 0.00%/ 1.34% time=13.88s/4990.69s
+  [ 391] obj=2276.74    act=9500     err= 0.00%/ 1.72% time=12.43s/5003.12s
+  [ 392] obj=2276.51    act=9526     err= 0.00%/ 1.53% time=10.68s/5013.80s
+  [ 393] obj=2276.26    act=9483     err= 0.00%/ 1.72% time=10.86s/5024.66s
+  [ 394] obj=2276.07    act=9528     err= 0.00%/ 1.53% time=13.53s/5038.20s
+  [ 395] obj=2275.77    act=9465     err= 0.00%/ 1.91% time=10.82s/5049.02s
+  [ 396] obj=2275.68    act=9470     err= 0.00%/ 1.72% time=10.31s/5059.33s
+  [ 397] obj=2275.40    act=9445     err= 0.00%/ 2.10% time=10.07s/5069.40s
+  [ 398] obj=2275.27    act=9471     err= 0.00%/ 1.72% time=11.78s/5081.18s
+  [ 399] obj=2274.98    act=9449     err= 0.00%/ 2.10% time=11.40s/5092.58s
+  [ 400] obj=2274.82    act=9479     err= 0.00%/ 1.72% time=13.38s/5105.96s
+  [ 401] obj=2274.54    act=9456     err= 0.00%/ 1.91% time=10.26s/5116.22s
+  [ 402] obj=2274.45    act=9439     err= 0.00%/ 1.72% time=10.30s/5126.52s
+  [ 403] obj=2274.18    act=9408     err= 0.00%/ 1.91% time=12.22s/5138.74s
+  [ 404] obj=2274.11    act=9425     err= 0.00%/ 1.72% time=10.76s/5149.50s
+  [ 405] obj=2273.78    act=9410     err= 0.00%/ 1.91% time=10.42s/5159.93s
+  [ 406] obj=2273.70    act=9398     err= 0.00%/ 1.72% time=10.12s/5170.04s
+  [ 407] obj=2273.42    act=9407     err= 0.00%/ 1.72% time=12.04s/5182.08s
+  [ 408] obj=2273.34    act=9371     err= 0.00%/ 1.72% time=11.45s/5193.54s
+  [ 409] obj=2273.05    act=9359     err= 0.00%/ 1.91% time=10.50s/5204.03s
+  [ 410] obj=2272.99    act=9359     err= 0.00%/ 1.72% time=10.02s/5214.05s
+  [ 411] obj=2272.68    act=9335     err= 0.00%/ 1.72% time=12.63s/5226.68s
+  [ 412] obj=2272.64    act=9337     err= 0.00%/ 1.72% time=11.32s/5238.00s
+  [ 413] obj=2272.31    act=9314     err= 0.00%/ 1.72% time=13.39s/5251.40s
+  [ 414] obj=2272.22    act=9343     err= 0.00%/ 1.72% time=10.17s/5261.57s
+  [ 415] obj=2271.91    act=9351     err= 0.00%/ 1.72% time=10.49s/5272.06s
+  [ 416] obj=2271.83    act=9328     err= 0.00%/ 1.72% time=11.86s/5283.92s
+  [ 417] obj=2271.51    act=9326     err= 0.00%/ 1.72% time=10.75s/5294.67s
+  [ 418] obj=2271.29    act=9362     err= 0.00%/ 1.53% time=19.20s/5313.87s
+  [ 419] obj=2271.22    act=9261     err= 0.00%/ 1.72% time=10.55s/5324.42s
+  [ 420] obj=2270.96    act=9429     err= 0.00%/ 1.91% time=10.12s/5334.53s
+  [ 421] obj=2270.59    act=9452     err= 0.00%/ 1.91% time=9.93s/5344.46s
+  [ 422] obj=2270.37    act=9493     err= 0.00%/ 1.53% time=12.24s/5356.70s
+  [ 423] obj=2269.90    act=9509     err= 0.00%/ 1.91% time=10.74s/5367.44s
+  [ 424] obj=2269.63    act=9468     err= 0.00%/ 1.53% time=10.65s/5378.09s
+  [ 425] obj=2269.32    act=9430     err= 0.00%/ 1.72% time=9.93s/5388.02s
+  [ 426] obj=2269.21    act=9391     err= 0.00%/ 1.53% time=12.15s/5400.16s
+  [ 427] obj=2268.94    act=9368     err= 0.00%/ 1.91% time=10.64s/5410.80s
+  [ 428] obj=2268.77    act=9393     err= 0.00%/ 1.53% time=10.13s/5420.94s
+  [ 429] obj=2268.49    act=9333     err= 0.00%/ 1.91% time=10.35s/5431.28s
+  [ 430] obj=2268.32    act=9360     err= 0.00%/ 1.53% time=9.86s/5441.15s
+  [ 431] obj=2268.02    act=9324     err= 0.00%/ 1.72% time=12.28s/5453.43s
+  [ 432] obj=2267.93    act=9333     err= 0.00%/ 1.53% time=10.47s/5463.89s
+  [ 433] obj=2267.63    act=9285     err= 0.00%/ 1.72% time=10.50s/5474.39s
+  [ 434] obj=2267.48    act=9289     err= 0.00%/ 1.72% time=9.82s/5484.21s
+  [ 435] obj=2267.17    act=9262     err= 0.00%/ 1.72% time=12.10s/5496.31s
+  [ 436] obj=2267.03    act=9275     err= 0.00%/ 1.72% time=10.62s/5506.93s
+  [ 437] obj=2266.75    act=9240     err= 0.00%/ 1.72% time=9.92s/5516.85s
+  [ 438] obj=2266.62    act=9241     err= 0.00%/ 1.72% time=10.46s/5527.32s
+  [ 439] obj=2266.40    act=9213     err= 0.00%/ 1.72% time=9.79s/5537.11s
+  [ 440] obj=2266.23    act=9211     err= 0.00%/ 1.53% time=12.24s/5549.35s
+  [ 441] obj=2265.97    act=9195     err= 0.00%/ 1.72% time=10.55s/5559.90s
+  [ 442] obj=2265.80    act=9251     err= 0.00%/ 1.53% time=10.08s/5569.98s
+  [ 443] obj=2265.54    act=9210     err= 0.00%/ 1.72% time=9.88s/5579.86s
+  [ 444] obj=2265.47    act=9225     err= 0.00%/ 1.53% time=11.92s/5591.78s
+  [ 445] obj=2265.22    act=9177     err= 0.00%/ 1.53% time=10.24s/5602.02s
+  [ 446] obj=2265.03    act=9152     err= 0.00%/ 1.53% time=12.34s/5614.36s
+  [ 447] obj=2264.77    act=9135     err= 0.00%/ 1.53% time=10.58s/5624.94s
+  [ 448] obj=2264.57    act=9155     err= 0.00%/ 1.53% time=11.03s/5635.97s
+  [ 449] obj=2264.38    act=9118     err= 0.00%/ 1.72% time=11.86s/5647.83s
+  [ 450] obj=2264.21    act=9137     err= 0.00%/ 1.72% time=10.33s/5658.17s
+  [ 451] obj=2264.02    act=9117     err= 0.00%/ 1.72% time=12.08s/5670.25s
+  [ 452] obj=2263.84    act=9149     err= 0.00%/ 1.72% time=10.65s/5680.90s
+  [ 453] obj=2263.62    act=9111     err= 0.00%/ 1.91% time=10.17s/5691.06s
+  [ 454] obj=2263.45    act=9118     err= 0.00%/ 1.53% time=10.14s/5701.20s
+  [ 455] obj=2263.25    act=9079     err= 0.00%/ 1.91% time=9.90s/5711.10s
+  [ 456] obj=2263.14    act=9112     err= 0.00%/ 1.72% time=12.33s/5723.43s
+  [ 457] obj=2262.91    act=9109     err= 0.00%/ 1.91% time=10.59s/5734.02s
+  [ 458] obj=2262.69    act=9154     err= 0.00%/ 1.72% time=10.06s/5744.08s
+  [ 459] obj=2262.48    act=9127     err= 0.00%/ 1.72% time=9.84s/5753.93s
+  [ 460] obj=2262.34    act=9120     err= 0.00%/ 1.72% time=12.15s/5766.08s
+  [ 461] obj=2262.11    act=9096     err= 0.00%/ 2.29% time=10.57s/5776.65s
+  [ 462] obj=2261.99    act=9101     err= 0.00%/ 1.91% time=10.15s/5786.80s
+  [ 463] obj=2261.80    act=9068     err= 0.00%/ 2.29% time=9.91s/5796.71s
+  [ 464] obj=2261.60    act=9075     err= 0.00%/ 1.91% time=9.84s/5806.55s
+  [ 465] obj=2261.42    act=9065     err= 0.00%/ 2.29% time=9.79s/5816.35s
+  [ 466] obj=2261.25    act=9059     err= 0.00%/ 1.91% time=9.99s/5826.33s
+  [ 467] obj=2261.08    act=9036     err= 0.00%/ 2.29% time=10.60s/5836.93s
+  [ 468] obj=2260.93    act=9007     err= 0.00%/ 1.72% time=11.23s/5848.16s
+  [ 469] obj=2260.75    act=8990     err= 0.00%/ 2.10% time=10.56s/5858.72s
+  [ 470] obj=2260.61    act=8994     err= 0.00%/ 1.91% time=9.87s/5868.59s
+  [ 471] obj=2260.39    act=8992     err= 0.00%/ 2.10% time=10.21s/5878.81s
+  [ 472] obj=2260.25    act=9023     err= 0.00%/ 1.53% time=9.89s/5888.70s
+  [ 473] obj=2260.05    act=8992     err= 0.00%/ 2.29% time=9.81s/5898.51s
+  [ 474] obj=2259.90    act=9015     err= 0.00%/ 1.53% time=12.15s/5910.65s
+  [ 475] obj=2259.70    act=8995     err= 0.00%/ 2.29% time=10.59s/5921.24s
+  [ 476] obj=2259.57    act=9007     err= 0.00%/ 1.34% time=10.21s/5931.45s
+  [ 477] obj=2259.40    act=8952     err= 0.00%/ 2.29% time=10.66s/5942.12s
+  [ 478] obj=2259.25    act=8964     err= 0.00%/ 1.34% time=12.27s/5954.39s
+  [ 479] obj=2259.07    act=8942     err= 0.00%/ 1.91% time=11.33s/5965.72s
+  [ 480] obj=2258.94    act=8938     err= 0.00%/ 1.34% time=10.88s/5976.60s
+  [ 481] obj=2258.79    act=8937     err= 0.00%/ 2.10% time=10.21s/5986.81s
+  [ 482] obj=2258.64    act=8928     err= 0.00%/ 1.34% time=13.06s/5999.87s
+  [ 483] obj=2258.48    act=8941     err= 0.00%/ 1.91% time=11.30s/6011.18s
+  [ 484] obj=2258.31    act=8928     err= 0.00%/ 1.34% time=10.72s/6021.90s
+  [ 485] obj=2258.13    act=8920     err= 0.00%/ 1.53% time=10.32s/6032.22s
+  [ 486] obj=2258.01    act=8935     err= 0.00%/ 1.34% time=10.31s/6042.53s
+  [ 487] obj=2257.84    act=8914     err= 0.00%/ 1.53% time=12.13s/6054.66s
+  [ 488] obj=2257.69    act=8904     err= 0.00%/ 1.53% time=10.81s/6065.47s
+  [ 489] obj=2257.51    act=8895     err= 0.00%/ 1.53% time=11.00s/6076.47s
+  [ 490] obj=2257.33    act=8908     err= 0.00%/ 1.53% time=12.31s/6088.78s
+  [ 491] obj=2257.15    act=8869     err= 0.00%/ 1.72% time=10.26s/6099.05s
+  [ 492] obj=2257.01    act=8917     err= 0.00%/ 1.34% time=12.90s/6111.95s
+  [ 493] obj=2256.85    act=8887     err= 0.00%/ 1.72% time=11.41s/6123.37s
+  [ 494] obj=2256.69    act=8894     err= 0.00%/ 1.72% time=10.93s/6134.29s
+  [ 495] obj=2256.61    act=8851     err= 0.00%/ 1.72% time=12.03s/6146.32s
+  [ 496] obj=2256.32    act=8897     err= 0.00%/ 1.72% time=10.66s/6156.98s
+  [ 497] obj=2256.19    act=8857     err= 0.00%/ 1.72% time=12.58s/6169.57s
+  [ 498] obj=2255.96    act=8931     err= 0.00%/ 1.72% time=10.90s/6180.46s
+  [ 499] obj=2255.87    act=8918     err= 0.00%/ 1.72% time=11.00s/6191.46s
+  [ 500] obj=2255.64    act=8891     err= 0.00%/ 1.72% time=11.96s/6203.42s
+  [ 501] obj=2255.59    act=8846     err= 0.00%/ 1.91% time=10.52s/6213.94s
+  [ 502] obj=2255.18    act=8879     err= 0.00%/ 1.72% time=12.53s/6226.47s
+  [ 503] obj=2255.08    act=8855     err= 0.00%/ 1.72% time=12.27s/6238.74s
+  [ 504] obj=2254.79    act=8928     err= 0.00%/ 1.72% time=13.95s/6252.69s
+  [ 505] obj=2254.68    act=8888     err= 0.00%/ 1.72% time=10.58s/6263.28s
+  [ 506] obj=2254.42    act=8894     err= 0.00%/ 1.72% time=10.66s/6273.94s
+  [ 507] obj=2254.16    act=8900     err= 0.00%/ 1.72% time=17.48s/6291.42s
+  [ 508] obj=2254.05    act=8863     err= 0.00%/ 1.72% time=17.83s/6309.25s
+  [ 509] obj=2254.00    act=8892     err= 0.00%/ 1.72% time=11.79s/6321.03s
+  [ 510] obj=2253.77    act=9026     err= 0.00%/ 1.91% time=11.56s/6332.59s
+  [ 511] obj=2253.03    act=9040     err= 0.00%/ 1.91% time=13.16s/6345.75s
+  [ 512] obj=2252.62    act=9127     err= 0.00%/ 1.91% time=17.41s/6363.16s
+  [ 513] obj=2252.29    act=9185     err= 0.00%/ 1.72% time=18.13s/6381.28s
+  [ 514] obj=2252.17    act=9056     err= 0.00%/ 1.72% time=22.08s/6403.36s
+  [ 515] obj=2251.84    act=9104     err= 0.00%/ 1.72% time=18.38s/6421.74s
+  [ 516] obj=2251.62    act=8973     err= 0.00%/ 1.72% time=18.08s/6439.82s
+  [ 517] obj=2251.35    act=9001     err= 0.00%/ 1.34% time=21.58s/6461.40s
+  [ 518] obj=2251.13    act=8967     err= 0.00%/ 1.53% time=18.71s/6480.11s
+  [ 519] obj=2250.85    act=8964     err= 0.00%/ 1.34% time=17.65s/6497.76s
+  [ 520] obj=2250.48    act=8996     err= 0.00%/ 1.91% time=20.60s/6518.36s
+  [ 521] obj=2250.45    act=9007     err= 0.00%/ 1.34% time=17.22s/6535.58s
+  [ 522] obj=2249.81    act=9220     err= 0.00%/ 1.72% time=17.79s/6553.37s
+  [ 523] obj=2249.71    act=9134     err= 0.00%/ 1.53% time=19.09s/6572.46s
+  [ 524] obj=2249.10    act=9132     err= 0.00%/ 1.91% time=18.54s/6590.99s
+  [ 525] obj=2248.73    act=8986     err= 0.00%/ 1.72% time=10.12s/6601.12s
+  [ 526] obj=2248.16    act=9413     err= 0.00%/ 1.72% time=19.05s/6620.17s
+  [ 527] obj=2247.64    act=9544     err= 0.00%/ 1.91% time=18.96s/6639.13s
+  [ 528] obj=2247.44    act=9216     err= 0.00%/ 1.72% time=26.12s/6665.25s
+  [ 529] obj=2247.14    act=9198     err= 0.00%/ 1.72% time=28.42s/6693.67s
+  [ 530] obj=2246.90    act=9127     err= 0.00%/ 1.72% time=28.43s/6722.10s
+  [ 531] obj=2246.67    act=9068     err= 0.00%/ 1.72% time=19.49s/6741.59s
+  [ 532] obj=2246.24    act=9164     err= 0.00%/ 1.91% time=18.33s/6759.92s
+  [ 533] obj=2246.05    act=9147     err= 0.00%/ 1.53% time=17.73s/6777.65s
+  [ 534] obj=2245.62    act=9111     err= 0.00%/ 1.53% time=18.85s/6796.50s
+  [ 535] obj=2245.35    act=9078     err= 0.00%/ 1.91% time=17.61s/6814.10s
+  [ 536] obj=2245.07    act=9206     err= 0.00%/ 1.72% time=17.52s/6831.63s
+  [ 537] obj=2244.69    act=9244     err= 0.00%/ 1.91% time=19.29s/6850.91s
+  [ 538] obj=2244.44    act=9151     err= 0.01%/ 2.29% time=17.46s/6868.38s
+  [ 539] obj=2244.08    act=9212     err= 0.00%/ 1.91% time=20.89s/6889.27s
+  [ 540] obj=2243.83    act=9117     err= 0.01%/ 2.10% time=17.99s/6907.26s
+  [ 541] obj=2243.40    act=9157     err= 0.00%/ 2.10% time=17.77s/6925.03s
+  [ 542] obj=2243.19    act=9086     err= 0.01%/ 1.91% time=20.59s/6945.62s
+  [ 543] obj=2242.81    act=9070     err= 0.00%/ 1.91% time=18.19s/6963.82s
+  [ 544] obj=2242.58    act=9030     err= 0.01%/ 2.10% time=17.94s/6981.75s
+  [ 545] obj=2242.23    act=9011     err= 0.00%/ 1.72% time=18.31s/7000.06s
+  [ 546] obj=2241.95    act=9016     err= 0.01%/ 1.91% time=17.19s/7017.25s
+  [ 547] obj=2241.81    act=9036     err= 0.00%/ 1.72% time=25.68s/7042.93s
+  [ 548] obj=2241.76    act=9039     err= 0.01%/ 1.91% time=16.96s/7059.89s
+  [ 549] obj=2241.21    act=9241     err= 0.00%/ 1.91% time=25.75s/7085.63s
+  [ 550] obj=2241.10    act=9228     err= 0.01%/ 1.91% time=25.25s/7110.89s
+  [ 551] obj=2240.90    act=8971     err= 0.01%/ 1.91% time=18.84s/7129.73s
+  [ 552] obj=2240.61    act=8877     err= 0.01%/ 1.91% time=23.81s/7153.54s
+  [ 553] obj=2240.47    act=8965     err= 0.01%/ 1.91% time=27.06s/7180.60s
+  [ 554] obj=2240.33    act=8939     err= 0.01%/ 1.91% time=19.04s/7199.65s
+  [ 555] obj=2240.29    act=9021     err= 0.00%/ 1.91% time=25.80s/7225.45s
+  [ 556] obj=2239.81    act=9431     err= 0.00%/ 1.72% time=19.83s/7245.27s
+  [ 557] obj=2239.52    act=9127     err= 0.01%/ 2.10% time=17.91s/7263.19s
+  [ 558] obj=2239.21    act=9011     err= 0.01%/ 1.91% time=26.81s/7289.99s
+  [ 559] obj=2239.03    act=8899     err= 0.01%/ 2.10% time=19.56s/7309.55s
+  [ 560] obj=2238.91    act=9068     err= 0.00%/ 1.72% time=17.75s/7327.30s
+  [ 561] obj=2238.46    act=9121     err= 0.01%/ 1.91% time=17.59s/7344.89s
+  [ 562] obj=2238.17    act=9095     err= 0.00%/ 1.72% time=19.52s/7364.41s
+  [ 563] obj=2237.86    act=9083     err= 0.00%/ 1.72% time=17.80s/7382.21s
+  [ 564] obj=2237.69    act=8978     err= 0.00%/ 1.72% time=18.72s/7400.93s
+  [ 565] obj=2237.43    act=9103     err= 0.00%/ 1.72% time=17.75s/7418.68s
+  [ 566] obj=2237.20    act=8996     err= 0.00%/ 1.72% time=17.27s/7435.95s
+  [ 567] obj=2236.97    act=8932     err= 0.01%/ 1.91% time=19.03s/7454.98s
+  [ 568] obj=2236.89    act=9026     err= 0.00%/ 1.72% time=20.99s/7475.97s
+  [ 569] obj=2236.38    act=8993     err= 0.01%/ 1.91% time=18.75s/7494.72s
+  [ 570] obj=2236.21    act=8983     err= 0.00%/ 1.72% time=18.91s/7513.63s
+  [ 571] obj=2235.88    act=8939     err= 0.01%/ 1.91% time=22.10s/7535.73s
+  [ 572] obj=2235.65    act=8957     err= 0.00%/ 1.72% time=18.25s/7553.97s
+  [ 573] obj=2235.40    act=8931     err= 0.01%/ 1.91% time=19.83s/7573.80s
+  [ 574] obj=2235.26    act=8909     err= 0.00%/ 1.72% time=19.41s/7593.21s
+  [ 575] obj=2234.96    act=9057     err= 0.01%/ 1.91% time=17.67s/7610.88s
+  [ 576] obj=2234.87    act=8979     err= 0.00%/ 1.72% time=21.00s/7631.88s
+  [ 577] obj=2234.52    act=9025     err= 0.01%/ 1.91% time=18.68s/7650.56s
+  [ 578] obj=2234.30    act=8981     err= 0.00%/ 1.72% time=17.59s/7668.16s
+  [ 579] obj=2234.11    act=9031     err= 0.01%/ 1.91% time=19.27s/7687.43s
+  [ 580] obj=2233.83    act=9037     err= 0.00%/ 1.72% time=17.73s/7705.16s
+  [ 581] obj=2233.73    act=9061     err= 0.00%/ 1.72% time=17.27s/7722.43s
+  [ 582] obj=2233.36    act=9020     err= 0.00%/ 1.72% time=19.50s/7741.93s
+  [ 583] obj=2233.17    act=8959     err= 0.00%/ 1.72% time=17.53s/7759.46s
+  [ 584] obj=2232.96    act=8962     err= 0.00%/ 1.72% time=18.28s/7777.74s
+  [ 585] obj=2232.73    act=8918     err= 0.00%/ 1.53% time=22.61s/7800.36s
+  [ 586] obj=2232.53    act=8907     err= 0.00%/ 1.72% time=18.02s/7818.38s
+  [ 587] obj=2232.47    act=8881     err= 0.00%/ 1.72% time=11.49s/7829.88s
+  [ 588] obj=2232.35    act=8896     err= 0.00%/ 1.72% time=14.19s/7844.06s
+  [ 589] obj=2231.53    act=8955     err= 0.00%/ 1.53% time=11.74s/7855.81s
+  [ 590] obj=2231.30    act=8937     err= 0.00%/ 1.72% time=19.68s/7875.48s
+  [ 591] obj=2231.14    act=8885     err= 0.00%/ 1.53% time=20.12s/7895.61s
+  [ 592] obj=2230.93    act=8853     err= 0.00%/ 1.53% time=19.00s/7914.61s
+  [ 593] obj=2230.90    act=8810     err= 0.00%/ 1.15% time=11.06s/7925.66s
+  [ 594] obj=2230.78    act=8962     err= 0.00%/ 1.72% time=14.79s/7940.45s
+  [ 595] obj=2230.07    act=9169     err= 0.00%/ 1.15% time=10.45s/7950.90s
+  [ 596] obj=2229.80    act=9017     err= 0.00%/ 1.53% time=12.53s/7963.44s
+  [ 597] obj=2229.48    act=9019     err= 0.00%/ 1.34% time=11.23s/7974.67s
+  [ 598] obj=2229.04    act=9028     err= 0.00%/ 1.72% time=10.21s/7984.88s
+  [ 599] obj=2228.98    act=8962     err= 0.00%/ 1.53% time=12.07s/7996.95s
+  [ 600] obj=2228.71    act=8934     err= 0.00%/ 1.72% time=11.76s/8008.71s
+  [ 601] obj=2228.59    act=8948     err= 0.00%/ 1.53% time=10.68s/8019.39s
+  [ 602] obj=2228.23    act=8918     err= 0.00%/ 1.53% time=14.02s/8033.42s
+  [ 603] obj=2227.97    act=8969     err= 0.00%/ 1.53% time=11.95s/8045.36s
+  [ 604] obj=2227.71    act=8978     err= 0.00%/ 1.53% time=11.19s/8056.55s
+  [ 605] obj=2227.67    act=9050     err= 0.00%/ 1.53% time=11.16s/8067.71s
+  [ 606] obj=2227.12    act=9024     err= 0.00%/ 1.53% time=12.77s/8080.48s
+  [ 607] obj=2226.89    act=9045     err= 0.00%/ 1.53% time=18.98s/8099.45s
+  [ 608] obj=2226.79    act=8959     err= 0.00%/ 1.53% time=10.77s/8110.23s
+  [ 609] obj=2226.40    act=9063     err= 0.00%/ 1.53% time=18.19s/8128.42s
+  [ 610] obj=2226.25    act=9059     err= 0.00%/ 1.72% time=17.70s/8146.12s
+  [ 611] obj=2226.03    act=9070     err= 0.00%/ 1.72% time=22.02s/8168.13s
+  [ 612] obj=2225.82    act=9029     err= 0.00%/ 1.72% time=18.65s/8186.78s
+  [ 613] obj=2225.69    act=9032     err= 0.00%/ 1.72% time=18.19s/8204.97s
+  [ 614] obj=2225.39    act=8965     err= 0.00%/ 1.91% time=24.05s/8229.02s
+  [ 615] obj=2225.15    act=8989     err= 0.00%/ 1.72% time=19.17s/8248.19s
+  [ 616] obj=2224.94    act=8938     err= 0.00%/ 1.91% time=21.27s/8269.46s
+  [ 617] obj=2224.78    act=8927     err= 0.00%/ 1.91% time=21.57s/8291.03s
+  [ 618] obj=2224.52    act=8908     err= 0.00%/ 1.91% time=17.20s/8308.23s
+  [ 619] obj=2224.35    act=8885     err= 0.00%/ 1.72% time=18.91s/8327.13s
+  [ 620] obj=2224.09    act=8941     err= 0.00%/ 1.72% time=18.93s/8346.06s
+  [ 621] obj=2223.94    act=8879     err= 0.00%/ 1.72% time=17.03s/8363.10s
+  [ 622] obj=2223.74    act=8863     err= 0.00%/ 1.91% time=16.87s/8379.97s
+  [ 623] obj=2223.64    act=8843     err= 0.00%/ 1.72% time=12.40s/8392.37s
+  [ 624] obj=2223.19    act=9005     err= 0.00%/ 1.91% time=19.16s/8411.53s
+  [ 625] obj=2223.00    act=8951     err= 0.00%/ 1.53% time=19.99s/8431.53s
+  [ 626] obj=2222.69    act=8981     err= 0.00%/ 1.72% time=18.57s/8450.09s
+  [ 627] obj=2222.43    act=8893     err= 0.00%/ 1.72% time=21.01s/8471.10s
+  [ 628] obj=2222.10    act=8916     err= 0.00%/ 1.91% time=21.78s/8492.88s
+  [ 629] obj=2221.81    act=8961     err= 0.00%/ 1.53% time=23.14s/8516.03s
+  [ 630] obj=2221.73    act=8915     err= 0.00%/ 1.72% time=18.52s/8534.55s
+  [ 631] obj=2221.23    act=9173     err= 0.00%/ 1.53% time=19.85s/8554.40s
+  [ 632] obj=2221.18    act=9060     err= 0.00%/ 1.53% time=18.64s/8573.03s
+  [ 633] obj=2221.06    act=9103     err= 0.00%/ 1.53% time=12.31s/8585.35s
+  [ 634] obj=2220.77    act=9033     err= 0.00%/ 1.53% time=14.43s/8599.78s
+  [ 635] obj=2220.19    act=9170     err= 0.00%/ 1.53% time=10.85s/8610.62s
+  [ 636] obj=2220.16    act=9050     err= 0.00%/ 1.34% time=10.73s/8621.35s
+  [ 637] obj=2219.83    act=8961     err= 0.00%/ 1.53% time=11.10s/8632.46s
+  [ 638] obj=2219.80    act=8965     err= 0.00%/ 1.72% time=10.99s/8643.45s
+  [ 639] obj=2219.40    act=8979     err= 0.00%/ 1.72% time=10.53s/8653.97s
+  [ 640] obj=2219.34    act=8963     err= 0.00%/ 2.10% time=10.85s/8664.82s
+  [ 641] obj=2218.98    act=8954     err= 0.00%/ 1.91% time=11.89s/8676.71s
+  [ 642] obj=2218.77    act=8970     err= 0.00%/ 1.91% time=17.64s/8694.35s
+  [ 643] obj=2218.66    act=8873     err= 0.00%/ 1.91% time=12.99s/8707.35s
+  [ 644] obj=2218.59    act=8958     err= 0.00%/ 1.72% time=10.76s/8718.11s
+  [ 645] obj=2218.29    act=9010     err= 0.00%/ 2.10% time=10.46s/8728.57s
+  [ 646] obj=2217.75    act=9052     err= 0.00%/ 1.91% time=10.20s/8738.76s
+  [ 647] obj=2217.54    act=9036     err= 0.00%/ 1.91% time=12.47s/8751.23s
+  [ 648] obj=2217.27    act=9006     err= 0.00%/ 1.91% time=18.85s/8770.09s
+  [ 649] obj=2217.12    act=8997     err= 0.00%/ 1.72% time=19.83s/8789.91s
+  [ 650] obj=2216.93    act=8976     err= 0.00%/ 1.72% time=19.60s/8809.51s
+  [ 651] obj=2216.78    act=8964     err= 0.00%/ 1.91% time=17.57s/8827.08s
+  [ 652] obj=2216.63    act=8941     err= 0.00%/ 1.72% time=17.01s/8844.09s
+  [ 653] obj=2216.39    act=8900     err= 0.00%/ 1.72% time=17.15s/8861.24s
+  [ 654] obj=2216.23    act=8875     err= 0.00%/ 1.72% time=18.00s/8879.24s
+  [ 655] obj=2216.02    act=8898     err= 0.00%/ 1.72% time=19.58s/8898.82s
+  [ 656] obj=2215.91    act=8879     err= 0.00%/ 1.72% time=17.73s/8916.55s
+  [ 657] obj=2215.69    act=8836     err= 0.00%/ 1.91% time=20.83s/8937.38s
+  [ 658] obj=2215.46    act=8817     err= 0.00%/ 1.72% time=20.34s/8957.72s
+  [ 659] obj=2215.24    act=8801     err= 0.00%/ 1.91% time=21.43s/8979.16s
+  [ 660] obj=2215.07    act=8747     err= 0.00%/ 1.72% time=17.72s/8996.88s
+  [ 661] obj=2214.89    act=8712     err= 0.00%/ 1.72% time=18.97s/9015.85s
+  [ 662] obj=2214.75    act=8695     err= 0.00%/ 1.72% time=19.47s/9035.32s
+  [ 663] obj=2214.58    act=8719     err= 0.00%/ 1.72% time=18.61s/9053.93s
+  [ 664] obj=2214.48    act=8717     err= 0.00%/ 1.72% time=17.73s/9071.66s
+  [ 665] obj=2214.27    act=8723     err= 0.00%/ 1.72% time=22.08s/9093.74s
+  [ 666] obj=2214.13    act=8734     err= 0.00%/ 1.72% time=18.93s/9112.67s
+  [ 667] obj=2213.96    act=8714     err= 0.00%/ 1.72% time=21.66s/9134.34s
+  [ 668] obj=2213.79    act=8684     err= 0.00%/ 1.72% time=17.97s/9152.30s
+  [ 669] obj=2213.69    act=8707     err= 0.00%/ 1.91% time=14.48s/9166.78s
+  [ 670] obj=2213.63    act=8793     err= 0.00%/ 1.72% time=11.82s/9178.60s
+  [ 671] obj=2213.31    act=8860     err= 0.00%/ 1.53% time=13.42s/9192.02s
+  [ 672] obj=2212.78    act=8915     err= 0.00%/ 1.72% time=10.96s/9202.98s
+  [ 673] obj=2212.70    act=8847     err= 0.00%/ 1.72% time=10.70s/9213.68s
+  [ 674] obj=2212.52    act=8793     err= 0.00%/ 1.72% time=12.50s/9226.18s
+  [ 675] obj=2212.34    act=8812     err= 0.01%/ 1.91% time=11.05s/9237.23s
+  [ 676] obj=2212.09    act=8807     err= 0.00%/ 1.72% time=11.15s/9248.38s
+  [ 677] obj=2212.04    act=8768     err= 0.00%/ 1.72% time=11.85s/9260.23s
+  [ 678] obj=2211.85    act=8717     err= 0.00%/ 1.53% time=11.27s/9271.50s
+  [ 679] obj=2211.60    act=8688     err= 0.00%/ 1.53% time=12.25s/9283.75s
+  [ 680] obj=2211.45    act=8724     err= 0.00%/ 1.53% time=18.84s/9302.59s
+  [ 681] obj=2211.40    act=8643     err= 0.00%/ 1.72% time=13.31s/9315.90s
+  [ 682] obj=2211.20    act=8687     err= 0.00%/ 1.91% time=10.88s/9326.78s
+  [ 683] obj=2210.97    act=8679     err= 0.00%/ 1.72% time=11.69s/9338.47s
+  [ 684] obj=2210.87    act=8694     err= 0.00%/ 1.72% time=10.68s/9349.16s
+  [ 685] obj=2210.46    act=8727     err= 0.00%/ 1.91% time=12.25s/9361.41s
+  [ 686] obj=2210.35    act=8688     err= 0.00%/ 1.53% time=10.33s/9371.75s
+  [ 687] obj=2210.10    act=8665     err= 0.00%/ 1.53% time=10.96s/9382.71s
+  [ 688] obj=2209.94    act=8699     err= 0.00%/ 1.53% time=18.00s/9400.71s
+  [ 689] obj=2209.91    act=8599     err= 0.00%/ 1.72% time=12.05s/9412.75s
+  [ 690] obj=2209.82    act=8634     err= 0.00%/ 1.53% time=10.25s/9423.00s
+  [ 691] obj=2209.38    act=8833     err= 0.00%/ 1.72% time=12.26s/9435.26s
+  [ 692] obj=2209.24    act=8727     err= 0.00%/ 1.53% time=11.51s/9446.77s
+  [ 693] obj=2209.03    act=8727     err= 0.00%/ 1.72% time=10.40s/9457.17s
+  [ 694] obj=2208.91    act=8737     err= 0.00%/ 1.34% time=10.36s/9467.54s
+  [ 695] obj=2208.60    act=8694     err= 0.00%/ 1.53% time=12.13s/9479.67s
+  [ 696] obj=2208.56    act=8731     err= 0.00%/ 1.34% time=11.52s/9491.18s
+  [ 697] obj=2208.22    act=8644     err= 0.00%/ 1.53% time=13.29s/9504.47s
+  [ 698] obj=2208.06    act=8655     err= 0.00%/ 1.53% time=20.77s/9525.24s
+  [ 699] obj=2208.06    act=8559     err= 0.00%/ 1.53% time=13.61s/9538.85s
+  [ 700] obj=2207.78    act=8664     err= 0.00%/ 1.53% time=11.54s/9550.39s
+  [ 701] obj=2207.67    act=8628     err= 0.00%/ 1.72% time=13.44s/9563.82s
+  [ 702] obj=2207.36    act=8626     err= 0.00%/ 1.91% time=10.44s/9574.26s
+  [ 703] obj=2207.23    act=8628     err= 0.00%/ 1.72% time=10.44s/9584.71s
+  [ 704] obj=2207.00    act=8594     err= 0.00%/ 1.91% time=11.93s/9596.63s
+  [ 705] obj=2206.81    act=8578     err= 0.00%/ 1.72% time=11.42s/9608.05s
+  [ 706] obj=2206.75    act=8555     err= 0.00%/ 1.91% time=13.34s/9621.39s
+  [ 707] obj=2206.50    act=8551     err= 0.00%/ 1.72% time=10.22s/9631.61s
+  [ 708] obj=2206.38    act=8604     err= 0.00%/ 1.91% time=16.91s/9648.53s
+  [ 709] obj=2206.38    act=8515     err= 0.00%/ 1.72% time=9.92s/9658.45s
+  [ 710] obj=2206.22    act=8551     err= 0.00%/ 1.91% time=9.88s/9668.32s
+  [ 711] obj=2205.99    act=8549     err= 0.01%/ 1.91% time=12.61s/9680.93s
+  [ 712] obj=2205.81    act=8588     err= 0.00%/ 1.91% time=10.67s/9691.60s
+  [ 713] obj=2205.68    act=8525     err= 0.01%/ 2.10% time=10.81s/9702.41s
+  [ 714] obj=2205.58    act=8511     err= 0.00%/ 1.91% time=11.63s/9714.04s
+  [ 715] obj=2205.29    act=8508     err= 0.01%/ 2.29% time=10.13s/9724.17s
+  [ 716] obj=2205.14    act=8510     err= 0.01%/ 2.29% time=21.24s/9745.41s
+  [ 717] obj=2205.12    act=8447     err= 0.01%/ 2.29% time=11.22s/9756.63s
+  [ 718] obj=2205.01    act=8511     err= 0.01%/ 2.29% time=10.20s/9766.83s
+  [ 719] obj=2204.68    act=8551     err= 0.01%/ 2.10% time=10.61s/9777.45s
+  [ 720] obj=2204.63    act=8484     err= 0.01%/ 2.29% time=10.17s/9787.61s
+  [ 721] obj=2204.36    act=8552     err= 0.01%/ 2.10% time=12.26s/9799.87s
+  [ 722] obj=2204.20    act=8535     err= 0.01%/ 2.29% time=10.06s/9809.93s
+  [ 723] obj=2204.00    act=8562     err= 0.01%/ 2.29% time=10.59s/9820.53s
+  [ 724] obj=2203.99    act=8481     err= 0.01%/ 2.29% time=11.77s/9832.30s
+  [ 725] obj=2203.70    act=8495     err= 0.00%/ 2.10% time=9.93s/9842.23s
+  [ 726] obj=2203.58    act=8489     err= 0.01%/ 2.29% time=16.93s/9859.16s
+  [ 727] obj=2203.51    act=8474     err= 0.00%/ 1.91% time=16.76s/9875.91s
+  [ 728] obj=2203.43    act=8434     err= 0.01%/ 2.29% time=19.10s/9895.02s
+  [ 729] obj=2203.29    act=8433     err= 0.00%/ 1.91% time=16.77s/9911.78s
+  [ 730] obj=2203.20    act=8449     err= 0.00%/ 2.10% time=21.25s/9933.03s
+  [ 731] obj=2203.05    act=8467     err= 0.00%/ 1.91% time=18.05s/9951.08s
+  [ 732] obj=2202.96    act=8464     err= 0.00%/ 2.10% time=18.11s/9969.19s
+  [ 733] obj=2202.77    act=8483     err= 0.00%/ 1.91% time=17.32s/9986.51s
+  [ 734] obj=2202.71    act=8492     err= 0.00%/ 2.10% time=17.44s/10003.95s
+  [ 735] obj=2202.49    act=8493     err= 0.00%/ 2.10% time=19.19s/10023.13s
+  [ 736] obj=2202.40    act=8454     err= 0.00%/ 2.10% time=16.99s/10040.13s
+  [ 737] obj=2202.25    act=8449     err= 0.00%/ 2.10% time=17.69s/10057.81s
+  [ 738] obj=2202.16    act=8499     err= 0.00%/ 2.10% time=19.52s/10077.33s
+  [ 739] obj=2201.99    act=8421     err= 0.00%/ 1.72% time=16.98s/10094.31s
+  [ 740] obj=2201.88    act=8444     err= 0.00%/ 1.91% time=17.37s/10111.67s
+  [ 741] obj=2201.78    act=8425     err= 0.00%/ 1.53% time=11.57s/10123.24s
+  [ 742] obj=2201.50    act=8464     err= 0.00%/ 1.53% time=16.65s/10139.89s
+  [ 743] obj=2201.41    act=8413     err= 0.00%/ 1.53% time=16.64s/10156.53s
+  [ 744] obj=2201.25    act=8436     err= 0.00%/ 1.53% time=18.67s/10175.20s
+  [ 745] obj=2201.16    act=8417     err= 0.00%/ 1.53% time=17.54s/10192.75s
+  [ 746] obj=2200.96    act=8441     err= 0.00%/ 1.72% time=19.16s/10211.91s
+  [ 747] obj=2200.86    act=8376     err= 0.00%/ 1.72% time=17.50s/10229.41s
+  [ 748] obj=2200.73    act=8357     err= 0.00%/ 1.72% time=21.25s/10250.66s
+  [ 749] obj=2200.57    act=8375     err= 0.00%/ 1.72% time=17.45s/10268.11s
+  [ 750] obj=2200.55    act=8394     err= 0.00%/ 1.91% time=19.25s/10287.36s
+  [ 751] obj=2200.26    act=8414     err= 0.00%/ 1.72% time=20.80s/10308.16s
+  [ 752] obj=2200.18    act=8421     err= 0.00%/ 1.91% time=18.17s/10326.32s
+  [ 753] obj=2200.16    act=8474     err= 0.01%/ 1.91% time=10.54s/10336.86s
+  [ 754] obj=2199.90    act=8482     err= 0.00%/ 1.91% time=10.20s/10347.06s
+  [ 755] obj=2199.60    act=8448     err= 0.01%/ 1.91% time=12.22s/10359.28s
+  [ 756] obj=2199.42    act=8452     err= 0.00%/ 1.91% time=17.61s/10376.89s
+  [ 757] obj=2199.39    act=8394     err= 0.01%/ 2.10% time=12.27s/10389.16s
+  [ 758] obj=2199.14    act=8413     err= 0.01%/ 2.10% time=10.60s/10399.76s
+  [ 759] obj=2198.96    act=8504     err= 0.01%/ 2.10% time=17.18s/10416.93s
+  [ 760] obj=2198.87    act=8425     err= 0.01%/ 2.10% time=17.45s/10434.38s
+  [ 761] obj=2198.73    act=8455     err= 0.01%/ 2.10% time=18.45s/10452.84s
+  [ 762] obj=2198.68    act=8382     err= 0.00%/ 1.91% time=17.95s/10470.79s
+  [ 763] obj=2198.43    act=8465     err= 0.01%/ 1.91% time=18.68s/10489.47s
+  [ 764] obj=2198.36    act=8430     err= 0.01%/ 1.91% time=17.18s/10506.65s
+  [ 765] obj=2198.15    act=8421     err= 0.00%/ 1.72% time=18.82s/10525.47s
+  [ 766] obj=2198.08    act=8333     err= 0.01%/ 1.91% time=10.52s/10535.98s
+  [ 767] obj=2197.78    act=8637     err= 0.01%/ 1.91% time=19.35s/10555.33s
+  [ 768] obj=2197.64    act=8608     err= 0.01%/ 2.10% time=11.95s/10567.29s
+  [ 769] obj=2197.32    act=8502     err= 0.01%/ 1.91% time=17.01s/10584.30s
+  [ 770] obj=2197.17    act=8549     err= 0.01%/ 1.91% time=25.64s/10609.94s
+  [ 771] obj=2197.12    act=8456     err= 0.01%/ 1.91% time=17.16s/10627.10s
+  [ 772] obj=2196.92    act=8502     err= 0.01%/ 2.10% time=18.73s/10645.83s
+  [ 773] obj=2196.79    act=8470     err= 0.01%/ 2.29% time=17.50s/10663.33s
+  [ 774] obj=2196.63    act=8446     err= 0.01%/ 1.91% time=18.63s/10681.96s
+  [ 775] obj=2196.52    act=8450     err= 0.01%/ 1.91% time=17.07s/10699.02s
+  [ 776] obj=2196.41    act=8390     err= 0.01%/ 2.10% time=17.62s/10716.64s
+  [ 777] obj=2196.28    act=8363     err= 0.01%/ 1.91% time=18.29s/10734.93s
+  [ 778] obj=2196.16    act=8320     err= 0.01%/ 1.91% time=16.93s/10751.87s
+  [ 779] obj=2196.03    act=8338     err= 0.01%/ 2.10% time=16.96s/10768.83s
+  [ 780] obj=2195.90    act=8409     err= 0.01%/ 2.10% time=24.48s/10793.31s
+  [ 781] obj=2195.82    act=8261     err= 0.01%/ 2.10% time=18.79s/10812.10s
+  [ 782] obj=2195.66    act=8371     err= 0.01%/ 1.91% time=17.21s/10829.31s
+  [ 783] obj=2195.49    act=8367     err= 0.01%/ 1.91% time=19.75s/10849.06s
+  [ 784] obj=2195.26    act=8375     err= 0.01%/ 1.91% time=17.09s/10866.15s
+  [ 785] obj=2195.14    act=8359     err= 0.01%/ 2.10% time=18.81s/10884.96s
+  [ 786] obj=2195.02    act=8336     err= 0.01%/ 2.10% time=17.48s/10902.44s
+  [ 787] obj=2194.90    act=8295     err= 0.01%/ 2.10% time=17.08s/10919.52s
+  [ 788] obj=2194.81    act=8288     err= 0.00%/ 1.91% time=19.05s/10938.57s
+  [ 789] obj=2194.66    act=8341     err= 0.01%/ 2.10% time=19.20s/10957.76s
+  [ 790] obj=2194.57    act=8395     err= 0.01%/ 1.91% time=27.86s/10985.62s
+  [ 791] obj=2194.50    act=8276     err= 0.01%/ 1.91% time=18.12s/11003.75s
+  [ 792] obj=2194.37    act=8396     err= 0.00%/ 1.72% time=18.00s/11021.75s
+  [ 793] obj=2194.18    act=8464     err= 0.01%/ 1.91% time=19.61s/11041.36s
+  [ 794] obj=2194.06    act=8404     err= 0.01%/ 1.91% time=18.65s/11060.01s
+  [ 795] obj=2193.90    act=8421     err= 0.00%/ 1.72% time=21.30s/11081.31s
+  [ 796] obj=2193.79    act=8408     err= 0.00%/ 1.53% time=21.53s/11102.84s
+  [ 797] obj=2193.64    act=8365     err= 0.01%/ 1.91% time=18.69s/11121.53s
+  [ 798] obj=2193.52    act=8382     err= 0.00%/ 1.72% time=17.73s/11139.26s
+  [ 799] obj=2193.35    act=8329     err= 0.01%/ 1.91% time=17.82s/11157.07s
+  [ 800] obj=2193.25    act=8325     err= 0.00%/ 1.53% time=18.93s/11176.00s
+  [ 801] obj=2193.06    act=8285     err= 0.00%/ 1.72% time=23.04s/11199.04s
+  [ 802] obj=2192.97    act=8238     err= 0.00%/ 1.53% time=19.00s/11218.05s
+  [ 803] obj=2192.82    act=8200     err= 0.00%/ 1.53% time=19.61s/11237.66s
+  [ 804] obj=2192.75    act=8204     err= 0.00%/ 1.34% time=18.10s/11255.76s
+  [ 805] obj=2192.58    act=8201     err= 0.00%/ 1.34% time=18.70s/11274.46s
+  [ 806] obj=2192.46    act=8188     err= 0.00%/ 1.72% time=13.78s/11288.24s
+  [ 807] obj=2192.23    act=8414     err= 0.00%/ 1.53% time=18.59s/11306.82s
+  [ 808] obj=2192.04    act=8480     err= 0.00%/ 1.53% time=18.30s/11325.12s
+  [ 809] obj=2191.99    act=8354     err= 0.00%/ 1.53% time=17.82s/11342.94s
+  [ 810] obj=2191.79    act=8408     err= 0.00%/ 1.53% time=17.74s/11360.68s
+  [ 811] obj=2191.59    act=8394     err= 0.00%/ 1.53% time=19.16s/11379.84s
+  [ 812] obj=2191.49    act=8362     err= 0.00%/ 1.53% time=22.57s/11402.41s
+  [ 813] obj=2191.34    act=8305     err= 0.00%/ 1.53% time=18.26s/11420.67s
+  [ 814] obj=2191.26    act=8271     err= 0.00%/ 1.34% time=18.14s/11438.81s
+  [ 815] obj=2191.12    act=8248     err= 0.00%/ 1.53% time=19.78s/11458.60s
+  [ 816] obj=2191.01    act=8248     err= 0.00%/ 1.34% time=18.40s/11476.99s
+  [ 817] obj=2190.98    act=8228     err= 0.00%/ 1.34% time=13.48s/11490.48s
+  [ 818] obj=2190.62    act=8398     err= 0.00%/ 1.34% time=18.43s/11508.91s
+  [ 819] obj=2190.47    act=8357     err= 0.00%/ 1.34% time=20.24s/11529.16s
+  [ 820] obj=2190.41    act=8285     err= 0.00%/ 1.34% time=19.32s/11548.48s
+  [ 821] obj=2190.27    act=8271     err= 0.00%/ 1.53% time=19.79s/11568.27s
+  [ 822] obj=2190.07    act=8241     err= 0.00%/ 1.53% time=18.63s/11586.91s
+  [ 823] obj=2189.98    act=8212     err= 0.00%/ 1.34% time=22.59s/11609.49s
+  [ 824] obj=2189.92    act=8220     err= 0.00%/ 1.53% time=18.63s/11628.12s
+  [ 825] obj=2189.72    act=8334     err= 0.00%/ 1.53% time=20.37s/11648.49s
+  [ 826] obj=2189.63    act=8218     err= 0.00%/ 1.34% time=21.81s/11670.31s
+  [ 827] obj=2189.51    act=8274     err= 0.00%/ 1.53% time=21.63s/11691.93s
+  [ 828] obj=2189.39    act=8282     err= 0.00%/ 1.53% time=22.09s/11714.02s
+  [ 829] obj=2189.22    act=8243     err= 0.00%/ 1.53% time=18.84s/11732.87s
+  [ 830] obj=2189.07    act=8239     err= 0.00%/ 1.53% time=18.62s/11751.49s
+  [ 831] obj=2188.92    act=8301     err= 0.00%/ 1.34% time=23.28s/11774.77s
+  [ 832] obj=2188.87    act=8378     err= 0.00%/ 1.53% time=18.95s/11793.72s
+  [ 833] obj=2188.73    act=8308     err= 0.00%/ 1.34% time=18.51s/11812.23s
+  [ 834] obj=2188.45    act=8304     err= 0.00%/ 1.72% time=20.73s/11832.96s
+  [ 835] obj=2188.42    act=8260     err= 0.00%/ 1.72% time=17.89s/11850.86s
+  [ 836] obj=2188.18    act=8289     err= 0.00%/ 1.72% time=21.78s/11872.63s
+  [ 837] obj=2188.15    act=8200     err= 0.00%/ 1.72% time=11.06s/11883.70s
+  [ 838] obj=2188.05    act=8286     err= 0.00%/ 1.53% time=14.35s/11898.04s
+  [ 839] obj=2187.86    act=8519     err= 0.01%/ 2.10% time=11.77s/11909.81s
+  [ 840] obj=2187.55    act=8559     err= 0.00%/ 1.53% time=10.90s/11920.71s
+  [ 841] obj=2187.39    act=8495     err= 0.00%/ 1.72% time=21.15s/11941.86s
+  [ 842] obj=2187.29    act=8370     err= 0.00%/ 1.91% time=21.65s/11963.51s
+  [ 843] obj=2187.25    act=8284     err= 0.01%/ 2.10% time=19.36s/11982.88s
+  [ 844] obj=2187.13    act=8386     err= 0.00%/ 1.91% time=18.73s/12001.61s
+  [ 845] obj=2187.03    act=8355     err= 0.01%/ 2.29% time=22.02s/12023.63s
+  [ 846] obj=2187.03    act=8356     err= 0.00%/ 2.10% time=12.71s/12036.33s
+  [ 847] obj=2186.67    act=8477     err= 0.01%/ 2.29% time=21.56s/12057.89s
+  [ 848] obj=2186.58    act=8356     err= 0.01%/ 2.29% time=19.24s/12077.13s
+  [ 849] obj=2186.51    act=8276     err= 0.01%/ 2.29% time=18.19s/12095.32s
+  [ 850] obj=2186.40    act=8294     err= 0.01%/ 2.29% time=20.19s/12115.50s
+  [ 851] obj=2186.28    act=8285     err= 0.01%/ 2.29% time=19.56s/12135.07s
+  [ 852] obj=2186.20    act=8246     err= 0.01%/ 2.29% time=18.23s/12153.30s
+  [ 853] obj=2186.12    act=8231     err= 0.01%/ 2.29% time=23.34s/12176.64s
+  [ 854] obj=2186.03    act=8236     err= 0.01%/ 2.29% time=10.97s/12187.61s
+  [ 855] obj=2185.92    act=8257     err= 0.01%/ 2.49% time=14.39s/12202.00s
+  [ 856] obj=2185.77    act=8216     err= 0.01%/ 2.68% time=11.03s/12213.03s
+  [ 857] obj=2185.48    act=8242     err= 0.01%/ 2.68% time=12.31s/12225.35s
+  [ 858] obj=2185.46    act=8249     err= 0.01%/ 2.87% time=11.02s/12236.37s
+  [ 859] obj=2185.15    act=8274     err= 0.01%/ 2.87% time=14.87s/12251.24s
+  [ 860] obj=2185.07    act=8232     err= 0.01%/ 2.87% time=18.53s/12269.77s
+  [ 861] obj=2184.92    act=8277     err= 0.01%/ 2.87% time=22.48s/12292.25s
+  [ 862] obj=2184.88    act=8214     err= 0.01%/ 2.87% time=19.38s/12311.63s
+  [ 863] obj=2184.85    act=8219     err= 0.01%/ 2.87% time=11.35s/12322.98s
+  [ 864] obj=2184.58    act=8432     err= 0.01%/ 2.87% time=18.57s/12341.55s
+  [ 865] obj=2184.44    act=8316     err= 0.01%/ 2.87% time=20.03s/12361.58s
+  [ 866] obj=2184.38    act=8254     err= 0.01%/ 2.87% time=19.27s/12380.85s
+  [ 867] obj=2184.26    act=8182     err= 0.01%/ 2.87% time=23.63s/12404.48s
+  [ 868] obj=2184.19    act=8204     err= 0.01%/ 2.87% time=19.16s/12423.64s
+  [ 869] obj=2184.07    act=8161     err= 0.01%/ 2.87% time=21.64s/12445.27s
+  [ 870] obj=2184.01    act=8160     err= 0.01%/ 2.87% time=23.59s/12468.86s
+  [ 871] obj=2183.87    act=8138     err= 0.01%/ 2.87% time=19.12s/12487.98s
+  [ 872] obj=2183.78    act=8197     err= 0.01%/ 2.68% time=22.16s/12510.14s
+  [ 873] obj=2183.64    act=8193     err= 0.01%/ 2.49% time=22.41s/12532.55s
+  [ 874] obj=2183.56    act=8200     err= 0.01%/ 2.29% time=17.99s/12550.53s
+  [ 875] obj=2183.41    act=8122     err= 0.01%/ 2.49% time=17.90s/12568.43s
+  [ 876] obj=2183.33    act=8146     err= 0.01%/ 1.91% time=19.53s/12587.96s
+  [ 877] obj=2183.16    act=8125     err= 0.01%/ 2.10% time=18.12s/12606.09s
+  [ 878] obj=2183.06    act=8123     err= 0.00%/ 1.72% time=18.23s/12624.32s
+  [ 879] obj=2182.93    act=8129     err= 0.00%/ 1.72% time=21.65s/12645.96s
+  [ 880] obj=2182.89    act=8137     err= 0.00%/ 1.53% time=20.22s/12666.18s
+  [ 881] obj=2182.69    act=8156     err= 0.00%/ 1.53% time=20.73s/12686.90s
+  [ 882] obj=2182.63    act=8154     err= 0.00%/ 1.34% time=22.32s/12709.23s
+  [ 883] obj=2182.47    act=8127     err= 0.00%/ 1.34% time=23.32s/12732.54s
+  [ 884] obj=2182.37    act=8182     err= 0.00%/ 1.34% time=19.18s/12751.72s
+  [ 885] obj=2182.34    act=8139     err= 0.00%/ 1.34% time=13.56s/12765.28s
+  [ 886] obj=2182.22    act=8220     err= 0.00%/ 1.15% time=12.27s/12777.55s
+  [ 887] obj=2181.86    act=8203     err= 0.00%/ 1.34% time=13.06s/12790.61s
+  [ 888] obj=2181.84    act=8200     err= 0.00%/ 1.15% time=11.01s/12801.62s
+  [ 889] obj=2181.58    act=8232     err= 0.00%/ 1.34% time=14.13s/12815.75s
+  [ 890] obj=2181.51    act=8189     err= 0.00%/ 1.15% time=13.25s/12829.01s
+  [ 891] obj=2181.31    act=8123     err= 0.00%/ 1.34% time=11.79s/12840.80s
+  [ 892] obj=2181.20    act=8157     err= 0.00%/ 1.34% time=19.59s/12860.39s
+  [ 893] obj=2181.13    act=8111     err= 0.00%/ 1.34% time=22.25s/12882.64s
+  [ 894] obj=2181.05    act=8126     err= 0.00%/ 1.34% time=18.36s/12900.99s
+  [ 895] obj=2181.04    act=8099     err= 0.00%/ 1.34% time=10.83s/12911.82s
+  [ 896] obj=2180.70    act=8245     err= 0.00%/ 1.34% time=19.69s/12931.52s
+  [ 897] obj=2180.63    act=8158     err= 0.00%/ 1.34% time=20.02s/12951.54s
+  [ 898] obj=2180.52    act=8155     err= 0.00%/ 0.96% time=21.29s/12972.83s
+  [ 899] obj=2180.33    act=8148     err= 0.00%/ 1.15% time=17.57s/12990.40s
+  [ 900] obj=2180.22    act=8117     err= 0.00%/ 0.96% time=21.44s/13011.84s
+  [ 901] obj=2180.20    act=8085     err= 0.00%/ 1.15% time=10.85s/13022.69s
+  [ 902] obj=2180.08    act=8151     err= 0.00%/ 1.15% time=10.98s/13033.67s
+  [ 903] obj=2179.74    act=8086     err= 0.00%/ 1.15% time=13.56s/13047.23s
+  [ 904] obj=2179.56    act=8164     err= 0.00%/ 1.15% time=18.52s/13065.76s
+  [ 905] obj=2179.47    act=8084     err= 0.00%/ 1.15% time=20.22s/13085.98s
+  [ 906] obj=2179.43    act=8074     err= 0.00%/ 1.15% time=19.05s/13105.03s
+  [ 907] obj=2179.41    act=8087     err= 0.00%/ 1.34% time=10.58s/13115.61s
+  [ 908] obj=2179.27    act=8142     err= 0.00%/ 1.15% time=10.22s/13125.83s
+  [ 909] obj=2178.90    act=8200     err= 0.00%/ 1.15% time=10.00s/13135.83s
+  [ 910] obj=2178.78    act=8163     err= 0.00%/ 1.15% time=19.52s/13155.36s
+  [ 911] obj=2178.75    act=8079     err= 0.00%/ 1.34% time=12.30s/13167.65s
+  [ 912] obj=2178.64    act=8137     err= 0.00%/ 1.34% time=10.66s/13178.31s
+  [ 913] obj=2178.40    act=8127     err= 0.00%/ 1.34% time=10.91s/13189.23s
+  [ 914] obj=2178.27    act=8161     err= 0.00%/ 1.34% time=18.60s/13207.82s
+  [ 915] obj=2178.24    act=8119     err= 0.00%/ 1.34% time=10.30s/13218.12s
+  [ 916] obj=2178.16    act=8116     err= 0.00%/ 1.34% time=12.22s/13230.34s
+  [ 917] obj=2177.93    act=8070     err= 0.00%/ 1.72% time=11.75s/13242.10s
+  [ 918] obj=2177.72    act=8153     err= 0.00%/ 1.72% time=13.07s/13255.16s
+  [ 919] obj=2177.58    act=8135     err= 0.00%/ 1.72% time=14.20s/13269.37s
+  [ 920] obj=2177.51    act=8104     err= 0.00%/ 1.72% time=10.99s/13280.35s
+  [ 921] obj=2177.26    act=8081     err= 0.00%/ 1.72% time=10.80s/13291.15s
+  [ 922] obj=2177.17    act=8077     err= 0.00%/ 1.91% time=17.97s/13309.12s
+  [ 923] obj=2177.08    act=8065     err= 0.00%/ 1.72% time=18.63s/13327.75s
+  [ 924] obj=2177.01    act=8077     err= 0.00%/ 1.91% time=18.32s/13346.07s
+  [ 925] obj=2176.90    act=8066     err= 0.00%/ 1.91% time=18.74s/13364.81s
+  [ 926] obj=2176.79    act=8013     err= 0.00%/ 1.72% time=18.81s/13383.62s
+  [ 927] obj=2176.70    act=8099     err= 0.00%/ 1.91% time=17.44s/13401.06s
+  [ 928] obj=2176.66    act=8177     err= 0.01%/ 2.10% time=18.99s/13420.05s
+  [ 929] obj=2176.42    act=8263     err= 0.00%/ 1.91% time=17.54s/13437.59s
+  [ 930] obj=2176.39    act=8133     err= 0.01%/ 2.10% time=11.88s/13449.47s
+  [ 931] obj=2176.16    act=8266     err= 0.00%/ 1.91% time=17.90s/13467.38s
+  [ 932] obj=2176.00    act=8257     err= 0.01%/ 2.10% time=13.52s/13480.89s
+  [ 933] obj=2175.93    act=8148     err= 0.00%/ 1.91% time=18.82s/13499.71s
+  [ 934] obj=2175.82    act=8120     err= 0.01%/ 2.10% time=18.71s/13518.43s
+  [ 935] obj=2175.69    act=8167     err= 0.00%/ 1.91% time=18.50s/13536.93s
+  [ 936] obj=2175.62    act=8052     err= 0.01%/ 2.29% time=10.23s/13547.15s
+  [ 937] obj=2175.53    act=8248     err= 0.00%/ 2.29% time=10.21s/13557.36s
+  [ 938] obj=2175.30    act=8438     err= 0.00%/ 2.29% time=19.65s/13577.01s
+  [ 939] obj=2175.20    act=8315     err= 0.00%/ 2.10% time=19.41s/13596.42s
+  [ 940] obj=2175.09    act=8261     err= 0.00%/ 2.10% time=17.57s/13613.99s
+  [ 941] obj=2175.00    act=8233     err= 0.01%/ 2.49% time=19.28s/13633.27s
+  [ 942] obj=2174.81    act=8300     err= 0.01%/ 2.29% time=21.06s/13654.33s
+  [ 943] obj=2174.77    act=8220     err= 0.01%/ 2.10% time=18.29s/13672.62s
+  [ 944] obj=2174.58    act=8259     err= 0.01%/ 1.91% time=18.86s/13691.48s
+  [ 945] obj=2174.55    act=8202     err= 0.01%/ 2.10% time=19.26s/13710.74s
+  [ 946] obj=2174.50    act=8184     err= 0.00%/ 1.72% time=12.19s/13722.93s
+  [ 947] obj=2174.17    act=8195     err= 0.01%/ 1.91% time=11.73s/13734.66s
+  [ 948] obj=2174.03    act=8180     err= 0.01%/ 1.91% time=21.46s/13756.12s
+  [ 949] obj=2173.96    act=8139     err= 0.01%/ 2.10% time=20.15s/13776.27s
+  [ 950] obj=2173.93    act=8073     err= 0.00%/ 1.91% time=10.59s/13786.86s
+  [ 951] obj=2173.70    act=8102     err= 0.01%/ 1.91% time=17.69s/13804.55s
+  [ 952] obj=2173.63    act=8047     err= 0.01%/ 2.10% time=19.17s/13823.72s
+  [ 953] obj=2173.54    act=8048     err= 0.01%/ 1.91% time=17.49s/13841.21s
+  [ 954] obj=2173.45    act=8020     err= 0.01%/ 2.10% time=22.10s/13863.31s
+  [ 955] obj=2173.29    act=8023     err= 0.01%/ 1.91% time=18.63s/13881.94s
+  [ 956] obj=2173.23    act=8044     err= 0.01%/ 1.91% time=24.16s/13906.10s
+  [ 957] obj=2173.11    act=7981     err= 0.01%/ 2.10% time=17.88s/13923.98s
+  [ 958] obj=2173.06    act=8002     err= 0.01%/ 1.91% time=20.28s/13944.26s
+  [ 959] obj=2172.92    act=8021     err= 0.01%/ 1.91% time=21.51s/13965.77s
+  [ 960] obj=2172.81    act=8031     err= 0.01%/ 2.10% time=17.99s/13983.75s
+  [ 961] obj=2172.67    act=7996     err= 0.00%/ 1.72% time=17.70s/14001.46s
+  [ 962] obj=2172.57    act=8026     err= 0.00%/ 1.53% time=19.25s/14020.71s
+  [ 963] obj=2172.47    act=7946     err= 0.00%/ 1.53% time=19.12s/14039.83s
+  [ 964] obj=2172.41    act=7948     err= 0.00%/ 1.53% time=19.15s/14058.97s
+  [ 965] obj=2172.31    act=7942     err= 0.00%/ 1.53% time=17.63s/14076.60s
+  [ 966] obj=2172.31    act=7907     err= 0.00%/ 1.53% time=12.35s/14088.95s
+  [ 967] obj=2172.12    act=8038     err= 0.00%/ 1.34% time=11.27s/14100.21s
+  [ 968] obj=2171.87    act=8171     err= 0.00%/ 1.34% time=18.13s/14118.35s
+  [ 969] obj=2171.78    act=8120     err= 0.00%/ 1.53% time=17.23s/14135.58s
+  [ 970] obj=2171.68    act=8076     err= 0.00%/ 1.34% time=18.01s/14153.59s
+  [ 971] obj=2171.64    act=8050     err= 0.00%/ 1.53% time=18.48s/14172.07s
+  [ 972] obj=2171.46    act=8068     err= 0.00%/ 1.53% time=18.29s/14190.36s
+  [ 973] obj=2171.41    act=7988     err= 0.00%/ 1.72% time=20.45s/14210.81s
+  [ 974] obj=2171.29    act=7994     err= 0.00%/ 1.53% time=19.23s/14230.03s
+  [ 975] obj=2171.20    act=7943     err= 0.00%/ 1.53% time=17.03s/14247.06s
+  [ 976] obj=2171.13    act=7934     err= 0.00%/ 1.34% time=20.90s/14267.95s
+  [ 977] obj=2171.10    act=7900     err= 0.00%/ 1.34% time=11.04s/14278.99s
+  [ 978] obj=2171.04    act=8009     err= 0.00%/ 1.34% time=10.86s/14289.85s
+  [ 979] obj=2170.71    act=8042     err= 0.00%/ 1.34% time=12.47s/14302.32s
+  [ 980] obj=2170.57    act=8065     err= 0.00%/ 1.34% time=17.02s/14319.34s
+  [ 981] obj=2170.48    act=7969     err= 0.00%/ 1.34% time=12.24s/14331.58s
+  [ 982] obj=2170.48    act=8118     err= 0.00%/ 1.15% time=10.91s/14342.49s
+  [ 983] obj=2170.17    act=8159     err= 0.00%/ 1.34% time=10.87s/14353.36s
+  [ 984] obj=2170.13    act=8166     err= 0.00%/ 1.34% time=10.62s/14363.98s
+  [ 985] obj=2169.88    act=8199     err= 0.00%/ 1.34% time=12.17s/14376.15s
+  [ 986] obj=2169.76    act=8208     err= 0.00%/ 1.15% time=10.85s/14387.00s
+  [ 987] obj=2169.59    act=8143     err= 0.00%/ 1.34% time=10.83s/14397.83s
+  [ 988] obj=2169.53    act=8133     err= 0.00%/ 1.15% time=12.38s/14410.21s
+  [ 989] obj=2169.34    act=8073     err= 0.00%/ 1.15% time=10.32s/14420.53s
+  [ 990] obj=2169.25    act=8096     err= 0.00%/ 1.15% time=18.76s/14439.29s
+  [ 991] obj=2169.20    act=8030     err= 0.00%/ 1.53% time=12.20s/14451.49s
+  [ 992] obj=2169.18    act=8040     err= 0.00%/ 1.34% time=10.85s/14462.34s
+  [ 993] obj=2168.86    act=8053     err= 0.00%/ 1.53% time=10.61s/14472.96s
+  [ 994] obj=2168.76    act=8092     err= 0.00%/ 1.34% time=17.61s/14490.57s
+  [ 995] obj=2168.72    act=8060     err= 0.00%/ 1.53% time=13.40s/14503.97s
+  [ 996] obj=2168.60    act=8118     err= 0.00%/ 1.34% time=11.53s/14515.50s
+  [ 997] obj=2168.46    act=8132     err= 0.00%/ 1.72% time=13.09s/14528.60s
+  [ 998] obj=2168.26    act=8126     err= 0.00%/ 1.34% time=10.39s/14538.99s
+  [ 999] obj=2168.05    act=8215     err= 0.00%/ 1.72% time=10.36s/14549.35s
+  [1000] obj=2167.98    act=8047     err= 0.00%/ 1.34% time=12.36s/14561.71s
+* Save the model
+* Done
+Model for segmentation created in 14579716 ms
+sourceTEIPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/segmentation/evaluation/tei
+sourceRawPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/segmentation/evaluation/raw
+trainingOutputPath: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/tmp/segmentation16742142580898344994.test
+evalOutputPath: null
+80 tei files
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15315-44533-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 104.v84-299.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 104.v84-299.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18838-66143-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5962-15853-1-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7241-21759-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19891-73565-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18642-60600-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17314-51812-3-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20157-81103-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19961-75036-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2033-4323-2-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20458-79662-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 16744-48271-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 15884-47230-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20095-75399-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18977-64082-3-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 2107-4855-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18594-59822-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18562-59548-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1883-2969-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19785-72111-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 1955-3671-2-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11075-36386-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5285-10584-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5657-13105-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19519-69349-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5774-14429-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7160-31947-1-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 71.v85-432.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 71.v85-432.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5554-13060-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17218-64803-1-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5458-11842-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 31.v87-066.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 31.v87-066.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18579-59662-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5201-10147-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20333-79094-1-AT.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5982-15908-1-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 12236-39909-1-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19182-67652-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7283-20911-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19713-71392-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8447-43585-4-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20228-76880-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7797-24749-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20644-82910-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: Bioinformatics-2007-Rivals-401-7.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5245-10381-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19139-66125-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4635-8004-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7206-19904-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20503-80679-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5071-9210-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8312-26343-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element div: type=acknowledgements
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element div: type=acknowledgements
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5334-10874-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7041-18796-3-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6307-16720-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18909-66129-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 17507-53247-3-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element div: type=acknowledgment
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18148-59273-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 8865-29162-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7129-19297-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19281-70091-1-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18712-63573-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4847-8564-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 50.v86-097.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+WARNING: 50.v86-097.training.segmentation.tei.xml / too many synchronization issues, file not used in training data and to be fixed!
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4859-8892-1-AT.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18376-56937-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4276-7570-2-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 6373-17346-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 11513-37906-3-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20262-77354-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19000-70021-1-CE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7611-23220-2-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 10611-55310-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 19064-65118-4-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 7919-24612-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5743-13863-1-AT.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 5845-14573-1-LE.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 4901-9066-1-ED.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 18447-57991-2-RV.training.segmentation.tei.xml
+Aug 06, 2019 12:05:12 AM org.grobid.core.jni.WapitiModel init
+INFO: Loading model: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/models/segmentation/model.wapiti (size: 21149911)
+[Wapiti] Loading model: "/home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/models/segmentation/model.wapiti"
+Model path: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/models/segmentation/model.wapiti
+Labeling took: 1568 ms
+
+===== Token-level results =====
+
+
+label                accuracy     precision    recall       f1     
+
+<acknowledgement>    100          100          100          100    
+<annex>              100          100          100          100    
+<body>               100          100          100          100    
+<cover>              100          100          100          100    
+<footnote>           99.98        99.66        98.65        99.15  
+<header>             99.98        99.8         100          99.9   
+<headnote>           100          100          96.15        98.04  
+<linenumber>         100          100          100          100    
+<page>               100          100          100          100    
+<references>         100          100          100          100    
+
+all fields           100          99.98        99.98        99.98   (micro average)
+                     100          99.95        99.48        99.71   (macro average)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1     
+
+<acknowledgement>    100          100          100          100    
+<annex>              100          100          100          100    
+<body>               100          100          100          100    
+<cover>              100          100          100          100    
+<footnote>           99.62        95           86.36        90.48  
+<header>             99.81        98.11        100          99.05  
+<headnote>           99.91        100          95.83        97.87  
+<linenumber>         100          100          100          100    
+<page>               100          100          100          100    
+<references>         100          100          100          100    
+
+all fields           99.93        99.71        99.62        99.67   (micro average)
+                     99.93        99.31        98.22        98.74   (macro average)
+
+===== Instance-level results =====
+
+Total expected instances:   76
+Correct instances:          75
+Instance-level recall:      98.68
+
+Evaluation for segmentation model is realized in 4183 ms
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 4h 3m 5s
+6 actionable tasks: 1 executed, 5 up-to-date

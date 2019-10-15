@@ -66,7 +66,7 @@ public class PDFALTOOutlineSaxHandler extends DefaultHandler {
 			// this is the document root
 			root = new DocumentNode();
 			nodes = new HashMap<Integer,DocumentNode>();
-		} if (qName.equals("ITEM")) {
+		} else if (qName.equals("ITEM")) {
 			currentNode = new DocumentNode();
 			// get the node id 
 			int length = atts.getLength();

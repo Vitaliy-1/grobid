@@ -980,6 +980,10 @@ public class TEIFormatter {
         if (documentNoteParts != null) {
             tei = toTEINote("margin", documentNoteParts, tei, doc, config);
         }
+        documentNoteParts = doc.getDocumentPart(SegmentationLabels.LINENUMBER);
+        if (documentNoteParts != null) {
+            tei = toTEINote("line_number", documentNoteParts, tei, doc, config);
+        }
         return tei;
     }
 
@@ -1046,7 +1050,12 @@ public class TEIFormatter {
             allNotes.add(footText);
 
             Element desc = XmlBuilderUtils.teiElement("note");
-            desc.addAttribute(new Attribute("place", noteType));
+            if (noteType.equals("line_number")) {
+                desc.addAttribute(new Attribute("type", noteType));
+            } else {
+                desc.addAttribute(new Attribute("place", noteType));
+            }
+
             if (currentNumber != -1) {
                 desc.addAttribute(new Attribute("n", ""+currentNumber));
             }

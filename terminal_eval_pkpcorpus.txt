@@ -1,0 +1,286 @@
+path2GbdHome=grobid-home   path2GbdProperties=grobid-home/config/grobid.properties
+Aug 07, 2019 7:00:38 PM org.grobid.core.main.GrobidHomeFinder getGrobidHomePathOrLoadFromClasspath
+WARNING: No Grobid property was provided. Attempting to find Grobid home in the current directory...
+Aug 07, 2019 7:00:38 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: ***************************************************************
+Aug 07, 2019 7:00:38 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: *** USING GROBID HOME: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home
+Aug 07, 2019 7:00:38 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: ***************************************************************
+Aug 07, 2019 7:00:38 PM org.grobid.core.main.GrobidHomeFinder findGrobidPropertiesOrFail
+WARNING: Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/config/grobid.properties
+Aug 07, 2019 7:00:38 PM org.grobid.core.main.LibraryLoader load
+INFO: Loading external native sequence labelling library
+Aug 07, 2019 7:00:38 PM org.grobid.core.main.LibraryLoader load
+INFO: Loading Wapiti native library...
+Aug 07, 2019 7:00:38 PM org.grobid.core.main.LibraryLoader load
+INFO: Native library for sequence labelling loaded
+Aug 07, 2019 7:00:38 PM org.grobid.core.lexicon.Lexicon initDictionary
+INFO: Initiating dictionary
+Aug 07, 2019 7:00:38 PM org.grobid.core.lexicon.Lexicon initDictionary
+INFO: End of Initialization of dictionary
+Aug 07, 2019 7:00:38 PM org.grobid.core.lexicon.Lexicon initNames
+INFO: Initiating names
+Aug 07, 2019 7:00:38 PM org.grobid.core.lexicon.Lexicon initNames
+INFO: End of initialization of names
+Aug 07, 2019 7:00:38 PM org.grobid.core.lexicon.Lexicon initCountryCodes
+INFO: Initiating country codes
+Aug 07, 2019 7:00:38 PM org.grobid.core.lexicon.Lexicon initCountryCodes
+INFO: End of initialization of country codes
+sourceTEIPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/../grobid-trainer/resources/dataset/segmentation/evaluation/tei
+sourceRawPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/../grobid-trainer/resources/dataset/segmentation/evaluation/raw
+trainingOutputPath: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/tmp/segmentation3521037227497831436.test
+evalOutputPath: null
+100 tei files
+Aug 07, 2019 7:00:38 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20873-84696-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:38 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20962-85621-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:38 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21240-88048-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:38 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21288-89075-2-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:38 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21219-87783-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21398-94028-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21403-89939-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21037-86424-2-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20974-85694-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21086-86780-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21028-86430-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21217-89981-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21188-87578-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21305-89182-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21264-88769-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21132-87770-1-AT.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21304-89179-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21144-87324-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21248-88223-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21198-87632-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21315-89257-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21089-86794-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20789-83821-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element note: type=headnote
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.sax.TEISegmentationSaxParser startElement
+SEVERE: Invalid attribute value for element note: type=headnote
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21426-90301-2-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20717-83260-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21202-87651-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21259-88738-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20878-87121-2-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21221-87793-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21326-89387-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21465-100043-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21519-91209-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21201-87643-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21186-87565-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20981-87625-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21350-89596-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21241-88691-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20888-86851-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21224-87806-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21203-87656-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21067-86628-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21411-91600-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20911-85169-2-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20960-85609-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20763-83630-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20963-85620-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21115-86986-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21075-95938-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21085-86774-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20909-93687-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21278-89074-2-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20943-85424-3-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21471-92236-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21316-89262-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20973-85688-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21143-87319-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21215-87743-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21223-87799-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20954-85579-2-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21087-86949-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21252-88667-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20739-83521-3-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20919-85285-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21207-87683-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21455-90492-2-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21306-89189-3-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21369-97327-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20849-84432-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20961-85895-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21166-87450-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20688-82900-3-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21362-104036-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21416-91112-3-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21307-89194-2-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21114-86979-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20968-85660-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20741-83534-3-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21210-87717-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20679-92916-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21189-87585-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21320-89328-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21314-89252-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21308-89197-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21301-94648-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20735-83442-3-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21233-88002-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21419-92410-1-CE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20732-83414-3-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21161-87432-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20833-84283-2-RV.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21070-86651-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21229-87942-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21317-89267-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20872-84708-2-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21130-98429-1-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21231-87947-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21065-86837-2-ED.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21313-89247-2-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 20713-83241-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.trainer.SegmentationTrainer addFeaturesSegmentation
+INFO: Processing: 21199-87637-1-LE.training.segmentation.tei.xml
+Aug 07, 2019 7:00:39 PM org.grobid.core.jni.WapitiModel init
+INFO: Loading model: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/models/segmentation/model.wapiti (size: 21149911)
+[Wapiti] Loading model: "/home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/models/segmentation/model.wapiti"
+Model path: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/models/segmentation/model.wapiti
+Labeling took: 2209 ms
+
+===== Token-level results =====
+
+
+label                accuracy     precision    recall       f1     
+
+<acknowledgement>    99.93        97.58        87.5         92.26  
+<annex>              99.3         55.91        18.06        27.3   
+<body>               97.82        97.28        99.16        98.21  
+<footnote>           99.71        83.49        69.73        75.99  
+<header>             99.16        95.93        92.96        94.42  
+<headnote>           99.89        100          59.81        74.85  
+<linenumber>         99.4         99.61        95.96        97.75  
+<page>               99.66        82.33        93.93        87.75  
+<references>         99.62        97.8         99.12        98.45  
+
+all fields           99.39        97.16        97.18        97.17   (micro average)
+                     99.39        89.99        79.58        83      (macro average)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1     
+
+<acknowledgement>    99.18        81.48        64.71        72.13  
+<annex>              99.23        63.64        36.84        46.67  
+<body>               92.16        85.69        85.23        85.46  
+<footnote>           99.28        60           50           54.55  
+<header>             96.05        72.59        68.53        70.5   
+<headnote>           98.08        100          61.17        75.9   
+<linenumber>         91.53        50.57        49.44        50     
+<page>               93.65        81.98        94.41        87.76  
+<references>         98.12        89.71        88.2         88.95  
+
+all fields           96.36        80.41        80.41        80.41   (micro average)
+                     96.36        76.18        66.5         70.21   (macro average)
+
+===== Instance-level results =====
+
+Total expected instances:   100
+Correct instances:          37
+Instance-level recall:      37
+
+Evaluation for segmentation model is realized in 5336 ms
