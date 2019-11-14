@@ -1203,7 +1203,7 @@ public class TEIFormatter {
 
             TaggingLabel clusterLabel = cluster.getTaggingLabel();
             Engine.getCntManager().i(clusterLabel);
-            if (clusterLabel.equals(TaggingLabels.SECTION)) {
+            if (clusterLabel.equals(TaggingLabels.SECTION) || clusterLabel.equals(TaggingLabels.SUBSECTION)) {
                 String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
                 curDiv = teiElement("div");
                 /*if (config.isGenerateTeiIds()) {
@@ -1212,6 +1212,11 @@ public class TEIFormatter {
                 }*/
                 
                 Element head = teiElement("head");
+                if (clusterLabel.equals(TaggingLabels.SECTION)) {
+                    head.addAttribute(new Attribute("level", "1"));
+                } else if (clusterLabel.equals(TaggingLabels.SUBSECTION)) {
+                    head.addAttribute(new Attribute("level", "2"));
+                }
                 // section numbers
                 org.grobid.core.utilities.Pair<String, String> numb = getSectionNumber(clusterContent);
                 if (numb != null) {
@@ -1256,17 +1261,26 @@ public class TEIFormatter {
                         }
                     }
                 }
-            } else if (clusterLabel.equals(TaggingLabels.ITEM)) {
+            } else if (clusterLabel.equals(TaggingLabels.ITEM_BULLETED) || clusterLabel.equals(TaggingLabels.ITEM_NUMBERED)) {
                 String clusterContent = LayoutTokensUtil.normalizeText(cluster.concatTokens());
                 //curDiv.appendChild(teiElement("item", clusterContent));
                 Element itemNode = teiElement("item", clusterContent);
-                if (!MARKER_LABELS.contains(lastClusterLabel) && (lastClusterLabel != TaggingLabels.ITEM)) {
+                if (!MARKER_LABELS.contains(lastClusterLabel) && ((lastClusterLabel != TaggingLabels.ITEM_BULLETED) && ((lastClusterLabel != TaggingLabels.ITEM_NUMBERED)))) {
                     curList = teiElement("list");
+                    if (clusterLabel.equals(TaggingLabels.ITEM_BULLETED)) {
+                        curList.addAttribute(new Attribute("rend", "bulleted"));
+                    } else if(clusterLabel.equals(TaggingLabels.ITEM_NUMBERED)) {
+                        curList.addAttribute(new Attribute("rend", "numbered"));
+                    }
                     curDiv.appendChild(curList);
                 }
                 if (curList != null) {
                     curList.appendChild(itemNode);
                 }
+            } else if (clusterLabel.equals(TaggingLabels.QUOTE)) {
+                String clusterContent = LayoutTokensUtil.normalizeText(cluster.concatTokens());
+                Element quote = teiElement("quote", clusterContent);
+                curDiv.appendChild(quote);
             } else if (clusterLabel.equals(TaggingLabels.OTHER)) {
                 String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
                 Element note = teiElement("note", clusterContent);
@@ -1311,6 +1325,9 @@ public class TEIFormatter {
                 } else if (clusterLabel.equals(TaggingLabels.EQUATION_MARKER)) {
                     refNodes = markReferencesEquationTEI(chunkRefString, refTokens, equations,
                             config.isGenerateTeiCoordinates("ref"));                    
+                } else if (clusterLabel.equals(TaggingLabels.NOTE_MARKER)) {
+                    refNodes = markReferencesEquationTEI(chunkRefString, refTokens, equations,
+                            config.isGenerateTeiCoordinates("ref"));
                 } else {
                     throw new IllegalStateException("Unsupported marker type: " + clusterLabel);
                 }

@@ -1,0 +1,1346 @@
+> Task :grobid-core:compileJava UP-TO-DATE
+> Task :grobid-core:processResources UP-TO-DATE
+> Task :grobid-core:classes UP-TO-DATE
+> Task :grobid-core:mainJar UP-TO-DATE
+> Task :grobid-core:jar SKIPPED
+> Task :grobid-trainer:compileJava UP-TO-DATE
+> Task :grobid-trainer:processResources UP-TO-DATE
+> Task :grobid-trainer:classes UP-TO-DATE
+
+> Task :grobid-trainer:train_fulltext
+Oct 26, 2019 1:48:24 PM org.grobid.core.main.GrobidHomeFinder getGrobidHomePathOrLoadFromClasspath
+WARNING: No Grobid property was provided. Attempting to find Grobid home in the current directory...
+Oct 26, 2019 1:48:24 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: ***************************************************************
+Oct 26, 2019 1:48:24 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: *** USING GROBID HOME: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home
+Oct 26, 2019 1:48:24 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: ***************************************************************
+Oct 26, 2019 1:48:24 PM org.grobid.core.main.GrobidHomeFinder findGrobidPropertiesOrFail
+WARNING: Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/config/grobid.properties
+Oct 26, 2019 1:48:24 PM org.grobid.core.main.LibraryLoader load
+INFO: Loading external native sequence labelling library
+Oct 26, 2019 1:48:24 PM org.grobid.core.main.LibraryLoader load
+INFO: Loading Wapiti native library...
+Oct 26, 2019 1:48:24 PM org.grobid.core.main.LibraryLoader load
+INFO: Native library for sequence labelling loaded
+Oct 26, 2019 1:48:24 PM org.grobid.core.lexicon.Lexicon initDictionary
+INFO: Initiating dictionary
+Oct 26, 2019 1:48:24 PM org.grobid.core.lexicon.Lexicon initDictionary
+INFO: End of Initialization of dictionary
+Oct 26, 2019 1:48:24 PM org.grobid.core.lexicon.Lexicon initNames
+INFO: Initiating names
+Oct 26, 2019 1:48:24 PM org.grobid.core.lexicon.Lexicon initNames
+INFO: End of initialization of names
+Oct 26, 2019 1:48:24 PM org.grobid.core.lexicon.Lexicon initCountryCodes
+INFO: Initiating country codes
+Oct 26, 2019 1:48:24 PM org.grobid.core.lexicon.Lexicon initCountryCodes
+INFO: End of initialization of country codes
+sourceTEIPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/fulltext/corpus/tei
+sourceRawPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/fulltext/corpus/raw
+trainingOutputPath: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/tmp/fulltext11889586496347329395.train
+evalOutputPath: null
+111 tei files
+Oct 26, 2019 1:48:24 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC2808884.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4852-8388-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2033-4323-2-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1974-3843-2-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1882-10716-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5298-10650-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC2644281.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4284 : P <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4285 : P <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4286 : P <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4287 : P <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4289 : . <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4291 : acupuncture <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4292 : acupuncture <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4293 : acupuncture <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4294 : acupuncture <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4295 : acupuncture <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4296 : acupuncture <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4297 : acupuncture <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4298 : acupuncture <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4300 : increased <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4301 : increased <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4302 : increased <paragraph>
+
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6603563a.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5333-10869-3-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5934-15375-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5334-10874-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5071-9210-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4880-8603-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:25 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 9911409.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 12985_2015_Article_447.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 12985_2015_Article_447.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3082 : positive <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 12985_2015_Article_447.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3088 : - <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 12985_2015_Article_447.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3877 : After <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5230-10321-3-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC5462700.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1821-2390-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5056-9055-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5780-14170-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5329-14069-1-AT.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4276-7570-2-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=annex
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5444-11918-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5414-15755-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4639-8020-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5554-13060-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5779-14165-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5060-11770-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: jep0016-1301.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 0807.3577.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 353 : Universe <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 354 : Universe <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 355 : Universe <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 673 : . I-<paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 674 : . I-<paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 675 : . I-<paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1303 : The I-<paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1304 : The I-<paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1334 : in <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1335 : in <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1672 : LemaˆıtreLemaˆıtre <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1673 : LemaˆıtreLemaˆıtre <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1678 : 30 <citation_marker>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1679 : 30 <citation_marker>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2146 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2147 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2415 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2416 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2486 : be <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2487 : be <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2972 : / <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2973 : / <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3447 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3448 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3449 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3576 : . <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3577 : . <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3578 : . <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3581 : be <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3582 : be <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3583 : be <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3859 : . <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3860 : . <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3953 : Sussman <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3954 : Sussman <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3955 : Sussman <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4054 : which <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4055 : which <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4280 : distances <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4281 : distances <paragraph>
+
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5253-10409-3-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:26 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4879-8591-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1678-7757-jaos-16-06-0380.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4654-8110-2-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5774-14429-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 12862_2014_Article_245.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 12862_2014_Article_245.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4268 : template <paragraph>
+
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2143-8053-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=annex
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5544-12628-2-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5167-9968-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4859-8892-1-AT.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5899-16974-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5872-14819-3-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2065-4718-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5978-17739-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5731-14474-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4901-9066-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5282-10572-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4629-7973-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2075-4462-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5536-12277-4-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5524-12188-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5052-9016-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5395-11934-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element figure: type=box
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element figure: type=box
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element figure: type=box
+Oct 26, 2019 1:48:27 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1925-3935-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1001._0908.0054.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1051 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1052 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1053 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1054 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1055 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1056 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1057 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1058 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1059 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1060 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1061 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1062 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1063 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1064 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1065 : for <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1217 : , <equation>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1278 : − <equation>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1306 : +LINE+ <equation>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1338 : i <equation>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1348 : + <equation>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1357 : f <equation>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5236-10331-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5760-14492-1-AT.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC2804221.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 52 : - <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 339 : ) <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 515 : , <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 695 : 27 <citation_marker>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 923 : bound <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 985 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1282 : after <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1383 : 1 <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1497 : 2 <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1516 : Single <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1596 : 42 <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1603 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1611 : phases <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1835 : 2 <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1839 : . <figure_marker>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1842 : ) I-<paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1872 : a <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2201 : . <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2529 : bound <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2933 : strands <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2939 : loops <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2966 : Gly <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2976 : of <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2985 : second <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3003 : Thr <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3013 : in <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3143 : the <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3227 : ( I-<citation_marker>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3366 : * <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3415 : and <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3429 : is <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3501 : but <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3519 : defined <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3574 : stabilized <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4008 : 1 <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4565 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4566 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4567 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4568 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4569 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4570 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4571 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4572 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4573 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4574 : also <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4692 : - <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4714 : ECD <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4750 : ends <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4796 : - <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 5984 : 1R <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6198 : * <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6215 : 22 <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6501 : or <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6597 : , <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6606 : asterisk <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6646 : 5 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6653 : 0 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6660 : 76 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6667 : 5 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6674 : 12 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6680 : 1 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6690 : +LINE+ <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6700 : 1 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6712 : . <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6725 : 30 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6731 : 7 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6741 : +LINE+ <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6751 : 1 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6763 : 0 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6777 : 57 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6783 : +LINE+ <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6791 : +LINE+ <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6801 : 8 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6813 : 3 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6825 : 15 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6831 : 4 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6843 : 7 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6855 : 9 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6867 : 6 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6879 : ND <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6903 : ) <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6912 : . <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6925 : 8 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6937 : 1 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6949 : 51 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6955 : ) <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6964 : ) <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6975 : 3 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6987 : 6 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6999 : 17 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7005 : 5 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7017 : 7 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7029 : 1 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7041 : 4 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7053 : 13 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7059 : 2 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7069 : . <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7082 : 7 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7094 : 8 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7106 : 12 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7112 : 1 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7124 : 2 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7136 : 1 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7148 : 1 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7160 : 28 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7166 : 5 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7176 : . <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7189 : 7 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7201 : 4 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7213 : 10 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7219 : 9 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7231 : 5 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7243 : 7 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7255 : 6 <table>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7267 : 40 <citation_marker>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7285 : N <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7336 : this <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7374 : to <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7389 : N <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7464 : - <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7473 : ually <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7523 : of <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7560 : 1 <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7919 : - <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7927 : concluded <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7940 : - <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 8066 : binding <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 8076 : - <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 8162 : in <figure>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 8611 : to <paragraph>
+
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1512.00002.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5743-13863-1-AT.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4853-8393-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2107-4855-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4275-7564-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element figure: type=box
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5223-10256-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5653-13988-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5285-10584-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1905-3612-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5245-10381-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: pgen.1002065.training.fulltext.tei.xml
+Oct 26, 2019 1:48:28 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4857-8414-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5201-10147-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4847-8564-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4634-7998-4-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2017-4329-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC2808580.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5969-15818-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=note
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4633-7993-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4644-8049-2-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4884-8655-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2144-5349-3-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4635-8004-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: Y05-1024.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: Y05-1024.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3291 : - <table>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5719-14047-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5657-13105-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5639-25599-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 522 : ) <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 523 : ) <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 528 : stable <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 529 : stable <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 542 : C <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 543 : C <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5705-13674-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5140-9746-3-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5962-15853-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1309.7222.training.fulltext.tei.xml
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7074 : . <section>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7075 : . <section>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12417 : = <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12418 : = <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12431 : - <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12432 : - <paragraph>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12480 : +LINE+ <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12481 : +LINE+ <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12652 : 2 <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12653 : 2 <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12998 : = <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12999 : = <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13135 : β <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13136 : β <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13244 : β <equation>
+
+Oct 26, 2019 1:48:29 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13245 : β <equation>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13456 : 2 <equation>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13457 : 2 <equation>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13609 : distribution <paragraph>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13610 : distribution <paragraph>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13611 : distribution <paragraph>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1883-2969-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5845-14573-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2086-4547-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1654-2012-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5266-10466-2-RV.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1512.00014.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1512.00014.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3345 : , <paragraph>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1512.00014.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 20429 : , <table>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1512.00014.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 20430 : , <table>
+
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5458-11842-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 12970_2015_Article_108.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 05_-_PMID_17035732.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1105.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5768-14004-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:30 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: Briere_Plant_Cell_Physiol_2003.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1908-3328-1-CE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1471-2148-8-1.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5826-15021-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5654-15100-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2020-4630-2-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5762-16234-1-ED.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: Wang-paperAVE2008.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5123-9679-1-LE.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 0070234.training.fulltext.tei.xml
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 497 : , <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 608 : Levels <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 643 : sub <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 651 : +LINE+ <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 668 : ad <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1084 : deflationary <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1114 : and <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1133 : . <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1140 : even <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1323 : +LINE+ <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1448 : emerged <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2049 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2050 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2051 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2131 : far <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2132 : far <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2420 : and <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2442 : key <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2460 : as <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2472 : at <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2806 : Print <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3390 : , <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3391 : , <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3392 : , <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3428 : Online <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4039 : Pediatrics <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4117 : in <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4130 : change <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4135 : in <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4147 : Include <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4554 : of <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4577 : in <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4736 : an <table>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4912 : affiliation—may <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4913 : affiliation—may <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4914 : affiliation—may <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4919 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4920 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4921 : +LINE+ <paragraph>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 5747 : seems <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 5795 : adoption <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 5836 : base <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6384 : +LINE+ <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6390 : the <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6399 : organizational <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6428 : and <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6452 : form <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6473 : entity <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6507 : capable <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6527 : +LINE+ <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6533 : , <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6545 : spring <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6557 : strategic <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6777 : the <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6808 : this <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6852 : via <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6866 : Pediatrics <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6990 : of <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7040 : metrics <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7090 : journal <item_bulleted>
+
+Oct 26, 2019 1:48:31 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1955-3671-2-LE.training.fulltext.tei.xml
+	epsilon: 1.0E-4
+	window: 20
+	nb max iterations: 1500
+	nb threads: 12
+* Load patterns
+* Load training data
+* Initialize the model
+* Summary
+    nb train:    111
+    nb labels:   28
+    nb blocks:   1138376
+    nb features: 31875284
+* Train the model with l-bfgs

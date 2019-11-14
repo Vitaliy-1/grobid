@@ -1,0 +1,2589 @@
+> Task :grobid-core:compileJava UP-TO-DATE
+> Task :grobid-core:processResources UP-TO-DATE
+> Task :grobid-core:classes UP-TO-DATE
+> Task :grobid-core:mainJar UP-TO-DATE
+> Task :grobid-core:jar SKIPPED
+> Task :grobid-trainer:compileJava UP-TO-DATE
+> Task :grobid-trainer:processResources UP-TO-DATE
+> Task :grobid-trainer:classes UP-TO-DATE
+
+> Task :grobid-trainer:train_fulltext
+Oct 28, 2019 8:22:14 PM org.grobid.core.main.GrobidHomeFinder getGrobidHomePathOrLoadFromClasspath
+WARNING: No Grobid property was provided. Attempting to find Grobid home in the current directory...
+Oct 28, 2019 8:22:14 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: ***************************************************************
+Oct 28, 2019 8:22:14 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: *** USING GROBID HOME: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home
+Oct 28, 2019 8:22:14 PM org.grobid.core.main.GrobidHomeFinder findGrobidHomeOrFail
+WARNING: ***************************************************************
+Oct 28, 2019 8:22:14 PM org.grobid.core.main.GrobidHomeFinder findGrobidPropertiesOrFail
+WARNING: Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/config/grobid.properties
+Oct 28, 2019 8:22:14 PM org.grobid.core.main.LibraryLoader load
+INFO: Loading external native sequence labelling library
+Oct 28, 2019 8:22:14 PM org.grobid.core.main.LibraryLoader load
+INFO: Loading Wapiti native library...
+Oct 28, 2019 8:22:14 PM org.grobid.core.main.LibraryLoader load
+INFO: Native library for sequence labelling loaded
+Oct 28, 2019 8:22:14 PM org.grobid.core.lexicon.Lexicon initDictionary
+INFO: Initiating dictionary
+Oct 28, 2019 8:22:14 PM org.grobid.core.lexicon.Lexicon initDictionary
+INFO: End of Initialization of dictionary
+Oct 28, 2019 8:22:14 PM org.grobid.core.lexicon.Lexicon initNames
+INFO: Initiating names
+Oct 28, 2019 8:22:14 PM org.grobid.core.lexicon.Lexicon initNames
+INFO: End of initialization of names
+Oct 28, 2019 8:22:15 PM org.grobid.core.lexicon.Lexicon initCountryCodes
+INFO: Initiating country codes
+Oct 28, 2019 8:22:15 PM org.grobid.core.lexicon.Lexicon initCountryCodes
+INFO: End of initialization of country codes
+sourceTEIPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/fulltext/corpus/tei
+sourceRawPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/fulltext/corpus/raw
+trainingOutputPath: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/tmp/fulltext15120482281882697550.train
+evalOutputPath: null
+128 tei files
+Oct 28, 2019 8:22:15 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC2808884.training.fulltext.tei.xml
+Oct 28, 2019 8:22:15 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6373-17346-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:15 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4852-8388-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:15 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2033-4323-2-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:15 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5981-18538-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:15 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1974-3843-2-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1882-10716-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5298-10650-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6336-19171-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC2644281.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4284 : P <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4285 : P <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4286 : P <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4287 : P <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4289 : . <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4291 : acupuncture <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4292 : acupuncture <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4293 : acupuncture <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4294 : acupuncture <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4295 : acupuncture <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4296 : acupuncture <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4297 : acupuncture <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4298 : acupuncture <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4300 : increased <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4301 : increased <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2644281.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4302 : increased <paragraph>
+
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6603563a.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5333-10869-3-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6415-17579-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5934-15375-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5334-10874-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5071-9210-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4880-8603-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:16 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 9911409.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 12985_2015_Article_447.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 12985_2015_Article_447.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3082 : positive <paragraph>
+
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 12985_2015_Article_447.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3088 : - <paragraph>
+
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 12985_2015_Article_447.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3877 : After <paragraph>
+
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5997-16067-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5230-10321-3-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC5462700.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1821-2390-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5056-9055-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5780-14170-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5329-14069-1-AT.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4276-7570-2-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=annex
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5444-11918-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5414-15755-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4639-8020-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5554-13060-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5779-14165-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:17 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6325-16794-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5060-11770-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: jep0016-1301.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 0807.3577.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 353 : Universe <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 354 : Universe <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 355 : Universe <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 673 : . I-<paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 674 : . I-<paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 675 : . I-<paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1303 : The I-<paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1304 : The I-<paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1334 : in <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1335 : in <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1672 : LemaˆıtreLemaˆıtre <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1673 : LemaˆıtreLemaˆıtre <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1678 : 30 <citation_marker>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1679 : 30 <citation_marker>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2146 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2147 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2415 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2416 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2486 : be <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2487 : be <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2972 : / <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2973 : / <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3447 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3448 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3449 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3576 : . <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3577 : . <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3578 : . <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3581 : be <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3582 : be <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3583 : be <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3859 : . <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3860 : . <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3953 : Sussman <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3954 : Sussman <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3955 : Sussman <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4054 : which <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4055 : which <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4280 : distances <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0807.3577.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4281 : distances <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5253-10409-3-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4879-8591-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1678-7757-jaos-16-06-0380.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4654-8110-2-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6021-16215-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5774-14429-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 12862_2014_Article_245.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 12862_2014_Article_245.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4268 : template <paragraph>
+
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2143-8053-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=annex
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5544-12628-2-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5167-9968-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4859-8892-1-AT.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5899-16974-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:18 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6366-17296-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6283-16863-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5872-14819-3-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2065-4718-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5978-17739-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5731-14474-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4901-9066-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5282-10572-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4629-7973-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2075-4462-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5536-12277-4-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5524-12188-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5052-9016-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5395-11934-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element figure: type=box
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element figure: type=box
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element figure: type=box
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1925-3935-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 7041-18796-3-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1001._0908.0054.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1051 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1052 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1053 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1054 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1055 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1056 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1057 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1058 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1059 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1060 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1061 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1062 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1063 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1064 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1065 : for <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1217 : , <equation>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1278 : − <equation>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1306 : +LINE+ <equation>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1338 : i <equation>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1348 : + <equation>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1001._0908.0054.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1357 : f <equation>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5236-10331-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5760-14492-1-AT.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC2804221.training.fulltext.tei.xml
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 52 : - <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 339 : ) <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 515 : , <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 695 : 27 <citation_marker>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 923 : bound <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 985 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1282 : after <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1383 : 1 <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1497 : 2 <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1516 : Single <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1596 : 42 <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1603 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1611 : phases <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1835 : 2 <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1839 : . <figure_marker>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1842 : ) I-<paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1872 : a <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2201 : . <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2529 : bound <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2933 : strands <figure>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2939 : loops <figure>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2966 : Gly <figure>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2976 : of <figure>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2985 : second <figure>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3003 : Thr <figure>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3013 : in <figure>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3143 : the <figure>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3227 : ( I-<citation_marker>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3366 : * <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3415 : and <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3429 : is <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3501 : but <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3519 : defined <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3574 : stabilized <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4008 : 1 <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4565 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4566 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4567 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4568 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4569 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4570 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4571 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4572 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4573 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4574 : also <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4692 : - <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4714 : ECD <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4750 : ends <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4796 : - <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 5984 : 1R <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6198 : * <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6215 : 22 <paragraph>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6501 : or <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6597 : , <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6606 : asterisk <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6646 : 5 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6653 : 0 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6660 : 76 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6667 : 5 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6674 : 12 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6680 : 1 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6690 : +LINE+ <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6700 : 1 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6712 : . <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6725 : 30 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6731 : 7 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6741 : +LINE+ <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6751 : 1 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6763 : 0 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6777 : 57 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6783 : +LINE+ <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6791 : +LINE+ <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6801 : 8 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6813 : 3 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6825 : 15 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6831 : 4 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6843 : 7 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6855 : 9 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6867 : 6 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6879 : ND <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6903 : ) <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6912 : . <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6925 : 8 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6937 : 1 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6949 : 51 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6955 : ) <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6964 : ) <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6975 : 3 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6987 : 6 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6999 : 17 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7005 : 5 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7017 : 7 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7029 : 1 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7041 : 4 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7053 : 13 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7059 : 2 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7069 : . <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7082 : 7 <table>
+
+Oct 28, 2019 8:22:19 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7094 : 8 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7106 : 12 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7112 : 1 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7124 : 2 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7136 : 1 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7148 : 1 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7160 : 28 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7166 : 5 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7176 : . <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7189 : 7 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7201 : 4 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7213 : 10 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7219 : 9 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7231 : 5 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7243 : 7 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7255 : 6 <table>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7267 : 40 <citation_marker>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7285 : N <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7336 : this <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7374 : to <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7389 : N <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7464 : - <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7473 : ually <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7523 : of <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7560 : 1 <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7919 : - <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7927 : concluded <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7940 : - <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 8066 : binding <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 8076 : - <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 8162 : in <figure>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: PMC2804221.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 8611 : to <paragraph>
+
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1512.00002.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5743-13863-1-AT.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4853-8393-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2107-4855-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4275-7564-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: type=box
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element figure: type=box
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5223-10256-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5653-13988-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5285-10584-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1905-3612-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5245-10381-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: pgen.1002065.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4857-8414-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5201-10147-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4847-8564-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4634-7998-4-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:20 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2017-4329-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: PMC2808580.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5969-15818-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6287-19169-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4633-7993-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4644-8049-2-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4884-8655-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5982-15908-1-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2144-5349-3-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4635-8004-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: Y05-1024.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.sax.TEIFulltextSaxParser startElement
+SEVERE: Invalid attribute value for element ref: level=3
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: Y05-1024.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3291 : - <table>
+
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6359-17247-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5719-14047-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5657-13105-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5639-25599-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 522 : ) <paragraph>
+
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 523 : ) <paragraph>
+
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 528 : stable <paragraph>
+
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 529 : stable <paragraph>
+
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 542 : C <paragraph>
+
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5639-25599-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 543 : C <paragraph>
+
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5705-13674-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5140-9746-3-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5962-15853-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 7030-19199-5-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:21 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1309.7222.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7074 : . <section>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7075 : . <section>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12417 : = <paragraph>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12418 : = <paragraph>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12431 : - <paragraph>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12432 : - <paragraph>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12480 : +LINE+ <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12481 : +LINE+ <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12652 : 2 <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12653 : 2 <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12998 : = <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 12999 : = <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13135 : β <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13136 : β <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13244 : β <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13245 : β <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13456 : 2 <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13457 : 2 <equation>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13609 : distribution <paragraph>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13610 : distribution <paragraph>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1309.7222.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 13611 : distribution <paragraph>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1883-2969-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6307-16720-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5845-14573-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2086-4547-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1654-2012-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5266-10466-2-RV.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1512.00014.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1512.00014.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3345 : , <paragraph>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1512.00014.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 20429 : , <table>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 1512.00014.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 20430 : , <table>
+
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5458-11842-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:22 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 12970_2015_Article_108.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 05_-_PMID_17035732.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1105.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5768-14004-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6420-17696-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: Briere_Plant_Cell_Physiol_2003.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1908-3328-1-CE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1471-2148-8-1.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5826-15021-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5654-15100-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 6433-19596-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2020-4630-2-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5762-16234-1-ED.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: Wang-paperAVE2008.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5123-9679-1-LE.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 0070234.training.fulltext.tei.xml
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 497 : , <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 608 : Levels <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 643 : sub <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 651 : +LINE+ <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 668 : ad <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1084 : deflationary <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1114 : and <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1133 : . <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1140 : even <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1323 : +LINE+ <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1448 : emerged <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2049 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2050 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2051 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2131 : far <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2132 : far <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2420 : and <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2442 : key <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2460 : as <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2472 : at <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 2806 : Print <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3390 : , <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3391 : , <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3392 : , <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 3428 : Online <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4039 : Pediatrics <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4117 : in <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4130 : change <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4135 : in <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4147 : Include <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4554 : of <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4577 : in <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4736 : an <table>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4912 : affiliation—may <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4913 : affiliation—may <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4914 : affiliation—may <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4919 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4920 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 4921 : +LINE+ <paragraph>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 5747 : seems <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 5795 : adoption <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 5836 : base <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6384 : +LINE+ <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6390 : the <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6399 : organizational <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6428 : and <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6452 : form <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6473 : entity <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6507 : capable <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6527 : +LINE+ <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6533 : , <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6545 : spring <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6557 : strategic <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6777 : the <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6808 : this <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6852 : via <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6866 : Pediatrics <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 6990 : of <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7040 : metrics <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 0070234.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 7090 : journal <item_bulleted>
+
+Oct 28, 2019 8:22:23 PM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1955-3671-2-LE.training.fulltext.tei.xml
+	epsilon: 1.0E-4
+	window: 20
+	nb max iterations: 1500
+	nb threads: 12
+* Load patterns
+* Load training data
+* Initialize the model
+* Summary
+    nb train:    128
+    nb labels:   30
+    nb blocks:   1239350
+    nb features: 37181370
+* Train the model with l-bfgs
+  [   1] obj=540874.79  act=3256038  err=20.78%/100.00% time=69.94s/69.94s
+  [   2] obj=464089.75  act=2805364  err=20.78%/100.00% time=34.54s/104.48s
+  [   3] obj=391004.72  act=1661397  err=20.78%/100.00% time=33.40s/137.89s
+  [   4] obj=383779.77  act=1465448  err=16.90%/100.00% time=33.55s/171.43s
+  [   5] obj=379276.69  act=1605202  err=20.78%/100.00% time=58.37s/229.80s
+  [   6] obj=343852.43  act=1555993  err=19.91%/100.00% time=54.34s/284.14s
+  [   7] obj=339890.89  act=1594789  err=20.76%/100.00% time=52.73s/336.87s
+  [   8] obj=328955.94  act=1498822  err=17.93%/100.00% time=52.40s/389.28s
+  [   9] obj=312351.15  act=1458632  err=17.84%/100.00% time=30.34s/419.62s
+  [  10] obj=271135.64  act=1307561  err=16.44%/100.00% time=29.99s/449.62s
+  [  11] obj=250217.40  act=1327563  err=16.46%/100.00% time=30.56s/480.17s
+  [  12] obj=222767.50  act=1258380  err=16.34%/100.00% time=29.88s/510.05s
+  [  13] obj=201790.05  act=1282139  err=16.07%/100.00% time=30.27s/540.31s
+  [  14] obj=176862.24  act=1226495  err=17.79%/100.00% time=29.89s/570.20s
+  [  15] obj=157360.10  act=1262591  err=15.63%/100.00% time=30.90s/601.10s
+  [  16] obj=152724.61  act=1238457  err=21.02%/100.00% time=52.46s/653.56s
+  [  17] obj=138382.03  act=1347420  err=14.88%/100.00% time=52.34s/705.90s
+  [  18] obj=137049.66  act=1252283  err=18.50%/100.00% time=52.75s/758.65s
+  [  19] obj=126693.50  act=1324124  err=13.80%/100.00% time=30.05s/788.70s
+  [  20] obj=116530.94  act=1225035  err=14.36%/100.00% time=30.46s/819.16s
+  [  21] obj=104054.61  act=1208660  err=14.50%/100.00% time=30.04s/849.19s
+  [  22] obj=102987.03  act=1108279  err=17.38%/99.22% time=30.15s/879.34s
+  [  23] obj=87860.35   act=1146427  err=11.92%/99.22% time=29.98s/909.33s
+  [  24] obj=78645.02   act=1144396  err=16.60%/99.22% time=52.94s/962.27s
+  [  25] obj=74826.46   act=1259296  err=11.77%/100.00% time=30.00s/992.27s
+  [  26] obj=65275.41   act=1199227  err=15.61%/100.00% time=30.01s/1022.28s
+  [  27] obj=62854.06   act=1261181  err=11.68%/99.22% time=53.41s/1075.69s
+  [  28] obj=61931.19   act=1224710  err=16.46%/100.00% time=53.64s/1129.33s
+  [  29] obj=59523.70   act=1279123  err=11.17%/98.44% time=52.71s/1182.04s
+  [  30] obj=56923.75   act=1180266  err=19.07%/99.22% time=30.78s/1212.82s
+  [  31] obj=54362.64   act=1269174  err=10.84%/98.44% time=30.04s/1242.87s
+  [  32] obj=50532.26   act=1183816  err=12.32%/99.22% time=29.87s/1272.74s
+  [  33] obj=48402.81   act=1168689  err=12.57%/98.44% time=30.09s/1302.83s
+  [  34] obj=44556.56   act=1206887  err=12.21%/98.44% time=30.80s/1333.64s
+  [  35] obj=40735.25   act=1192185  err=10.10%/99.22% time=29.81s/1363.45s
+  [  36] obj=38725.64   act=1116389  err=21.03%/99.22% time=30.13s/1393.58s
+  [  37] obj=36097.41   act=1357805  err= 9.54%/98.44% time=52.45s/1446.03s
+  [  38] obj=32397.47   act=1279223  err=10.40%/99.22% time=52.10s/1498.13s
+  [  39] obj=32023.42   act=1118206  err=12.91%/99.22% time=29.79s/1527.91s
+  [  40] obj=28329.08   act=1167642  err= 9.23%/99.22% time=30.55s/1558.46s
+  [  41] obj=27308.90   act=1107969  err=19.30%/100.00% time=30.00s/1588.47s
+  [  42] obj=24178.69   act=1266494  err= 8.02%/99.22% time=29.98s/1618.45s
+  [  43] obj=22170.42   act=1162837  err= 8.99%/99.22% time=53.30s/1671.75s
+  [  44] obj=21789.89   act=1084694  err= 8.34%/99.22% time=29.91s/1701.65s
+  [  45] obj=18722.01   act=1043114  err= 7.95%/99.22% time=30.06s/1731.71s
+  [  46] obj=18340.91   act=1010906  err= 7.91%/99.22% time=30.09s/1761.80s
+  [  47] obj=16218.56   act=992901   err= 6.75%/99.22% time=30.00s/1791.80s
+  [  48] obj=15736.51   act=1019999  err= 6.17%/99.22% time=52.61s/1844.41s
+  [  49] obj=14889.02   act=966414   err= 6.11%/99.22% time=52.58s/1896.99s
+  [  50] obj=14055.27   act=934903   err= 5.70%/99.22% time=29.75s/1926.74s
+  [  51] obj=12764.35   act=883967   err= 5.18%/99.22% time=30.12s/1956.86s
+  [  52] obj=11734.08   act=857734   err= 4.28%/98.44% time=30.24s/1987.10s
+  [  53] obj=11097.89   act=839932   err= 4.29%/99.22% time=30.39s/2017.50s
+  [  54] obj=10354.02   act=813489   err= 3.50%/99.22% time=29.88s/2047.37s
+  [  55] obj=9926.28    act=808873   err= 3.12%/98.44% time=30.66s/2078.04s
+  [  56] obj=9355.39    act=774536   err= 2.69%/99.22% time=30.06s/2108.10s
+  [  57] obj=8855.85    act=747272   err= 2.16%/98.44% time=29.78s/2137.88s
+  [  58] obj=8355.13    act=714121   err= 1.87%/98.44% time=30.23s/2168.11s
+  [  59] obj=7974.46    act=682091   err= 1.62%/98.44% time=30.00s/2198.11s
+  [  60] obj=7667.16    act=652943   err= 1.14%/97.66% time=30.15s/2228.26s
+  [  61] obj=7322.66    act=621050   err= 0.97%/97.66% time=29.73s/2257.99s
+  [  62] obj=7038.71    act=589758   err= 0.85%/96.88% time=30.07s/2288.05s
+  [  63] obj=6757.93    act=545840   err= 0.66%/96.88% time=29.98s/2318.03s
+  [  64] obj=6522.59    act=508667   err= 0.58%/96.09% time=29.90s/2347.94s
+  [  65] obj=6322.77    act=477543   err= 0.55%/92.97% time=29.98s/2377.92s
+  [  66] obj=6167.11    act=442158   err= 0.73%/92.19% time=29.94s/2407.86s
+  [  67] obj=6020.58    act=438828   err= 0.46%/92.19% time=30.23s/2438.09s
+  [  68] obj=5888.48    act=411291   err= 0.41%/89.84% time=29.79s/2467.89s
+  [  69] obj=5663.67    act=344540   err= 0.38%/89.84% time=29.88s/2497.76s
+  [  70] obj=5554.86    act=330254   err= 0.40%/88.28% time=30.12s/2527.89s
+  [  71] obj=5436.04    act=306403   err= 0.41%/89.06% time=30.69s/2558.58s
+  [  72] obj=5301.46    act=288517   err= 0.31%/87.50% time=30.07s/2588.64s
+  [  73] obj=5198.12    act=257166   err= 0.32%/85.16% time=29.86s/2618.51s
+  [  74] obj=5117.99    act=240900   err= 0.18%/83.59% time=30.01s/2648.51s
+  [  75] obj=5043.37    act=221143   err= 0.27%/83.59% time=30.24s/2678.76s
+  [  76] obj=4960.88    act=206416   err= 0.19%/82.03% time=30.00s/2708.76s
+  [  77] obj=4899.46    act=192470   err= 0.13%/83.59% time=30.71s/2739.47s
+  [  78] obj=4844.95    act=180787   err= 0.13%/81.25% time=29.84s/2769.31s
+  [  79] obj=4796.00    act=173030   err= 0.12%/81.25% time=30.12s/2799.43s
+  [  80] obj=4753.49    act=153688   err= 0.21%/78.12% time=29.79s/2829.23s
+  [  81] obj=4730.72    act=158444   err= 0.10%/74.22% time=75.04s/2904.27s
+  [  82] obj=4687.55    act=145137   err= 0.37%/78.12% time=75.76s/2980.02s
+  [  83] obj=4655.16    act=146267   err= 0.10%/76.56% time=30.04s/3010.06s
+  [  84] obj=4607.33    act=138414   err= 0.08%/75.78% time=30.43s/3040.49s
+  [  85] obj=4577.74    act=129317   err= 0.16%/75.78% time=30.01s/3070.50s
+  [  86] obj=4524.99    act=136670   err= 0.09%/73.44% time=29.80s/3100.30s
+  [  87] obj=4493.11    act=122665   err= 0.08%/70.31% time=30.88s/3131.18s
+  [  88] obj=4463.94    act=115182   err= 0.07%/72.66% time=75.04s/3206.22s
+  [  89] obj=4435.39    act=108927   err= 0.07%/70.31% time=30.15s/3236.37s
+  [  90] obj=4398.15    act=101925   err= 0.11%/71.88% time=52.12s/3288.49s
+  [  91] obj=4360.79    act=102396   err= 0.08%/64.06% time=30.15s/3318.64s
+  [  92] obj=4332.19    act=98178    err= 0.07%/63.28% time=30.05s/3348.68s
+  [  93] obj=4307.36    act=97593    err= 0.08%/57.81% time=29.73s/3378.41s
+  [  94] obj=4289.18    act=97124    err= 0.06%/57.81% time=52.08s/3430.49s
+  [  95] obj=4273.31    act=91783    err= 0.07%/57.03% time=30.05s/3460.54s
+  [  96] obj=4251.68    act=88991    err= 0.08%/51.56% time=52.09s/3512.63s
+  [  97] obj=4232.28    act=84437    err= 0.07%/54.69% time=29.79s/3542.43s
+  [  98] obj=4215.34    act=82404    err= 0.08%/51.56% time=30.22s/3572.65s
+  [  99] obj=4206.83    act=84810    err= 0.06%/53.12% time=52.22s/3624.87s
+  [ 100] obj=4189.34    act=80036    err= 0.05%/54.69% time=52.62s/3677.49s
+  [ 101] obj=4162.41    act=74909    err= 0.05%/54.69% time=30.11s/3707.60s
+  [ 102] obj=4139.50    act=77183    err= 0.05%/53.12% time=29.93s/3737.53s
+  [ 103] obj=4117.52    act=71979    err= 0.05%/55.47% time=30.04s/3767.57s
+  [ 104] obj=4091.20    act=68008    err= 0.07%/58.59% time=29.99s/3797.56s
+  [ 105] obj=4072.05    act=67280    err= 0.05%/57.81% time=30.01s/3827.56s
+  [ 106] obj=4048.92    act=67321    err= 0.04%/53.91% time=30.29s/3857.85s
+  [ 107] obj=4034.16    act=64246    err= 0.04%/54.69% time=30.13s/3887.98s
+  [ 108] obj=4018.16    act=64070    err= 0.05%/57.81% time=30.29s/3918.28s
+  [ 109] obj=4004.05    act=65668    err= 0.14%/53.91% time=29.99s/3948.26s
+  [ 110] obj=3983.31    act=66292    err= 0.05%/55.47% time=29.83s/3978.09s
+  [ 111] obj=3972.00    act=63656    err= 0.14%/58.59% time=30.04s/4008.13s
+  [ 112] obj=3957.02    act=66341    err= 0.08%/55.47% time=30.11s/4038.24s
+  [ 113] obj=3943.94    act=62461    err= 0.14%/54.69% time=30.35s/4068.59s
+  [ 114] obj=3927.12    act=62396    err= 0.05%/54.69% time=30.27s/4098.86s
+  [ 115] obj=3919.05    act=59576    err= 0.14%/53.12% time=30.19s/4129.05s
+  [ 116] obj=3904.72    act=58646    err= 0.05%/52.34% time=29.92s/4158.98s
+  [ 117] obj=3894.92    act=59258    err= 0.05%/50.78% time=30.20s/4189.18s
+  [ 118] obj=3883.39    act=57117    err= 0.06%/51.56% time=30.03s/4219.21s
+  [ 119] obj=3874.68    act=56939    err= 0.05%/49.22% time=30.61s/4249.83s
+  [ 120] obj=3862.01    act=55362    err= 0.05%/45.31% time=29.92s/4279.75s
+  [ 121] obj=3855.45    act=54229    err= 0.04%/50.78% time=29.90s/4309.65s
+  [ 122] obj=3845.81    act=53283    err= 0.05%/50.00% time=29.87s/4339.52s
+  [ 123] obj=3837.73    act=52680    err= 0.03%/43.75% time=30.06s/4369.58s
+  [ 124] obj=3828.44    act=51460    err= 0.04%/50.78% time=30.24s/4399.82s
+  [ 125] obj=3820.61    act=51146    err= 0.03%/46.88% time=29.72s/4429.54s
+  [ 126] obj=3811.50    act=50190    err= 0.03%/50.00% time=29.88s/4459.42s
+  [ 127] obj=3804.95    act=49499    err= 0.03%/48.44% time=30.13s/4489.55s
+  [ 128] obj=3796.53    act=49122    err= 0.04%/49.22% time=30.80s/4520.34s
+  [ 129] obj=3790.95    act=48658    err= 0.03%/48.44% time=30.75s/4551.09s
+  [ 130] obj=3782.30    act=48276    err= 0.04%/46.88% time=29.86s/4580.95s
+  [ 131] obj=3777.25    act=47706    err= 0.04%/45.31% time=30.67s/4611.62s
+  [ 132] obj=3769.49    act=47190    err= 0.04%/48.44% time=30.11s/4641.73s
+  [ 133] obj=3764.68    act=46338    err= 0.03%/46.88% time=30.27s/4672.00s
+  [ 134] obj=3757.29    act=45771    err= 0.04%/46.09% time=29.78s/4701.78s
+  [ 135] obj=3751.86    act=45302    err= 0.03%/47.66% time=29.90s/4731.68s
+  [ 136] obj=3744.59    act=44424    err= 0.03%/47.66% time=30.15s/4761.83s
+  [ 137] obj=3739.54    act=44100    err= 0.03%/50.78% time=30.22s/4792.05s
+  [ 138] obj=3732.45    act=43518    err= 0.03%/48.44% time=30.07s/4822.12s
+  [ 139] obj=3727.74    act=43080    err= 0.03%/48.44% time=29.97s/4852.09s
+  [ 140] obj=3720.88    act=42603    err= 0.03%/48.44% time=30.24s/4882.33s
+  [ 141] obj=3716.22    act=42503    err= 0.03%/50.00% time=29.92s/4912.25s
+  [ 142] obj=3710.19    act=41997    err= 0.03%/47.66% time=30.44s/4942.69s
+  [ 143] obj=3705.97    act=41873    err= 0.03%/46.09% time=30.06s/4972.76s
+  [ 144] obj=3700.13    act=41466    err= 0.04%/47.66% time=30.18s/5002.94s
+  [ 145] obj=3695.98    act=41037    err= 0.03%/42.97% time=30.02s/5032.96s
+  [ 146] obj=3690.29    act=40683    err= 0.03%/46.88% time=30.29s/5063.25s
+  [ 147] obj=3686.72    act=40160    err= 0.03%/41.41% time=30.01s/5093.26s
+  [ 148] obj=3681.35    act=40002    err= 0.03%/46.09% time=30.37s/5123.64s
+  [ 149] obj=3678.42    act=39496    err= 0.03%/41.41% time=29.81s/5153.44s
+  [ 150] obj=3672.84    act=39355    err= 0.03%/45.31% time=29.80s/5183.25s
+  [ 151] obj=3670.42    act=38739    err= 0.03%/39.84% time=29.97s/5213.22s
+  [ 152] obj=3664.65    act=38763    err= 0.03%/46.09% time=29.97s/5243.20s
+  [ 153] obj=3662.46    act=38021    err= 0.03%/44.53% time=30.37s/5273.57s
+  [ 154] obj=3656.64    act=38000    err= 0.03%/42.97% time=30.02s/5303.59s
+  [ 155] obj=3654.97    act=37486    err= 0.03%/43.75% time=29.86s/5333.44s
+  [ 156] obj=3648.81    act=37654    err= 0.03%/42.97% time=30.01s/5363.45s
+  [ 157] obj=3646.89    act=37277    err= 0.02%/39.84% time=29.88s/5393.33s
+  [ 158] obj=3641.66    act=36925    err= 0.03%/44.53% time=30.21s/5423.54s
+  [ 159] obj=3638.74    act=36866    err= 0.03%/40.62% time=29.96s/5453.50s
+  [ 160] obj=3634.13    act=36601    err= 0.03%/43.75% time=30.28s/5483.78s
+  [ 161] obj=3631.71    act=36377    err= 0.03%/43.75% time=29.88s/5513.65s
+  [ 162] obj=3627.26    act=36081    err= 0.03%/44.53% time=29.94s/5543.59s
+  [ 163] obj=3624.95    act=35750    err= 0.03%/42.19% time=29.97s/5573.56s
+  [ 164] obj=3620.49    act=35600    err= 0.03%/44.53% time=30.02s/5603.58s
+  [ 165] obj=3618.33    act=35279    err= 0.03%/41.41% time=29.91s/5633.49s
+  [ 166] obj=3613.99    act=35119    err= 0.03%/43.75% time=30.09s/5663.58s
+  [ 167] obj=3611.61    act=34871    err= 0.03%/39.84% time=30.33s/5693.91s
+  [ 168] obj=3608.03    act=34559    err= 0.03%/40.62% time=29.91s/5723.82s
+  [ 169] obj=3605.77    act=34410    err= 0.03%/39.06% time=30.23s/5754.05s
+  [ 170] obj=3601.57    act=34246    err= 0.03%/38.28% time=29.89s/5783.95s
+  [ 171] obj=3599.80    act=34032    err= 0.03%/38.28% time=29.91s/5813.85s
+  [ 172] obj=3595.50    act=33851    err= 0.03%/39.84% time=30.22s/5844.08s
+  [ 173] obj=3593.60    act=33487    err= 0.03%/40.62% time=30.10s/5874.18s
+  [ 174] obj=3590.06    act=33316    err= 0.03%/42.97% time=29.87s/5904.05s
+  [ 175] obj=3588.03    act=33369    err= 0.03%/42.97% time=29.76s/5933.81s
+  [ 176] obj=3584.42    act=32914    err= 0.03%/45.31% time=30.04s/5963.85s
+  [ 177] obj=3582.42    act=32820    err= 0.03%/43.75% time=29.72s/5993.57s
+  [ 178] obj=3579.04    act=32538    err= 0.03%/46.88% time=30.33s/6023.90s
+  [ 179] obj=3577.07    act=32367    err= 0.03%/44.53% time=30.15s/6054.06s
+  [ 180] obj=3573.76    act=32138    err= 0.03%/46.88% time=30.04s/6084.09s
+  [ 181] obj=3571.84    act=32054    err= 0.03%/42.19% time=29.67s/6113.76s
+  [ 182] obj=3568.27    act=31855    err= 0.03%/46.09% time=29.85s/6143.61s
+  [ 183] obj=3566.00    act=31819    err= 0.03%/40.62% time=29.68s/6173.30s
+  [ 184] obj=3562.73    act=31589    err= 0.03%/43.75% time=29.75s/6203.04s
+  [ 185] obj=3560.52    act=31419    err= 0.03%/40.62% time=30.05s/6233.09s
+  [ 186] obj=3557.83    act=31181    err= 0.03%/42.97% time=29.77s/6262.86s
+  [ 187] obj=3555.55    act=31061    err= 0.03%/41.41% time=29.96s/6292.82s
+  [ 188] obj=3552.97    act=30829    err= 0.03%/42.19% time=29.95s/6322.77s
+  [ 189] obj=3551.14    act=30613    err= 0.03%/41.41% time=29.79s/6352.57s
+  [ 190] obj=3548.27    act=30434    err= 0.03%/41.41% time=29.80s/6382.36s
+  [ 191] obj=3546.56    act=30248    err= 0.03%/39.06% time=29.94s/6412.30s
+  [ 192] obj=3544.12    act=30109    err= 0.02%/37.50% time=29.77s/6442.07s
+  [ 193] obj=3542.42    act=29986    err= 0.02%/36.72% time=29.72s/6471.79s
+  [ 194] obj=3539.83    act=29774    err= 0.02%/36.72% time=30.17s/6501.96s
+  [ 195] obj=3538.44    act=29660    err= 0.02%/36.72% time=30.13s/6532.09s
+  [ 196] obj=3535.61    act=29518    err= 0.02%/35.94% time=29.89s/6561.97s
+  [ 197] obj=3534.20    act=29401    err= 0.02%/37.50% time=29.88s/6591.85s
+  [ 198] obj=3532.06    act=29258    err= 0.02%/35.94% time=29.82s/6621.67s
+  [ 199] obj=3530.44    act=29119    err= 0.02%/36.72% time=30.16s/6651.83s
+  [ 200] obj=3528.29    act=28953    err= 0.02%/35.16% time=30.00s/6681.83s
+  [ 201] obj=3527.11    act=28875    err= 0.02%/38.28% time=29.97s/6711.80s
+  [ 202] obj=3524.66    act=28700    err= 0.02%/38.28% time=29.99s/6741.79s
+  [ 203] obj=3523.46    act=28612    err= 0.02%/39.06% time=29.66s/6771.45s
+  [ 204] obj=3521.31    act=28395    err= 0.02%/36.72% time=30.12s/6801.57s
+  [ 205] obj=3520.10    act=28201    err= 0.02%/39.84% time=30.10s/6831.67s
+  [ 206] obj=3518.18    act=28110    err= 0.02%/38.28% time=29.94s/6861.61s
+  [ 207] obj=3516.92    act=28027    err= 0.02%/39.06% time=30.18s/6891.79s
+  [ 208] obj=3515.03    act=27847    err= 0.02%/39.06% time=29.84s/6921.63s
+  [ 209] obj=3513.62    act=27752    err= 0.03%/40.62% time=30.15s/6951.78s
+  [ 210] obj=3511.79    act=27615    err= 0.02%/39.84% time=29.76s/6981.54s
+  [ 211] obj=3510.37    act=27489    err= 0.03%/39.84% time=29.88s/7011.43s
+  [ 212] obj=3508.47    act=27349    err= 0.02%/38.28% time=30.33s/7041.76s
+  [ 213] obj=3507.11    act=27275    err= 0.03%/39.06% time=29.92s/7071.68s
+  [ 214] obj=3505.49    act=27056    err= 0.02%/38.28% time=30.32s/7102.00s
+  [ 215] obj=3504.27    act=27162    err= 0.02%/39.06% time=29.86s/7131.85s
+  [ 216] obj=3502.31    act=27016    err= 0.02%/38.28% time=30.40s/7162.26s
+  [ 217] obj=3501.05    act=27068    err= 0.02%/38.28% time=29.89s/7192.15s
+  [ 218] obj=3499.42    act=26852    err= 0.03%/39.06% time=30.93s/7223.08s
+  [ 219] obj=3498.40    act=26802    err= 0.02%/39.84% time=30.00s/7253.08s
+  [ 220] obj=3496.65    act=26621    err= 0.03%/39.84% time=30.73s/7283.81s
+  [ 221] obj=3495.74    act=26614    err= 0.02%/35.94% time=29.70s/7313.51s
+  [ 222] obj=3493.90    act=26462    err= 0.03%/40.62% time=29.85s/7343.36s
+  [ 223] obj=3492.70    act=26453    err= 0.02%/35.94% time=29.77s/7373.13s
+  [ 224] obj=3491.12    act=26212    err= 0.02%/39.06% time=29.84s/7402.96s
+  [ 225] obj=3489.99    act=26166    err= 0.02%/35.94% time=30.74s/7433.70s
+  [ 226] obj=3488.51    act=25985    err= 0.02%/38.28% time=30.85s/7464.55s
+  [ 227] obj=3487.26    act=25925    err= 0.02%/33.59% time=29.80s/7494.35s
+  [ 228] obj=3485.84    act=25841    err= 0.02%/38.28% time=29.72s/7524.07s
+  [ 229] obj=3484.71    act=25740    err= 0.02%/33.59% time=29.90s/7553.97s
+  [ 230] obj=3483.07    act=25656    err= 0.02%/35.16% time=30.26s/7584.23s
+  [ 231] obj=3482.07    act=25614    err= 0.02%/33.59% time=30.09s/7614.31s
+  [ 232] obj=3480.61    act=25471    err= 0.02%/37.50% time=29.85s/7644.16s
+  [ 233] obj=3479.52    act=25444    err= 0.02%/35.94% time=29.90s/7674.06s
+  [ 234] obj=3477.94    act=25323    err= 0.02%/39.06% time=30.75s/7704.82s
+  [ 235] obj=3476.92    act=25253    err= 0.02%/34.38% time=30.04s/7734.86s
+  [ 236] obj=3475.17    act=25174    err= 0.02%/36.72% time=29.84s/7764.69s
+  [ 237] obj=3474.11    act=25025    err= 0.02%/35.16% time=29.81s/7794.50s
+  [ 238] obj=3472.68    act=24950    err= 0.02%/35.94% time=29.93s/7824.44s
+  [ 239] obj=3471.50    act=24865    err= 0.02%/35.94% time=29.94s/7854.37s
+  [ 240] obj=3470.09    act=24867    err= 0.02%/35.16% time=29.99s/7884.36s
+  [ 241] obj=3469.41    act=24683    err= 0.02%/36.72% time=29.83s/7914.20s
+  [ 242] obj=3467.53    act=24756    err= 0.02%/36.72% time=29.78s/7943.98s
+  [ 243] obj=3466.85    act=24665    err= 0.02%/37.50% time=30.64s/7974.62s
+  [ 244] obj=3465.04    act=24622    err= 0.02%/35.94% time=30.54s/8005.15s
+  [ 245] obj=3464.25    act=24536    err= 0.02%/35.94% time=30.03s/8035.19s
+  [ 246] obj=3462.91    act=24446    err= 0.02%/36.72% time=29.64s/8064.83s
+  [ 247] obj=3462.24    act=24377    err= 0.02%/35.94% time=29.84s/8094.67s
+  [ 248] obj=3460.99    act=24337    err= 0.02%/39.06% time=30.69s/8125.37s
+  [ 249] obj=3459.53    act=24353    err= 0.02%/38.28% time=29.78s/8155.15s
+  [ 250] obj=3458.57    act=24167    err= 0.02%/39.06% time=29.98s/8185.13s
+  [ 251] obj=3457.41    act=24207    err= 0.02%/38.28% time=29.90s/8215.02s
+  [ 252] obj=3456.47    act=24123    err= 0.02%/39.06% time=30.73s/8245.75s
+  [ 253] obj=3455.30    act=24078    err= 0.02%/39.84% time=29.67s/8275.43s
+  [ 254] obj=3454.37    act=24033    err= 0.02%/39.84% time=29.94s/8305.36s
+  [ 255] obj=3453.30    act=23996    err= 0.02%/35.94% time=29.83s/8335.19s
+  [ 256] obj=3452.12    act=23896    err= 0.02%/36.72% time=29.88s/8365.07s
+  [ 257] obj=3450.99    act=23852    err= 0.02%/35.94% time=29.83s/8394.90s
+  [ 258] obj=3449.93    act=23746    err= 0.02%/39.06% time=29.98s/8424.87s
+  [ 259] obj=3448.86    act=23632    err= 0.02%/38.28% time=29.81s/8454.68s
+  [ 260] obj=3448.02    act=23502    err= 0.02%/39.06% time=29.87s/8484.55s
+  [ 261] obj=3447.01    act=23483    err= 0.02%/37.50% time=29.88s/8514.43s
+  [ 262] obj=3445.82    act=23377    err= 0.02%/37.50% time=29.91s/8544.34s
+  [ 263] obj=3444.78    act=23353    err= 0.02%/37.50% time=29.95s/8574.30s
+  [ 264] obj=3443.78    act=23290    err= 0.02%/39.06% time=30.71s/8605.01s
+  [ 265] obj=3442.76    act=23300    err= 0.02%/37.50% time=29.95s/8634.96s
+  [ 266] obj=3441.94    act=23153    err= 0.03%/39.84% time=30.13s/8665.10s
+  [ 267] obj=3440.89    act=23141    err= 0.02%/40.62% time=29.89s/8694.99s
+  [ 268] obj=3440.03    act=23084    err= 0.03%/39.84% time=30.76s/8725.75s
+  [ 269] obj=3439.14    act=23095    err= 0.02%/37.50% time=29.93s/8755.69s
+  [ 270] obj=3438.17    act=23033    err= 0.02%/37.50% time=29.67s/8785.35s
+  [ 271] obj=3437.15    act=23001    err= 0.02%/35.94% time=29.86s/8815.21s
+  [ 272] obj=3436.26    act=22949    err= 0.02%/35.16% time=29.72s/8844.93s
+  [ 273] obj=3435.33    act=22818    err= 0.02%/35.94% time=30.10s/8875.04s
+  [ 274] obj=3434.39    act=22767    err= 0.02%/36.72% time=29.93s/8904.97s
+  [ 275] obj=3433.65    act=22791    err= 0.02%/35.94% time=29.70s/8934.67s
+  [ 276] obj=3432.39    act=22743    err= 0.02%/36.72% time=30.41s/8965.08s
+  [ 277] obj=3431.57    act=22676    err= 0.02%/36.72% time=29.96s/8995.04s
+  [ 278] obj=3430.40    act=22627    err= 0.02%/36.72% time=30.22s/9025.26s
+  [ 279] obj=3429.61    act=22535    err= 0.02%/33.59% time=29.96s/9055.22s
+  [ 280] obj=3428.62    act=22502    err= 0.02%/37.50% time=30.72s/9085.94s
+  [ 281] obj=3428.01    act=22492    err= 0.02%/35.16% time=29.97s/9115.91s
+  [ 282] obj=3426.88    act=22416    err= 0.02%/36.72% time=30.58s/9146.49s
+  [ 283] obj=3426.22    act=22411    err= 0.02%/33.59% time=29.64s/9176.13s
+  [ 284] obj=3425.03    act=22372    err= 0.02%/35.94% time=30.30s/9206.43s
+  [ 285] obj=3424.26    act=22313    err= 0.02%/35.16% time=29.77s/9236.20s
+  [ 286] obj=3423.31    act=22230    err= 0.02%/35.16% time=30.74s/9266.94s
+  [ 287] obj=3422.47    act=22200    err= 0.02%/35.94% time=30.00s/9296.94s
+  [ 288] obj=3421.59    act=22136    err= 0.02%/33.59% time=29.75s/9326.69s
+  [ 289] obj=3420.81    act=22128    err= 0.02%/35.16% time=30.65s/9357.34s
+  [ 290] obj=3419.90    act=22082    err= 0.02%/35.94% time=29.70s/9387.03s
+  [ 291] obj=3419.20    act=22079    err= 0.02%/35.16% time=30.73s/9417.76s
+  [ 292] obj=3418.16    act=21991    err= 0.02%/36.72% time=29.65s/9447.41s
+  [ 293] obj=3417.57    act=21984    err= 0.02%/36.72% time=30.64s/9478.05s
+  [ 294] obj=3416.49    act=21864    err= 0.02%/39.06% time=30.67s/9508.72s
+  [ 295] obj=3415.90    act=21790    err= 0.02%/35.94% time=30.14s/9538.86s
+  [ 296] obj=3414.83    act=21732    err= 0.02%/38.28% time=30.68s/9569.54s
+  [ 297] obj=3414.20    act=21732    err= 0.02%/35.94% time=29.72s/9599.26s
+  [ 298] obj=3413.23    act=21629    err= 0.02%/39.84% time=30.69s/9629.95s
+  [ 299] obj=3412.53    act=21599    err= 0.02%/35.94% time=29.96s/9659.91s
+  [ 300] obj=3411.67    act=21517    err= 0.02%/38.28% time=30.82s/9690.73s
+  [ 301] obj=3411.02    act=21561    err= 0.02%/35.94% time=29.96s/9720.69s
+  [ 302] obj=3410.14    act=21471    err= 0.02%/37.50% time=29.68s/9750.37s
+  [ 303] obj=3409.55    act=21472    err= 0.02%/37.50% time=29.79s/9780.16s
+  [ 304] obj=3408.50    act=21411    err= 0.02%/39.06% time=29.83s/9810.00s
+  [ 305] obj=3407.93    act=21376    err= 0.02%/37.50% time=29.80s/9839.80s
+  [ 306] obj=3406.93    act=21331    err= 0.02%/40.62% time=29.74s/9869.54s
+  [ 307] obj=3406.34    act=21290    err= 0.02%/35.16% time=30.05s/9899.59s
+  [ 308] obj=3405.48    act=21219    err= 0.02%/39.84% time=30.31s/9929.90s
+  [ 309] obj=3404.86    act=21311    err= 0.03%/36.72% time=30.06s/9959.95s
+  [ 310] obj=3403.79    act=21317    err= 0.02%/36.72% time=30.05s/9990.00s
+  [ 311] obj=3403.39    act=21208    err= 0.03%/35.94% time=29.75s/10019.75s
+  [ 312] obj=3402.07    act=21273    err= 0.03%/39.84% time=30.68s/10050.43s
+  [ 313] obj=3401.71    act=21143    err= 0.03%/37.50% time=29.81s/10080.24s
+  [ 314] obj=3400.65    act=21120    err= 0.02%/35.94% time=31.12s/10111.35s
+  [ 315] obj=3400.42    act=21141    err= 0.03%/35.16% time=29.67s/10141.03s
+  [ 316] obj=3399.00    act=21073    err= 0.02%/36.72% time=29.99s/10171.02s
+  [ 317] obj=3398.72    act=21067    err= 0.02%/32.03% time=29.76s/10200.77s
+  [ 318] obj=3397.55    act=21073    err= 0.02%/35.16% time=30.08s/10230.85s
+  [ 319] obj=3397.14    act=21104    err= 0.02%/31.25% time=29.76s/10260.61s
+  [ 320] obj=3396.05    act=21045    err= 0.02%/35.94% time=30.04s/10290.65s
+  [ 321] obj=3395.58    act=20959    err= 0.02%/32.03% time=29.86s/10320.51s
+  [ 322] obj=3394.66    act=20925    err= 0.02%/35.16% time=29.84s/10350.35s
+  [ 323] obj=3394.16    act=20796    err= 0.02%/32.81% time=29.83s/10380.18s
+  [ 324] obj=3393.47    act=20737    err= 0.02%/35.16% time=29.76s/10409.94s
+  [ 325] obj=3392.94    act=20656    err= 0.02%/32.81% time=30.98s/10440.92s
+  [ 326] obj=3392.23    act=20562    err= 0.02%/35.94% time=29.81s/10470.73s
+  [ 327] obj=3391.59    act=20590    err= 0.02%/32.81% time=29.73s/10500.45s
+  [ 328] obj=3390.83    act=20481    err= 0.02%/35.16% time=29.91s/10530.37s
+  [ 329] obj=3390.37    act=20426    err= 0.02%/32.81% time=29.78s/10560.15s
+  [ 330] obj=3389.66    act=20399    err= 0.02%/34.38% time=30.71s/10590.86s
+  [ 331] obj=3389.28    act=20356    err= 0.02%/33.59% time=29.78s/10620.64s
+  [ 332] obj=3388.60    act=20306    err= 0.02%/35.16% time=30.95s/10651.60s
+  [ 333] obj=3388.06    act=20289    err= 0.02%/33.59% time=29.69s/10681.29s
+  [ 334] obj=3387.40    act=20217    err= 0.02%/35.94% time=29.84s/10711.13s
+  [ 335] obj=3386.91    act=20175    err= 0.02%/32.03% time=30.56s/10741.69s
+  [ 336] obj=3386.33    act=20105    err= 0.02%/35.94% time=30.84s/10772.53s
+  [ 337] obj=3385.89    act=20075    err= 0.02%/32.81% time=29.63s/10802.16s
+  [ 338] obj=3385.27    act=20040    err= 0.02%/35.16% time=30.11s/10832.27s
+  [ 339] obj=3384.85    act=20069    err= 0.02%/33.59% time=30.14s/10862.40s
+  [ 340] obj=3384.12    act=20042    err= 0.02%/35.94% time=29.71s/10892.11s
+  [ 341] obj=3383.69    act=20047    err= 0.02%/33.59% time=30.68s/10922.79s
+  [ 342] obj=3382.97    act=20000    err= 0.02%/34.38% time=29.89s/10952.68s
+  [ 343] obj=3382.49    act=19955    err= 0.02%/32.81% time=29.72s/10982.40s
+  [ 344] obj=3381.85    act=19921    err= 0.02%/33.59% time=29.99s/11012.39s
+  [ 345] obj=3381.29    act=19904    err= 0.02%/32.81% time=29.72s/11042.11s
+  [ 346] obj=3380.64    act=19979    err= 0.02%/33.59% time=30.64s/11072.75s
+  [ 347] obj=3380.19    act=19907    err= 0.02%/30.47% time=29.97s/11102.72s
+  [ 348] obj=3379.45    act=19997    err= 0.02%/34.38% time=29.79s/11132.51s
+  [ 349] obj=3378.90    act=20001    err= 0.02%/32.81% time=30.08s/11162.58s
+  [ 350] obj=3378.20    act=19906    err= 0.02%/33.59% time=29.74s/11192.32s
+  [ 351] obj=3377.66    act=19861    err= 0.02%/33.59% time=30.14s/11222.46s
+  [ 352] obj=3377.09    act=19798    err= 0.02%/35.16% time=29.81s/11252.28s
+  [ 353] obj=3376.61    act=19780    err= 0.02%/33.59% time=29.82s/11282.10s
+  [ 354] obj=3375.97    act=19812    err= 0.02%/34.38% time=30.59s/11312.68s
+  [ 355] obj=3375.61    act=19727    err= 0.02%/34.38% time=29.76s/11342.44s
+  [ 356] obj=3374.72    act=19804    err= 0.02%/34.38% time=29.80s/11372.24s
+  [ 357] obj=3374.25    act=19685    err= 0.02%/32.03% time=29.76s/11402.00s
+  [ 358] obj=3373.68    act=19673    err= 0.02%/33.59% time=30.16s/11432.17s
+  [ 359] obj=3373.19    act=19605    err= 0.02%/32.03% time=29.87s/11462.03s
+  [ 360] obj=3372.69    act=19526    err= 0.02%/32.03% time=30.63s/11492.66s
+  [ 361] obj=3372.15    act=19564    err= 0.02%/33.59% time=30.54s/11523.20s
+  [ 362] obj=3371.64    act=19457    err= 0.02%/32.81% time=29.83s/11553.03s
+  [ 363] obj=3371.09    act=19446    err= 0.02%/33.59% time=30.14s/11583.17s
+  [ 364] obj=3370.56    act=19384    err= 0.02%/32.81% time=29.94s/11613.10s
+  [ 365] obj=3370.00    act=19349    err= 0.02%/35.94% time=29.76s/11642.87s
+  [ 366] obj=3369.39    act=19331    err= 0.02%/34.38% time=29.72s/11672.59s
+  [ 367] obj=3368.81    act=19304    err= 0.02%/35.94% time=29.93s/11702.51s
+  [ 368] obj=3368.11    act=19356    err= 0.02%/34.38% time=30.65s/11733.16s
+  [ 369] obj=3367.48    act=19301    err= 0.02%/34.38% time=30.53s/11763.69s
+  [ 370] obj=3366.81    act=19304    err= 0.02%/34.38% time=29.78s/11793.48s
+  [ 371] obj=3366.77    act=19485    err= 0.02%/35.94% time=30.58s/11824.06s
+  [ 372] obj=3365.21    act=19705    err= 0.02%/35.16% time=29.80s/11853.86s
+  [ 373] obj=3364.89    act=19596    err= 0.02%/34.38% time=52.68s/11906.54s
+  [ 374] obj=3364.84    act=19380    err= 0.02%/36.72% time=29.78s/11936.32s
+  [ 375] obj=3363.71    act=19549    err= 0.02%/36.72% time=29.80s/11966.12s
+  [ 376] obj=3363.62    act=19326    err= 0.02%/35.94% time=29.98s/11996.10s
+  [ 377] obj=3362.48    act=19492    err= 0.02%/36.72% time=29.87s/12025.97s
+  [ 378] obj=3362.32    act=19338    err= 0.02%/39.06% time=30.03s/12056.00s
+  [ 379] obj=3360.95    act=19378    err= 0.02%/38.28% time=29.84s/12085.84s
+  [ 380] obj=3360.87    act=19330    err= 0.02%/39.06% time=30.77s/12116.61s
+  [ 381] obj=3359.49    act=19527    err= 0.02%/37.50% time=29.82s/12146.43s
+  [ 382] obj=3359.36    act=19299    err= 0.02%/34.38% time=31.13s/12177.56s
+  [ 383] obj=3358.13    act=19388    err= 0.02%/35.94% time=30.01s/12207.57s
+  [ 384] obj=3357.82    act=19279    err= 0.02%/34.38% time=30.47s/12238.04s
+  [ 385] obj=3357.10    act=19312    err= 0.02%/35.16% time=30.54s/12268.58s
+  [ 386] obj=3356.88    act=19252    err= 0.02%/35.94% time=31.20s/12299.77s
+  [ 387] obj=3356.01    act=19233    err= 0.02%/35.16% time=29.83s/12329.60s
+  [ 388] obj=3355.49    act=19270    err= 0.02%/38.28% time=29.93s/12359.53s
+  [ 389] obj=3354.73    act=19171    err= 0.02%/35.94% time=29.86s/12389.40s
+  [ 390] obj=3354.36    act=19145    err= 0.02%/38.28% time=29.64s/12419.04s
+  [ 391] obj=3353.77    act=19071    err= 0.02%/37.50% time=30.00s/12449.04s
+  [ 392] obj=3353.37    act=18974    err= 0.02%/36.72% time=29.72s/12478.76s
+  [ 393] obj=3352.75    act=18971    err= 0.02%/37.50% time=30.52s/12509.28s
+  [ 394] obj=3352.33    act=18900    err= 0.02%/35.94% time=29.74s/12539.02s
+  [ 395] obj=3351.77    act=18877    err= 0.02%/39.06% time=30.06s/12569.08s
+  [ 396] obj=3351.28    act=18867    err= 0.02%/34.38% time=30.70s/12599.78s
+  [ 397] obj=3350.75    act=18856    err= 0.02%/35.94% time=30.68s/12630.46s
+  [ 398] obj=3350.35    act=18832    err= 0.02%/33.59% time=30.41s/12660.87s
+  [ 399] obj=3349.84    act=18855    err= 0.02%/36.72% time=30.00s/12690.87s
+  [ 400] obj=3349.38    act=18812    err= 0.02%/35.16% time=29.83s/12720.70s
+  [ 401] obj=3348.91    act=18758    err= 0.02%/35.16% time=30.59s/12751.30s
+  [ 402] obj=3348.41    act=18734    err= 0.02%/35.16% time=30.14s/12781.44s
+  [ 403] obj=3347.98    act=18662    err= 0.02%/35.94% time=29.85s/12811.29s
+  [ 404] obj=3347.62    act=18646    err= 0.02%/38.28% time=29.83s/12841.12s
+  [ 405] obj=3347.23    act=18620    err= 0.02%/35.16% time=29.78s/12870.90s
+  [ 406] obj=3346.78    act=18591    err= 0.02%/37.50% time=29.73s/12900.63s
+  [ 407] obj=3346.34    act=18565    err= 0.02%/35.16% time=29.88s/12930.51s
+  [ 408] obj=3345.90    act=18542    err= 0.02%/36.72% time=30.99s/12961.50s
+  [ 409] obj=3345.46    act=18517    err= 0.02%/32.81% time=30.55s/12992.05s
+  [ 410] obj=3345.13    act=18499    err= 0.02%/35.94% time=29.94s/13021.99s
+  [ 411] obj=3344.71    act=18490    err= 0.02%/30.47% time=29.79s/13051.78s
+  [ 412] obj=3344.33    act=18427    err= 0.02%/34.38% time=29.82s/13081.61s
+  [ 413] obj=3343.88    act=18426    err= 0.02%/31.25% time=29.74s/13111.35s
+  [ 414] obj=3343.50    act=18412    err= 0.02%/32.81% time=31.10s/13142.45s
+  [ 415] obj=3343.08    act=18392    err= 0.02%/32.03% time=30.52s/13172.97s
+  [ 416] obj=3342.69    act=18338    err= 0.02%/32.03% time=29.65s/13202.62s
+  [ 417] obj=3342.31    act=18294    err= 0.02%/32.03% time=30.21s/13232.83s
+  [ 418] obj=3341.96    act=18280    err= 0.02%/33.59% time=30.04s/13262.87s
+  [ 419] obj=3341.52    act=18252    err= 0.02%/32.81% time=29.91s/13292.78s
+  [ 420] obj=3341.20    act=18256    err= 0.02%/33.59% time=29.94s/13322.72s
+  [ 421] obj=3340.76    act=18252    err= 0.02%/33.59% time=29.86s/13352.58s
+  [ 422] obj=3340.43    act=18219    err= 0.02%/33.59% time=29.88s/13382.46s
+  [ 423] obj=3340.06    act=18200    err= 0.02%/32.81% time=30.14s/13412.60s
+  [ 424] obj=3339.72    act=18171    err= 0.02%/35.16% time=30.03s/13442.63s
+  [ 425] obj=3339.39    act=18092    err= 0.02%/32.03% time=29.93s/13472.56s
+  [ 426] obj=3339.01    act=18058    err= 0.02%/32.81% time=30.22s/13502.78s
+  [ 427] obj=3338.59    act=18032    err= 0.02%/32.81% time=30.31s/13533.09s
+  [ 428] obj=3338.22    act=18004    err= 0.02%/35.16% time=29.84s/13562.92s
+  [ 429] obj=3337.79    act=18007    err= 0.02%/34.38% time=29.99s/13592.92s
+  [ 430] obj=3337.43    act=17950    err= 0.02%/35.16% time=30.34s/13623.26s
+  [ 431] obj=3336.96    act=17964    err= 0.02%/33.59% time=30.22s/13653.47s
+  [ 432] obj=3336.71    act=17936    err= 0.02%/35.94% time=30.01s/13683.48s
+  [ 433] obj=3336.13    act=18113    err= 0.02%/32.03% time=30.00s/13713.49s
+  [ 434] obj=3335.73    act=18050    err= 0.02%/33.59% time=30.21s/13743.70s
+  [ 435] obj=3335.09    act=18241    err= 0.02%/33.59% time=30.18s/13773.88s
+  [ 436] obj=3334.83    act=18122    err= 0.02%/32.81% time=29.86s/13803.73s
+  [ 437] obj=3334.35    act=18073    err= 0.02%/34.38% time=29.96s/13833.70s
+  [ 438] obj=3334.06    act=18029    err= 0.02%/32.81% time=30.35s/13864.05s
+  [ 439] obj=3333.70    act=18097    err= 0.02%/34.38% time=29.92s/13893.97s
+  [ 440] obj=3333.20    act=17991    err= 0.02%/34.38% time=30.16s/13924.13s
+  [ 441] obj=3332.92    act=17977    err= 0.02%/35.16% time=30.33s/13954.46s
+  [ 442] obj=3332.32    act=17974    err= 0.02%/32.81% time=29.87s/13984.33s
+  [ 443] obj=3331.92    act=17888    err= 0.02%/32.81% time=29.74s/14014.07s
+  [ 444] obj=3331.54    act=17870    err= 0.02%/32.03% time=30.88s/14044.96s
+  [ 445] obj=3331.32    act=17868    err= 0.02%/32.81% time=29.82s/14074.78s
+  [ 446] obj=3330.71    act=17767    err= 0.02%/35.16% time=29.99s/14104.77s
+  [ 447] obj=3330.33    act=17821    err= 0.02%/31.25% time=30.69s/14135.46s
+  [ 448] obj=3329.76    act=17787    err= 0.02%/35.94% time=29.77s/14165.24s
+  [ 449] obj=3329.42    act=17759    err= 0.02%/32.81% time=30.13s/14195.37s
+  [ 450] obj=3329.04    act=17715    err= 0.02%/35.16% time=29.92s/14225.29s
+  [ 451] obj=3328.69    act=17720    err= 0.02%/32.03% time=30.62s/14255.91s
+  [ 452] obj=3328.25    act=17654    err= 0.02%/33.59% time=29.76s/14285.67s
+  [ 453] obj=3327.99    act=17655    err= 0.02%/32.03% time=30.62s/14316.29s
+  [ 454] obj=3327.40    act=17648    err= 0.02%/32.81% time=30.54s/14346.83s
+  [ 455] obj=3327.13    act=17611    err= 0.02%/34.38% time=29.78s/14376.61s
+  [ 456] obj=3326.68    act=17564    err= 0.02%/33.59% time=29.69s/14406.31s
+  [ 457] obj=3326.35    act=17566    err= 0.02%/33.59% time=30.64s/14436.95s
+  [ 458] obj=3326.07    act=17528    err= 0.02%/33.59% time=29.83s/14466.78s
+  [ 459] obj=3325.68    act=17590    err= 0.02%/32.81% time=29.92s/14496.70s
+  [ 460] obj=3325.26    act=17533    err= 0.02%/34.38% time=30.70s/14527.40s
+  [ 461] obj=3324.85    act=17570    err= 0.02%/32.81% time=29.75s/14557.15s
+  [ 462] obj=3324.47    act=17516    err= 0.02%/35.16% time=29.72s/14586.87s
+  [ 463] obj=3324.19    act=17547    err= 0.02%/35.16% time=29.80s/14616.67s
+  [ 464] obj=3323.87    act=17441    err= 0.02%/36.72% time=30.12s/14646.80s
+  [ 465] obj=3323.52    act=17464    err= 0.02%/36.72% time=30.64s/14677.44s
+  [ 466] obj=3323.21    act=17389    err= 0.02%/36.72% time=29.65s/14707.09s
+  [ 467] obj=3322.78    act=17415    err= 0.02%/37.50% time=30.54s/14737.63s
+  [ 468] obj=3322.48    act=17337    err= 0.02%/38.28% time=30.03s/14767.66s
+  [ 469] obj=3322.16    act=17382    err= 0.02%/35.94% time=30.19s/14797.85s
+  [ 470] obj=3321.89    act=17299    err= 0.02%/38.28% time=30.25s/14828.10s
+  [ 471] obj=3321.42    act=17309    err= 0.02%/35.94% time=29.63s/14857.74s
+  [ 472] obj=3321.02    act=17292    err= 0.02%/35.16% time=30.00s/14887.74s
+  [ 473] obj=3320.70    act=17259    err= 0.02%/36.72% time=30.16s/14917.90s
+  [ 474] obj=3320.40    act=17248    err= 0.02%/35.16% time=29.86s/14947.76s
+  [ 475] obj=3320.07    act=17255    err= 0.02%/33.59% time=30.10s/14977.85s
+  [ 476] obj=3319.80    act=17184    err= 0.02%/34.38% time=29.77s/15007.62s
+  [ 477] obj=3319.38    act=17236    err= 0.02%/32.81% time=29.99s/15037.61s
+  [ 478] obj=3319.02    act=17203    err= 0.02%/34.38% time=29.87s/15067.48s
+  [ 479] obj=3318.67    act=17219    err= 0.02%/32.81% time=30.04s/15097.51s
+  [ 480] obj=3318.33    act=17189    err= 0.02%/34.38% time=30.13s/15127.65s
+  [ 481] obj=3317.96    act=17179    err= 0.02%/29.69% time=29.56s/15157.20s
+  [ 482] obj=3317.67    act=17108    err= 0.02%/34.38% time=30.19s/15187.39s
+  [ 483] obj=3317.37    act=17154    err= 0.02%/30.47% time=30.14s/15217.53s
+  [ 484] obj=3317.14    act=17063    err= 0.02%/35.94% time=29.94s/15247.47s
+  [ 485] obj=3316.69    act=17103    err= 0.02%/30.47% time=30.35s/15277.82s
+  [ 486] obj=3316.39    act=17031    err= 0.02%/35.16% time=29.76s/15307.59s
+  [ 487] obj=3316.04    act=17062    err= 0.02%/31.25% time=30.21s/15337.80s
+  [ 488] obj=3315.78    act=16936    err= 0.02%/35.94% time=29.79s/15367.59s
+  [ 489] obj=3315.46    act=16960    err= 0.02%/32.81% time=29.97s/15397.56s
+  [ 490] obj=3315.24    act=16932    err= 0.02%/35.16% time=30.15s/15427.72s
+  [ 491] obj=3314.87    act=16945    err= 0.02%/33.59% time=30.21s/15457.92s
+  [ 492] obj=3314.63    act=16940    err= 0.02%/34.38% time=29.78s/15487.71s
+  [ 493] obj=3314.30    act=16944    err= 0.02%/32.81% time=30.23s/15517.94s
+  [ 494] obj=3314.01    act=16905    err= 0.02%/31.25% time=29.94s/15547.87s
+  [ 495] obj=3313.70    act=16915    err= 0.02%/30.47% time=30.05s/15577.92s
+  [ 496] obj=3313.49    act=16857    err= 0.02%/29.69% time=30.09s/15608.01s
+  [ 497] obj=3313.21    act=16839    err= 0.02%/32.03% time=29.92s/15637.93s
+  [ 498] obj=3312.88    act=16857    err= 0.02%/29.69% time=30.22s/15668.15s
+  [ 499] obj=3312.59    act=16820    err= 0.02%/30.47% time=29.70s/15697.85s
+  [ 500] obj=3312.26    act=16860    err= 0.02%/30.47% time=30.27s/15728.12s
+  [ 501] obj=3311.97    act=16805    err= 0.02%/28.91% time=29.79s/15757.91s
+  [ 502] obj=3311.68    act=16795    err= 0.02%/30.47% time=30.28s/15788.19s
+  [ 503] obj=3311.48    act=16826    err= 0.02%/29.69% time=29.79s/15817.98s
+  [ 504] obj=3311.15    act=16751    err= 0.02%/32.81% time=30.27s/15848.25s
+  [ 505] obj=3310.72    act=16869    err= 0.02%/31.25% time=29.97s/15878.22s
+  [ 506] obj=3310.40    act=16811    err= 0.02%/33.59% time=29.90s/15908.12s
+  [ 507] obj=3310.01    act=16796    err= 0.02%/32.03% time=30.23s/15938.35s
+  [ 508] obj=3309.74    act=16736    err= 0.02%/33.59% time=30.04s/15968.39s
+  [ 509] obj=3309.50    act=16691    err= 0.02%/32.03% time=30.06s/15998.45s
+  [ 510] obj=3309.24    act=16658    err= 0.02%/33.59% time=30.22s/16028.67s
+  [ 511] obj=3308.94    act=16670    err= 0.02%/33.59% time=29.71s/16058.37s
+  [ 512] obj=3308.62    act=16604    err= 0.02%/32.03% time=30.12s/16088.50s
+  [ 513] obj=3308.27    act=16558    err= 0.02%/33.59% time=30.28s/16118.77s
+  [ 514] obj=3308.03    act=16535    err= 0.02%/35.16% time=30.15s/16148.92s
+  [ 515] obj=3307.75    act=16547    err= 0.02%/33.59% time=29.76s/16178.68s
+  [ 516] obj=3307.55    act=16510    err= 0.02%/34.38% time=29.76s/16208.45s
+  [ 517] obj=3307.19    act=16552    err= 0.02%/33.59% time=30.51s/16238.95s
+  [ 518] obj=3306.96    act=16500    err= 0.02%/32.03% time=29.72s/16268.67s
+  [ 519] obj=3306.65    act=16516    err= 0.02%/32.81% time=30.26s/16298.93s
+  [ 520] obj=3306.39    act=16477    err= 0.02%/32.03% time=30.37s/16329.31s
+  [ 521] obj=3306.11    act=16476    err= 0.02%/32.81% time=30.17s/16359.48s
+  [ 522] obj=3305.87    act=16451    err= 0.02%/33.59% time=30.17s/16389.65s
+  [ 523] obj=3305.55    act=16457    err= 0.02%/32.03% time=30.09s/16419.74s
+  [ 524] obj=3305.30    act=16460    err= 0.02%/33.59% time=29.86s/16449.61s
+  [ 525] obj=3304.95    act=16599    err= 0.02%/32.81% time=30.14s/16479.75s
+  [ 526] obj=3304.69    act=16471    err= 0.02%/33.59% time=29.70s/16509.44s
+  [ 527] obj=3304.32    act=16611    err= 0.02%/34.38% time=30.23s/16539.67s
+  [ 528] obj=3304.12    act=16473    err= 0.02%/32.81% time=30.18s/16569.84s
+  [ 529] obj=3303.88    act=16447    err= 0.02%/32.81% time=29.53s/16599.38s
+  [ 530] obj=3303.66    act=16417    err= 0.02%/31.25% time=30.30s/16629.68s
+  [ 531] obj=3303.40    act=16394    err= 0.02%/32.03% time=30.24s/16659.92s
+  [ 532] obj=3303.10    act=16421    err= 0.02%/30.47% time=29.98s/16689.91s
+  [ 533] obj=3302.80    act=16387    err= 0.02%/32.81% time=30.34s/16720.25s
+  [ 534] obj=3302.55    act=16370    err= 0.02%/32.03% time=30.16s/16750.40s
+  [ 535] obj=3302.28    act=16384    err= 0.02%/32.81% time=29.81s/16780.21s
+  [ 536] obj=3302.07    act=16357    err= 0.02%/32.03% time=29.79s/16810.00s
+  [ 537] obj=3301.81    act=16288    err= 0.02%/32.81% time=30.97s/16840.98s
+  [ 538] obj=3301.36    act=16425    err= 0.02%/32.03% time=31.12s/16872.10s
+  [ 539] obj=3301.25    act=16430    err= 0.02%/33.59% time=30.50s/16902.60s
+  [ 540] obj=3300.75    act=16415    err= 0.02%/32.81% time=29.72s/16932.32s
+  [ 541] obj=3300.58    act=16383    err= 0.02%/32.03% time=30.63s/16962.95s
+  [ 542] obj=3300.24    act=16385    err= 0.02%/32.03% time=29.74s/16992.69s
+  [ 543] obj=3300.23    act=16417    err= 0.02%/34.38% time=29.87s/17022.56s
+  [ 544] obj=3299.76    act=16330    err= 0.02%/34.38% time=29.69s/17052.25s
+  [ 545] obj=3299.31    act=16448    err= 0.02%/31.25% time=30.03s/17082.29s
+  [ 546] obj=3299.03    act=16301    err= 0.02%/31.25% time=29.98s/17112.27s
+  [ 547] obj=3298.67    act=16370    err= 0.02%/31.25% time=30.71s/17142.99s
+  [ 548] obj=3298.50    act=16266    err= 0.02%/32.03% time=30.20s/17173.19s
+  [ 549] obj=3298.15    act=16293    err= 0.02%/31.25% time=30.57s/17203.76s
+  [ 550] obj=3297.98    act=16266    err= 0.02%/31.25% time=29.74s/17233.49s
+  [ 551] obj=3297.55    act=16232    err= 0.02%/31.25% time=29.84s/17263.33s
+  [ 552] obj=3297.36    act=16224    err= 0.02%/32.03% time=30.62s/17293.95s
+  [ 553] obj=3296.94    act=16224    err= 0.02%/32.03% time=29.86s/17323.81s
+  [ 554] obj=3296.78    act=16214    err= 0.02%/31.25% time=29.99s/17353.80s
+  [ 555] obj=3296.42    act=16282    err= 0.02%/34.38% time=29.93s/17383.73s
+  [ 556] obj=3296.15    act=16302    err= 0.02%/31.25% time=29.97s/17413.70s
+  [ 557] obj=3295.89    act=16283    err= 0.02%/33.59% time=29.91s/17443.61s
+  [ 558] obj=3295.60    act=16301    err= 0.02%/32.03% time=30.63s/17474.24s
+  [ 559] obj=3295.31    act=16232    err= 0.02%/34.38% time=30.68s/17504.92s
+  [ 560] obj=3295.12    act=16213    err= 0.02%/32.03% time=29.91s/17534.83s
+  [ 561] obj=3294.86    act=16225    err= 0.02%/35.16% time=29.82s/17564.65s
+  [ 562] obj=3294.56    act=16218    err= 0.02%/32.81% time=29.91s/17594.57s
+  [ 563] obj=3294.25    act=16223    err= 0.02%/35.16% time=29.73s/17624.29s
+  [ 564] obj=3293.95    act=16185    err= 0.02%/32.03% time=29.97s/17654.27s
+  [ 565] obj=3293.66    act=16165    err= 0.02%/33.59% time=29.81s/17684.08s
+  [ 566] obj=3293.48    act=16100    err= 0.02%/32.03% time=29.81s/17713.88s
+  [ 567] obj=3293.27    act=16123    err= 0.02%/34.38% time=29.96s/17743.85s
+  [ 568] obj=3292.88    act=16185    err= 0.02%/32.03% time=29.70s/17773.55s
+  [ 569] obj=3292.62    act=16205    err= 0.02%/32.81% time=29.79s/17803.34s
+  [ 570] obj=3292.16    act=16241    err= 0.02%/32.81% time=29.97s/17833.30s
+  [ 571] obj=3291.92    act=16202    err= 0.02%/33.59% time=30.65s/17863.95s
+  [ 572] obj=3291.62    act=16179    err= 0.02%/32.81% time=29.95s/17893.90s
+  [ 573] obj=3291.23    act=16179    err= 0.02%/32.03% time=52.22s/17946.12s
+  [ 574] obj=3291.07    act=16103    err= 0.02%/31.25% time=51.79s/17997.90s
+  [ 575] obj=3291.02    act=16107    err= 0.02%/32.81% time=29.78s/18027.68s
+  [ 576] obj=3290.69    act=16245    err= 0.02%/32.81% time=29.89s/18057.57s
+  [ 577] obj=3290.26    act=16244    err= 0.02%/34.38% time=29.88s/18087.45s
+  [ 578] obj=3289.39    act=16295    err= 0.02%/33.59% time=29.67s/18117.12s
+  [ 579] obj=3289.12    act=16199    err= 0.02%/33.59% time=29.95s/18147.07s
+  [ 580] obj=3288.67    act=16240    err= 0.02%/33.59% time=29.85s/18176.92s
+  [ 581] obj=3288.29    act=16290    err= 0.02%/33.59% time=29.70s/18206.62s
+  [ 582] obj=3288.21    act=16230    err= 0.02%/36.72% time=29.70s/18236.32s
+  [ 583] obj=3287.67    act=16354    err= 0.02%/33.59% time=29.80s/18266.12s
+  [ 584] obj=3287.49    act=16267    err= 0.02%/34.38% time=29.70s/18295.82s
+  [ 585] obj=3287.04    act=16323    err= 0.02%/32.03% time=29.70s/18325.52s
+  [ 586] obj=3286.71    act=16286    err= 0.02%/31.25% time=30.20s/18355.72s
+  [ 587] obj=3286.63    act=16284    err= 0.02%/32.81% time=30.35s/18386.07s
+  [ 588] obj=3286.03    act=16301    err= 0.02%/33.59% time=30.20s/18416.27s
+  [ 589] obj=3285.97    act=16233    err= 0.02%/30.47% time=30.26s/18446.53s
+  [ 590] obj=3285.30    act=16227    err= 0.02%/31.25% time=29.67s/18476.19s
+  [ 591] obj=3285.15    act=16251    err= 0.02%/31.25% time=30.32s/18506.52s
+  [ 592] obj=3284.67    act=16140    err= 0.02%/33.59% time=29.69s/18536.21s
+  [ 593] obj=3284.25    act=16176    err= 0.02%/31.25% time=52.73s/18588.94s
+  [ 594] obj=3284.13    act=16055    err= 0.02%/32.81% time=30.24s/18619.18s
+  [ 595] obj=3283.40    act=16313    err= 0.02%/31.25% time=52.13s/18671.31s
+  [ 596] obj=3283.10    act=16271    err= 0.02%/31.25% time=52.21s/18723.52s
+  [ 597] obj=3282.81    act=16162    err= 0.02%/30.47% time=52.61s/18776.13s
+  [ 598] obj=3282.30    act=16307    err= 0.02%/33.59% time=52.79s/18828.92s
+  [ 599] obj=3281.86    act=16185    err= 0.02%/29.69% time=52.45s/18881.36s
+  [ 600] obj=3281.42    act=16193    err= 0.02%/32.03% time=52.71s/18934.07s
+  [ 601] obj=3281.16    act=16233    err= 0.02%/32.03% time=52.36s/18986.44s
+  [ 602] obj=3280.56    act=16254    err= 0.02%/31.25% time=52.09s/19038.53s
+  [ 603] obj=3280.44    act=16134    err= 0.02%/32.03% time=52.58s/19091.11s
+  [ 604] obj=3280.26    act=16151    err= 0.02%/35.16% time=30.19s/19121.30s
+  [ 605] obj=3279.44    act=16382    err= 0.02%/30.47% time=29.85s/19151.15s
+  [ 606] obj=3279.21    act=16208    err= 0.02%/34.38% time=29.89s/19181.04s
+  [ 607] obj=3278.49    act=16342    err= 0.02%/32.03% time=30.37s/19211.41s
+  [ 608] obj=3277.94    act=16384    err= 0.02%/32.81% time=29.84s/19241.25s
+  [ 609] obj=3277.59    act=16278    err= 0.02%/32.81% time=30.04s/19271.29s
+  [ 610] obj=3277.16    act=16160    err= 0.02%/34.38% time=30.04s/19301.33s
+  [ 611] obj=3276.90    act=16133    err= 0.02%/32.81% time=30.05s/19331.38s
+  [ 612] obj=3276.47    act=16047    err= 0.02%/32.81% time=29.83s/19361.21s
+  [ 613] obj=3276.28    act=16063    err= 0.02%/32.81% time=30.18s/19391.38s
+  [ 614] obj=3275.86    act=16077    err= 0.02%/32.81% time=29.73s/19421.11s
+  [ 615] obj=3275.67    act=16062    err= 0.02%/32.81% time=29.80s/19450.91s
+  [ 616] obj=3275.28    act=16049    err= 0.02%/33.59% time=29.88s/19480.80s
+  [ 617] obj=3275.07    act=16064    err= 0.02%/32.03% time=30.23s/19511.02s
+  [ 618] obj=3274.78    act=15981    err= 0.02%/33.59% time=29.67s/19540.69s
+  [ 619] obj=3274.50    act=15923    err= 0.02%/33.59% time=30.25s/19570.93s
+  [ 620] obj=3274.26    act=15874    err= 0.02%/34.38% time=29.81s/19600.74s
+  [ 621] obj=3273.97    act=15936    err= 0.02%/34.38% time=30.21s/19630.95s
+  [ 622] obj=3273.70    act=15876    err= 0.02%/34.38% time=30.38s/19661.33s
+  [ 623] obj=3273.47    act=15901    err= 0.02%/35.16% time=29.65s/19690.98s
+  [ 624] obj=3273.21    act=15878    err= 0.02%/35.94% time=30.20s/19721.19s
+  [ 625] obj=3272.96    act=15873    err= 0.02%/35.16% time=30.06s/19751.25s
+  [ 626] obj=3272.65    act=15792    err= 0.02%/35.94% time=29.75s/19781.00s
+  [ 627] obj=3272.48    act=15811    err= 0.02%/35.94% time=29.82s/19810.82s
+  [ 628] obj=3272.17    act=15775    err= 0.02%/37.50% time=30.28s/19841.10s
+  [ 629] obj=3271.95    act=15751    err= 0.02%/35.94% time=29.80s/19870.90s
+  [ 630] obj=3271.63    act=15754    err= 0.02%/35.94% time=29.94s/19900.84s
+  [ 631] obj=3271.39    act=15746    err= 0.02%/35.16% time=29.76s/19930.61s
+  [ 632] obj=3271.14    act=15714    err= 0.02%/33.59% time=30.10s/19960.70s
+  [ 633] obj=3270.94    act=15701    err= 0.02%/35.94% time=29.82s/19990.52s
+  [ 634] obj=3270.67    act=15689    err= 0.02%/33.59% time=30.04s/20020.56s
+  [ 635] obj=3270.47    act=15677    err= 0.02%/35.16% time=30.20s/20050.76s
+  [ 636] obj=3270.21    act=15647    err= 0.02%/34.38% time=29.65s/20080.41s
+  [ 637] obj=3269.98    act=15626    err= 0.02%/35.16% time=30.08s/20110.49s
+  [ 638] obj=3269.73    act=15631    err= 0.02%/33.59% time=30.17s/20140.66s
+  [ 639] obj=3269.48    act=15609    err= 0.02%/34.38% time=30.25s/20170.91s
+  [ 640] obj=3269.22    act=15591    err= 0.02%/33.59% time=29.83s/20200.74s
+  [ 641] obj=3269.09    act=15604    err= 0.02%/35.16% time=30.26s/20230.99s
+  [ 642] obj=3268.68    act=15694    err= 0.02%/34.38% time=30.26s/20261.25s
+  [ 643] obj=3268.65    act=15619    err= 0.02%/34.38% time=29.85s/20291.10s
+  [ 644] obj=3268.15    act=15670    err= 0.02%/33.59% time=30.16s/20321.26s
+  [ 645] obj=3268.00    act=15593    err= 0.02%/35.16% time=30.10s/20351.36s
+  [ 646] obj=3267.65    act=15657    err= 0.02%/34.38% time=29.78s/20381.14s
+  [ 647] obj=3267.33    act=15727    err= 0.02%/33.59% time=52.84s/20433.98s
+  [ 648] obj=3267.19    act=15623    err= 0.02%/34.38% time=52.62s/20486.60s
+  [ 649] obj=3266.84    act=15736    err= 0.02%/33.59% time=52.58s/20539.17s
+  [ 650] obj=3266.70    act=15635    err= 0.02%/35.94% time=52.44s/20591.62s
+  [ 651] obj=3266.28    act=15689    err= 0.02%/32.81% time=52.83s/20644.45s
+  [ 652] obj=3265.97    act=15622    err= 0.02%/33.59% time=52.70s/20697.15s
+  [ 653] obj=3265.70    act=15635    err= 0.02%/32.81% time=53.28s/20750.43s
+  [ 654] obj=3265.33    act=15592    err= 0.02%/32.03% time=51.97s/20802.40s
+  [ 655] obj=3265.05    act=15662    err= 0.02%/32.03% time=52.03s/20854.43s
+  [ 656] obj=3264.70    act=15550    err= 0.02%/31.25% time=52.29s/20906.72s
+  [ 657] obj=3264.32    act=15535    err= 0.02%/32.03% time=51.58s/20958.30s
+  [ 658] obj=3264.02    act=15501    err= 0.02%/32.03% time=52.19s/21010.50s
+  [ 659] obj=3263.72    act=15491    err= 0.02%/31.25% time=53.45s/21063.95s
+  [ 660] obj=3263.37    act=15515    err= 0.02%/31.25% time=51.83s/21115.78s
+  [ 661] obj=3263.01    act=15546    err= 0.02%/31.25% time=51.99s/21167.77s
+  [ 662] obj=3262.60    act=15518    err= 0.02%/32.03% time=52.10s/21219.87s
+  [ 663] obj=3262.28    act=15488    err= 0.02%/31.25% time=52.21s/21272.08s
+  [ 664] obj=3261.90    act=15451    err= 0.02%/32.03% time=52.00s/21324.09s
+  [ 665] obj=3261.51    act=15389    err= 0.02%/31.25% time=52.64s/21376.72s
+  [ 666] obj=3261.25    act=15474    err= 0.02%/32.81% time=52.14s/21428.86s
+  [ 667] obj=3260.80    act=15661    err= 0.02%/31.25% time=52.39s/21481.26s
+  [ 668] obj=3260.56    act=15550    err= 0.02%/33.59% time=52.17s/21533.43s
+  [ 669] obj=3259.99    act=15661    err= 0.02%/32.81% time=52.34s/21585.77s
+  [ 670] obj=3259.84    act=15534    err= 0.02%/32.03% time=30.10s/21615.88s
+  [ 671] obj=3259.01    act=15717    err= 0.02%/33.59% time=30.04s/21645.92s
+  [ 672] obj=3258.62    act=15640    err= 0.02%/32.81% time=52.38s/21698.30s
+  [ 673] obj=3258.60    act=15583    err= 0.02%/33.59% time=29.91s/21728.20s
+  [ 674] obj=3257.39    act=15935    err= 0.02%/34.38% time=52.25s/21780.45s
+  [ 675] obj=3257.00    act=15677    err= 0.02%/33.59% time=52.14s/21832.59s
+  [ 676] obj=3256.68    act=15655    err= 0.02%/35.16% time=52.45s/21885.04s
+  [ 677] obj=3256.43    act=15831    err= 0.02%/33.59% time=53.09s/21938.13s
+  [ 678] obj=3255.56    act=15840    err= 0.02%/35.16% time=52.47s/21990.60s
+  [ 679] obj=3255.25    act=15632    err= 0.02%/35.16% time=52.75s/22043.35s
+  [ 680] obj=3254.88    act=15691    err= 0.02%/34.38% time=52.24s/22095.59s
+  [ 681] obj=3254.39    act=15796    err= 0.02%/35.16% time=52.31s/22147.90s
+  [ 682] obj=3253.94    act=15648    err= 0.02%/32.81% time=52.23s/22200.13s
+  [ 683] obj=3253.58    act=15764    err= 0.02%/32.81% time=52.43s/22252.56s
+  [ 684] obj=3253.14    act=15626    err= 0.02%/32.81% time=51.92s/22304.48s
+  [ 685] obj=3252.60    act=15595    err= 0.02%/32.03% time=52.43s/22356.91s
+  [ 686] obj=3252.14    act=15574    err= 0.02%/32.03% time=52.14s/22409.05s
+  [ 687] obj=3251.85    act=15740    err= 0.02%/33.59% time=74.67s/22483.72s
+  [ 688] obj=3251.68    act=15486    err= 0.02%/32.81% time=52.31s/22536.04s
+  [ 689] obj=3251.13    act=15663    err= 0.02%/32.81% time=52.41s/22588.45s
+  [ 690] obj=3250.69    act=15598    err= 0.02%/34.38% time=74.20s/22662.65s
+  [ 691] obj=3250.44    act=15449    err= 0.02%/32.81% time=52.28s/22714.93s
+  [ 692] obj=3250.42    act=15295    err= 0.02%/35.16% time=30.03s/22744.96s
+  [ 693] obj=3249.34    act=15799    err= 0.02%/35.94% time=52.13s/22797.09s
+  [ 694] obj=3248.93    act=15598    err= 0.02%/35.16% time=30.52s/22827.61s
+  [ 695] obj=3248.35    act=16115    err= 0.02%/36.72% time=29.90s/22857.51s
+  [ 696] obj=3247.68    act=16141    err= 0.02%/35.16% time=52.09s/22909.60s
+  [ 697] obj=3247.67    act=15848    err= 0.02%/35.16% time=52.04s/22961.63s
+  [ 698] obj=3246.89    act=17428    err= 0.02%/36.72% time=52.42s/23014.06s
+  [ 699] obj=3245.97    act=16215    err= 0.02%/35.16% time=52.21s/23066.26s
+  [ 700] obj=3245.86    act=15819    err= 0.02%/35.94% time=53.20s/23119.46s
+  [ 701] obj=3245.63    act=15821    err= 0.02%/35.94% time=29.90s/23149.36s
+  [ 702] obj=3244.99    act=15865    err= 0.02%/36.72% time=29.92s/23179.29s
+  [ 703] obj=3244.99    act=15710    err= 0.02%/38.28% time=29.68s/23208.97s
+  [ 704] obj=3244.32    act=15656    err= 0.02%/37.50% time=30.12s/23239.09s
+  [ 705] obj=3244.11    act=15621    err= 0.02%/37.50% time=29.85s/23268.94s
+  [ 706] obj=3243.53    act=15589    err= 0.02%/36.72% time=29.84s/23298.78s
+  [ 707] obj=3243.26    act=15565    err= 0.02%/36.72% time=52.41s/23351.19s
+  [ 708] obj=3243.11    act=15445    err= 0.02%/35.94% time=29.92s/23381.10s
+  [ 709] obj=3242.69    act=15380    err= 0.02%/36.72% time=29.76s/23410.86s
+  [ 710] obj=3242.60    act=15633    err= 0.02%/35.16% time=30.02s/23440.88s
+  [ 711] obj=3241.91    act=15476    err= 0.02%/35.94% time=30.38s/23471.26s
+  [ 712] obj=3241.49    act=15614    err= 0.02%/35.16% time=29.91s/23501.16s
+  [ 713] obj=3241.42    act=15482    err= 0.02%/35.94% time=29.92s/23531.09s
+  [ 714] obj=3240.84    act=15588    err= 0.02%/35.16% time=30.16s/23561.25s
+  [ 715] obj=3240.65    act=15321    err= 0.02%/36.72% time=30.16s/23591.41s
+  [ 716] obj=3240.30    act=15340    err= 0.02%/35.94% time=30.12s/23621.53s
+  [ 717] obj=3240.03    act=15353    err= 0.02%/35.94% time=30.39s/23651.92s
+  [ 718] obj=3239.65    act=15338    err= 0.02%/35.94% time=30.03s/23681.95s
+  [ 719] obj=3239.41    act=15284    err= 0.02%/34.38% time=29.90s/23711.85s
+  [ 720] obj=3239.08    act=15293    err= 0.02%/35.16% time=29.96s/23741.81s
+  [ 721] obj=3238.87    act=15286    err= 0.02%/34.38% time=30.07s/23771.89s
+  [ 722] obj=3238.50    act=15289    err= 0.02%/35.16% time=30.03s/23801.92s
+  [ 723] obj=3238.35    act=15243    err= 0.02%/34.38% time=29.91s/23831.83s
+  [ 724] obj=3237.92    act=15252    err= 0.02%/35.16% time=30.27s/23862.09s
+  [ 725] obj=3237.85    act=15217    err= 0.02%/35.16% time=29.63s/23891.73s
+  [ 726] obj=3237.34    act=15284    err= 0.02%/35.16% time=30.06s/23921.79s
+  [ 727] obj=3237.22    act=15267    err= 0.02%/34.38% time=30.64s/23952.43s
+  [ 728] obj=3236.76    act=15269    err= 0.02%/35.16% time=29.76s/23982.19s
+  [ 729] obj=3236.72    act=15231    err= 0.02%/35.16% time=29.83s/24012.02s
+  [ 730] obj=3236.20    act=15224    err= 0.02%/35.16% time=30.99s/24043.01s
+  [ 731] obj=3236.13    act=15177    err= 0.02%/35.16% time=30.43s/24073.45s
+  [ 732] obj=3235.57    act=15289    err= 0.02%/35.16% time=30.75s/24104.20s
+  [ 733] obj=3235.51    act=15297    err= 0.02%/35.94% time=29.65s/24133.85s
+  [ 734] obj=3235.04    act=15250    err= 0.02%/35.94% time=29.94s/24163.79s
+  [ 735] obj=3234.98    act=15238    err= 0.02%/35.16% time=30.81s/24194.59s
+  [ 736] obj=3234.47    act=15210    err= 0.02%/35.16% time=29.67s/24224.26s
+  [ 737] obj=3234.33    act=15187    err= 0.02%/35.16% time=30.55s/24254.81s
+  [ 738] obj=3233.88    act=15117    err= 0.02%/35.16% time=30.59s/24285.40s
+  [ 739] obj=3233.83    act=15127    err= 0.02%/35.16% time=29.70s/24315.10s
+  [ 740] obj=3233.29    act=15139    err= 0.02%/33.59% time=30.51s/24345.61s
+  [ 741] obj=3233.25    act=15097    err= 0.02%/34.38% time=29.83s/24375.44s
+  [ 742] obj=3232.69    act=15179    err= 0.02%/34.38% time=29.63s/24405.06s
+  [ 743] obj=3232.63    act=15170    err= 0.02%/35.94% time=29.74s/24434.81s
+  [ 744] obj=3232.19    act=15150    err= 0.02%/33.59% time=29.98s/24464.79s
+  [ 745] obj=3232.04    act=15178    err= 0.02%/34.38% time=29.72s/24494.51s
+  [ 746] obj=3231.59    act=15172    err= 0.02%/34.38% time=29.90s/24524.41s
+  [ 747] obj=3231.45    act=15195    err= 0.02%/36.72% time=29.75s/24554.16s
+  [ 748] obj=3231.03    act=15103    err= 0.02%/35.94% time=29.83s/24583.99s
+  [ 749] obj=3230.91    act=15115    err= 0.02%/36.72% time=30.00s/24613.99s
+  [ 750] obj=3230.47    act=15105    err= 0.02%/35.16% time=29.88s/24643.87s
+  [ 751] obj=3230.38    act=15085    err= 0.02%/35.16% time=30.14s/24674.00s
+  [ 752] obj=3229.93    act=15072    err= 0.02%/34.38% time=30.21s/24704.22s
+  [ 753] obj=3229.87    act=15059    err= 0.02%/35.94% time=30.16s/24734.38s
+  [ 754] obj=3229.40    act=15060    err= 0.02%/34.38% time=29.95s/24764.33s
+  [ 755] obj=3229.37    act=15012    err= 0.02%/35.94% time=30.04s/24794.37s
+  [ 756] obj=3228.89    act=15016    err= 0.02%/32.81% time=30.04s/24824.41s
+  [ 757] obj=3228.82    act=14953    err= 0.02%/36.72% time=29.72s/24854.13s
+  [ 758] obj=3228.43    act=14931    err= 0.02%/33.59% time=29.86s/24884.00s
+  [ 759] obj=3228.34    act=14906    err= 0.02%/36.72% time=30.02s/24914.02s
+  [ 760] obj=3227.99    act=14897    err= 0.02%/32.81% time=29.91s/24943.93s
+  [ 761] obj=3227.92    act=14889    err= 0.02%/35.16% time=30.13s/24974.05s
+  [ 762] obj=3227.55    act=14822    err= 0.02%/32.03% time=29.86s/25003.91s
+  [ 763] obj=3227.48    act=14825    err= 0.02%/34.38% time=30.00s/25033.91s
+  [ 764] obj=3227.09    act=14784    err= 0.02%/33.59% time=30.05s/25063.96s
+  [ 765] obj=3227.01    act=14781    err= 0.02%/35.16% time=29.64s/25093.60s
+  [ 766] obj=3226.68    act=14816    err= 0.02%/32.81% time=31.77s/25125.37s
+  [ 767] obj=3226.64    act=14739    err= 0.02%/33.59% time=29.80s/25155.17s
+  [ 768] obj=3226.31    act=14704    err= 0.02%/32.03% time=30.07s/25185.24s
+  [ 769] obj=3226.20    act=14665    err= 0.02%/33.59% time=30.94s/25216.19s
+  [ 770] obj=3225.82    act=14682    err= 0.02%/31.25% time=30.28s/25246.46s
+  [ 771] obj=3225.71    act=14660    err= 0.02%/33.59% time=29.80s/25276.27s
+  [ 772] obj=3225.37    act=14628    err= 0.02%/30.47% time=29.96s/25306.23s
+  [ 773] obj=3225.36    act=14597    err= 0.02%/35.94% time=29.85s/25336.09s
+  [ 774] obj=3224.93    act=14609    err= 0.02%/31.25% time=30.00s/25366.09s
+  [ 775] obj=3224.82    act=14599    err= 0.02%/32.81% time=29.86s/25395.95s
+  [ 776] obj=3224.49    act=14518    err= 0.02%/32.03% time=29.98s/25425.93s
+  [ 777] obj=3224.40    act=14530    err= 0.02%/32.81% time=30.18s/25456.10s
+  [ 778] obj=3224.11    act=14503    err= 0.02%/33.59% time=29.77s/25485.87s
+  [ 779] obj=3224.04    act=14496    err= 0.02%/33.59% time=30.29s/25516.17s
+  [ 780] obj=3223.77    act=14474    err= 0.02%/33.59% time=30.04s/25546.20s
+  [ 781] obj=3223.71    act=14451    err= 0.02%/33.59% time=30.06s/25576.27s
+  [ 782] obj=3223.40    act=14433    err= 0.02%/33.59% time=30.23s/25606.50s
+  [ 783] obj=3223.30    act=14431    err= 0.02%/35.94% time=29.94s/25636.44s
+  [ 784] obj=3223.04    act=14409    err= 0.02%/34.38% time=29.62s/25666.06s
+  [ 785] obj=3222.96    act=14392    err= 0.02%/34.38% time=29.78s/25695.84s
+  [ 786] obj=3222.66    act=14392    err= 0.02%/34.38% time=30.16s/25726.00s
+  [ 787] obj=3222.60    act=14405    err= 0.02%/32.81% time=30.05s/25756.05s
+  [ 788] obj=3222.32    act=14391    err= 0.02%/34.38% time=30.26s/25786.31s
+  [ 789] obj=3222.18    act=14386    err= 0.02%/32.81% time=30.36s/25816.67s
+  [ 790] obj=3221.97    act=14385    err= 0.02%/33.59% time=30.39s/25847.06s
+  [ 791] obj=3221.82    act=14391    err= 0.02%/33.59% time=29.86s/25876.92s
+  [ 792] obj=3221.56    act=14409    err= 0.02%/32.81% time=30.01s/25906.92s
+  [ 793] obj=3221.49    act=14458    err= 0.02%/32.03% time=30.07s/25937.00s
+  [ 794] obj=3221.18    act=14433    err= 0.02%/32.81% time=30.06s/25967.06s
+  [ 795] obj=3221.17    act=14416    err= 0.02%/32.81% time=29.76s/25996.82s
+  [ 796] obj=3220.79    act=14416    err= 0.02%/33.59% time=30.04s/26026.86s
+  [ 797] obj=3220.69    act=14414    err= 0.02%/32.03% time=30.03s/26056.89s
+  [ 798] obj=3220.42    act=14314    err= 0.02%/32.81% time=29.84s/26086.72s
+  [ 799] obj=3220.38    act=14313    err= 0.02%/32.03% time=30.16s/26116.88s
+  [ 800] obj=3220.05    act=14327    err= 0.02%/33.59% time=30.18s/26147.06s
+  [ 801] obj=3219.95    act=14309    err= 0.02%/32.81% time=30.29s/26177.35s
+  [ 802] obj=3219.68    act=14266    err= 0.02%/33.59% time=30.22s/26207.57s
+  [ 803] obj=3219.65    act=14269    err= 0.02%/32.81% time=30.00s/26237.56s
+  [ 804] obj=3219.33    act=14291    err= 0.02%/32.81% time=29.97s/26267.53s
+  [ 805] obj=3219.32    act=14244    err= 0.02%/32.03% time=30.10s/26297.63s
+  [ 806] obj=3218.97    act=14325    err= 0.02%/32.03% time=30.19s/26327.82s
+  [ 807] obj=3218.90    act=14280    err= 0.02%/32.03% time=29.94s/26357.76s
+  [ 808] obj=3218.66    act=14248    err= 0.02%/32.03% time=29.71s/26387.47s
+  [ 809] obj=3218.60    act=14233    err= 0.02%/33.59% time=30.09s/26417.55s
+  [ 810] obj=3218.34    act=14246    err= 0.02%/32.03% time=30.36s/26447.91s
+  [ 811] obj=3218.24    act=14255    err= 0.02%/33.59% time=30.23s/26478.15s
+  [ 812] obj=3217.98    act=14242    err= 0.02%/31.25% time=30.11s/26508.26s
+  [ 813] obj=3217.91    act=14171    err= 0.02%/33.59% time=30.31s/26538.57s
+  [ 814] obj=3217.61    act=14206    err= 0.02%/31.25% time=29.63s/26568.21s
+  [ 815] obj=3217.59    act=14169    err= 0.02%/32.81% time=29.83s/26598.04s
+  [ 816] obj=3217.30    act=14153    err= 0.02%/29.69% time=30.06s/26628.09s
+  [ 817] obj=3217.21    act=14211    err= 0.02%/33.59% time=30.19s/26658.29s
+  [ 818] obj=3216.97    act=14152    err= 0.02%/28.91% time=29.76s/26688.05s
+  [ 819] obj=3216.87    act=14185    err= 0.02%/32.81% time=30.00s/26718.05s
+  [ 820] obj=3216.64    act=14143    err= 0.02%/31.25% time=30.11s/26748.16s
+  [ 821] obj=3216.56    act=14134    err= 0.02%/32.81% time=29.81s/26777.97s
+  [ 822] obj=3216.32    act=14125    err= 0.02%/31.25% time=30.25s/26808.23s
+  [ 823] obj=3216.24    act=14133    err= 0.02%/32.81% time=29.64s/26837.86s
+  [ 824] obj=3215.97    act=14142    err= 0.02%/33.59% time=29.62s/26867.48s
+  [ 825] obj=3215.80    act=14157    err= 0.02%/32.81% time=30.00s/26897.48s
+  [ 826] obj=3215.64    act=14087    err= 0.02%/34.38% time=30.10s/26927.58s
+  [ 827] obj=3215.38    act=14186    err= 0.02%/34.38% time=29.65s/26957.24s
+  [ 828] obj=3215.19    act=14242    err= 0.02%/32.81% time=52.33s/27009.56s
+  [ 829] obj=3215.17    act=14137    err= 0.02%/33.59% time=30.12s/27039.68s
+  [ 830] obj=3214.91    act=14255    err= 0.02%/30.47% time=30.05s/27069.74s
+  [ 831] obj=3214.82    act=14357    err= 0.02%/34.38% time=29.87s/27099.60s
+  [ 832] obj=3214.53    act=14268    err= 0.02%/30.47% time=29.78s/27129.38s
+  [ 833] obj=3214.25    act=14403    err= 0.02%/33.59% time=29.75s/27159.13s
+  [ 834] obj=3214.00    act=14259    err= 0.02%/31.25% time=30.10s/27189.24s
+  [ 835] obj=3213.93    act=14286    err= 0.02%/33.59% time=29.75s/27218.98s
+  [ 836] obj=3213.62    act=14336    err= 0.02%/32.03% time=29.67s/27248.65s
+  [ 837] obj=3213.59    act=14253    err= 0.02%/33.59% time=30.16s/27278.82s
+  [ 838] obj=3213.30    act=14369    err= 0.02%/31.25% time=30.10s/27308.92s
+  [ 839] obj=3213.20    act=14272    err= 0.02%/33.59% time=30.12s/27339.04s
+  [ 840] obj=3213.03    act=14206    err= 0.02%/32.03% time=29.72s/27368.76s
+  [ 841] obj=3212.90    act=14189    err= 0.02%/34.38% time=30.12s/27398.88s
+  [ 842] obj=3212.70    act=14139    err= 0.02%/32.03% time=29.51s/27428.39s
+  [ 843] obj=3212.55    act=14109    err= 0.02%/33.59% time=30.12s/27458.52s
+  [ 844] obj=3212.40    act=14094    err= 0.02%/34.38% time=29.66s/27488.18s
+  [ 845] obj=3212.26    act=14062    err= 0.02%/35.16% time=29.71s/27517.89s
+  [ 846] obj=3212.11    act=14040    err= 0.02%/34.38% time=29.61s/27547.49s
+  [ 847] obj=3212.01    act=14016    err= 0.02%/35.94% time=29.82s/27577.31s
+  [ 848] obj=3211.81    act=14006    err= 0.02%/34.38% time=30.03s/27607.33s
+  [ 849] obj=3211.71    act=13989    err= 0.02%/34.38% time=30.07s/27637.41s
+  [ 850] obj=3211.53    act=13968    err= 0.02%/34.38% time=30.19s/27667.60s
+  [ 851] obj=3211.46    act=13947    err= 0.02%/35.94% time=29.44s/27697.04s
+  [ 852] obj=3211.26    act=13902    err= 0.02%/32.81% time=29.94s/27726.98s
+  [ 853] obj=3211.17    act=13887    err= 0.02%/35.94% time=29.99s/27756.97s
+  [ 854] obj=3210.96    act=13901    err= 0.02%/34.38% time=29.58s/27786.55s
+  [ 855] obj=3210.89    act=13867    err= 0.02%/35.16% time=29.75s/27816.30s
+  [ 856] obj=3210.69    act=13849    err= 0.02%/33.59% time=29.61s/27845.92s
+  [ 857] obj=3210.66    act=13846    err= 0.02%/35.94% time=29.86s/27875.78s
+  [ 858] obj=3210.42    act=13847    err= 0.02%/32.81% time=29.76s/27905.54s
+  [ 859] obj=3210.37    act=13811    err= 0.02%/33.59% time=30.36s/27935.90s
+  [ 860] obj=3210.16    act=13800    err= 0.02%/32.03% time=29.85s/27965.76s
+  [ 861] obj=3210.09    act=13785    err= 0.02%/32.03% time=30.20s/27995.95s
+  [ 862] obj=3209.93    act=13772    err= 0.02%/32.81% time=29.83s/28025.79s
+  [ 863] obj=3209.84    act=13781    err= 0.02%/32.81% time=30.26s/28056.04s
+  [ 864] obj=3209.66    act=13731    err= 0.02%/32.81% time=29.76s/28085.80s
+  [ 865] obj=3209.60    act=13781    err= 0.02%/33.59% time=30.09s/28115.89s
+  [ 866] obj=3209.41    act=13791    err= 0.02%/31.25% time=30.26s/28146.15s
+  [ 867] obj=3209.38    act=13782    err= 0.02%/34.38% time=30.24s/28176.39s
+  [ 868] obj=3209.17    act=13810    err= 0.02%/31.25% time=29.72s/28206.11s
+  [ 869] obj=3209.10    act=13853    err= 0.02%/33.59% time=30.25s/28236.36s
+  [ 870] obj=3208.93    act=13804    err= 0.02%/34.38% time=30.35s/28266.72s
+  [ 871] obj=3208.85    act=13772    err= 0.02%/35.16% time=30.30s/28297.02s
+  [ 872] obj=3208.67    act=13742    err= 0.02%/32.03% time=30.15s/28327.17s
+  [ 873] obj=3208.56    act=13765    err= 0.02%/33.59% time=29.84s/28357.01s
+  [ 874] obj=3208.39    act=13722    err= 0.02%/31.25% time=29.99s/28387.00s
+  [ 875] obj=3208.29    act=13745    err= 0.02%/33.59% time=30.29s/28417.29s
+  [ 876] obj=3208.11    act=13770    err= 0.02%/32.03% time=30.23s/28447.51s
+  [ 877] obj=3207.99    act=13833    err= 0.02%/32.81% time=30.29s/28477.80s
+  [ 878] obj=3207.82    act=13785    err= 0.02%/34.38% time=30.14s/28507.94s
+  [ 879] obj=3207.67    act=13782    err= 0.02%/35.16% time=30.19s/28538.14s
+  [ 880] obj=3207.56    act=13745    err= 0.02%/33.59% time=30.22s/28568.35s
+  [ 881] obj=3207.43    act=13709    err= 0.02%/34.38% time=30.18s/28598.54s
+  [ 882] obj=3207.27    act=13700    err= 0.02%/35.16% time=30.10s/28628.64s
+  [ 883] obj=3207.15    act=13720    err= 0.02%/35.16% time=30.17s/28658.81s
+  [ 884] obj=3207.03    act=13645    err= 0.02%/32.81% time=30.83s/28689.64s
+  [ 885] obj=3206.85    act=13683    err= 0.02%/35.94% time=30.08s/28719.71s
+  [ 886] obj=3206.70    act=13709    err= 0.02%/32.81% time=30.36s/28750.08s
+  [ 887] obj=3206.58    act=13676    err= 0.02%/35.94% time=29.98s/28780.06s
+  [ 888] obj=3206.39    act=13682    err= 0.02%/33.59% time=29.89s/28809.95s
+  [ 889] obj=3206.33    act=13628    err= 0.02%/35.94% time=29.93s/28839.88s
+  [ 890] obj=3206.13    act=13593    err= 0.02%/33.59% time=30.99s/28870.88s
+  [ 891] obj=3206.10    act=13574    err= 0.02%/34.38% time=30.20s/28901.07s
+  [ 892] obj=3205.88    act=13607    err= 0.02%/32.81% time=29.80s/28930.87s
+  [ 893] obj=3205.81    act=13586    err= 0.02%/33.59% time=30.16s/28961.03s
+  [ 894] obj=3205.64    act=13563    err= 0.02%/33.59% time=29.58s/28990.61s
+  [ 895] obj=3205.56    act=13545    err= 0.02%/32.03% time=29.74s/29020.35s
+  [ 896] obj=3205.39    act=13530    err= 0.02%/32.81% time=29.95s/29050.30s
+  [ 897] obj=3205.34    act=13510    err= 0.02%/30.47% time=29.82s/29080.12s
+  [ 898] obj=3205.15    act=13497    err= 0.02%/32.03% time=29.82s/29109.94s
+  [ 899] obj=3205.09    act=13501    err= 0.02%/30.47% time=29.66s/29139.60s
+  [ 900] obj=3204.89    act=13539    err= 0.02%/32.81% time=29.85s/29169.45s
+  [ 901] obj=3204.88    act=13504    err= 0.02%/33.59% time=30.76s/29200.21s
+  [ 902] obj=3204.65    act=13529    err= 0.02%/32.03% time=29.57s/29229.78s
+  [ 903] obj=3204.62    act=13514    err= 0.02%/33.59% time=29.82s/29259.60s
+  [ 904] obj=3204.43    act=13507    err= 0.02%/32.03% time=30.14s/29289.75s
+  [ 905] obj=3204.33    act=13477    err= 0.02%/34.38% time=29.68s/29319.42s
+  [ 906] obj=3204.18    act=13464    err= 0.02%/32.81% time=30.67s/29350.09s
+  [ 907] obj=3204.12    act=13458    err= 0.02%/33.59% time=29.78s/29379.87s
+  [ 908] obj=3203.94    act=13423    err= 0.02%/34.38% time=30.15s/29410.03s
+  [ 909] obj=3203.91    act=13445    err= 0.02%/32.81% time=30.37s/29440.40s
+  [ 910] obj=3203.68    act=13461    err= 0.02%/33.59% time=29.63s/29470.02s
+  [ 911] obj=3203.64    act=13431    err= 0.02%/33.59% time=30.58s/29500.60s
+  [ 912] obj=3203.44    act=13439    err= 0.02%/32.81% time=29.88s/29530.48s
+  [ 913] obj=3203.39    act=13412    err= 0.02%/32.81% time=30.15s/29560.64s
+  [ 914] obj=3203.21    act=13435    err= 0.02%/31.25% time=30.20s/29590.84s
+  [ 915] obj=3203.13    act=13492    err= 0.02%/33.59% time=29.75s/29620.59s
+  [ 916] obj=3202.98    act=13423    err= 0.02%/32.03% time=30.22s/29650.80s
+  [ 917] obj=3202.89    act=13454    err= 0.02%/35.16% time=29.79s/29680.59s
+  [ 918] obj=3202.70    act=13475    err= 0.02%/32.81% time=30.15s/29710.75s
+  [ 919] obj=3202.53    act=13545    err= 0.02%/35.16% time=30.15s/29740.90s
+  [ 920] obj=3202.39    act=13499    err= 0.02%/35.94% time=30.48s/29771.38s
+  [ 921] obj=3202.29    act=13527    err= 0.02%/35.94% time=29.59s/29800.97s
+  [ 922] obj=3202.17    act=13520    err= 0.02%/35.16% time=30.13s/29831.10s
+  [ 923] obj=3202.06    act=13483    err= 0.02%/35.16% time=30.72s/29861.82s
+  [ 924] obj=3201.87    act=13582    err= 0.02%/34.38% time=29.61s/29891.43s
+  [ 925] obj=3201.70    act=13584    err= 0.02%/35.16% time=29.96s/29921.39s
+  [ 926] obj=3201.59    act=13497    err= 0.02%/33.59% time=30.04s/29951.43s
+  [ 927] obj=3201.48    act=13491    err= 0.02%/33.59% time=29.89s/29981.32s
+  [ 928] obj=3201.35    act=13457    err= 0.02%/34.38% time=29.86s/30011.19s
+  [ 929] obj=3201.24    act=13463    err= 0.02%/34.38% time=30.26s/30041.45s
+  [ 930] obj=3201.03    act=13467    err= 0.02%/35.16% time=30.03s/30071.48s
+  [ 931] obj=3200.91    act=13442    err= 0.02%/33.59% time=30.25s/30101.73s
+  [ 932] obj=3200.76    act=13422    err= 0.02%/33.59% time=29.68s/30131.41s
+  [ 933] obj=3200.72    act=13454    err= 0.02%/34.38% time=30.16s/30161.57s
+  [ 934] obj=3200.53    act=13419    err= 0.02%/32.81% time=29.59s/30191.16s
+  [ 935] obj=3200.44    act=13426    err= 0.02%/35.16% time=29.71s/30220.87s
+  [ 936] obj=3200.26    act=13394    err= 0.02%/33.59% time=30.09s/30250.95s
+  [ 937] obj=3200.20    act=13378    err= 0.02%/34.38% time=29.62s/30280.57s
+  [ 938] obj=3200.01    act=13371    err= 0.02%/33.59% time=30.16s/30310.73s
+  [ 939] obj=3199.99    act=13381    err= 0.02%/33.59% time=30.04s/30340.77s
+  [ 940] obj=3199.79    act=13390    err= 0.02%/33.59% time=29.87s/30370.64s
+  [ 941] obj=3199.71    act=13379    err= 0.02%/34.38% time=29.85s/30400.50s
+  [ 942] obj=3199.56    act=13369    err= 0.02%/32.03% time=29.80s/30430.30s
+  [ 943] obj=3199.55    act=13396    err= 0.02%/32.81% time=29.86s/30460.16s
+  [ 944] obj=3199.32    act=13371    err= 0.02%/32.03% time=30.18s/30490.34s
+  [ 945] obj=3199.28    act=13421    err= 0.02%/33.59% time=29.71s/30520.05s
+  [ 946] obj=3199.07    act=13396    err= 0.02%/32.03% time=29.52s/30549.57s
+  [ 947] obj=3199.03    act=13419    err= 0.02%/34.38% time=29.73s/30579.30s
+  [ 948] obj=3198.84    act=13399    err= 0.02%/32.81% time=30.17s/30609.47s
+  [ 949] obj=3198.82    act=13398    err= 0.02%/33.59% time=30.07s/30639.53s
+  [ 950] obj=3198.63    act=13381    err= 0.02%/31.25% time=29.74s/30669.27s
+  [ 951] obj=3198.55    act=13422    err= 0.02%/34.38% time=29.72s/30698.99s
+  [ 952] obj=3198.38    act=13396    err= 0.02%/32.03% time=30.17s/30729.16s
+  [ 953] obj=3198.30    act=13413    err= 0.02%/32.03% time=29.72s/30758.88s
+  [ 954] obj=3198.13    act=13413    err= 0.02%/32.03% time=30.07s/30788.95s
+  [ 955] obj=3198.06    act=13401    err= 0.02%/32.03% time=29.48s/30818.43s
+  [ 956] obj=3197.94    act=13381    err= 0.02%/31.25% time=29.78s/30848.22s
+  [ 957] obj=3197.81    act=13360    err= 0.02%/32.03% time=29.79s/30878.00s
+  [ 958] obj=3197.71    act=13320    err= 0.02%/32.03% time=29.98s/30907.98s
+  [ 959] obj=3197.52    act=13431    err= 0.02%/32.03% time=29.60s/30937.58s
+  [ 960] obj=3197.44    act=13364    err= 0.02%/32.03% time=29.57s/30967.15s
+  [ 961] obj=3197.28    act=13416    err= 0.02%/33.59% time=29.78s/30996.93s
+  [ 962] obj=3197.22    act=13468    err= 0.02%/31.25% time=30.28s/31027.21s
+  [ 963] obj=3197.10    act=13442    err= 0.02%/33.59% time=30.22s/31057.43s
+  [ 964] obj=3196.93    act=13518    err= 0.02%/30.47% time=30.05s/31087.48s
+  [ 965] obj=3196.69    act=13615    err= 0.02%/32.81% time=30.07s/31117.55s
+  [ 966] obj=3196.57    act=13575    err= 0.02%/32.81% time=51.86s/31169.41s
+  [ 967] obj=3196.47    act=13516    err= 0.02%/34.38% time=53.25s/31222.67s
+  [ 968] obj=3196.33    act=13521    err= 0.02%/32.03% time=52.28s/31274.95s
+  [ 969] obj=3196.22    act=13508    err= 0.02%/33.59% time=52.11s/31327.06s
+  [ 970] obj=3196.08    act=13518    err= 0.02%/32.81% time=52.30s/31379.37s
+  [ 971] obj=3195.86    act=13584    err= 0.02%/34.38% time=52.51s/31431.88s
+  [ 972] obj=3195.67    act=13606    err= 0.02%/32.81% time=51.51s/31483.39s
+  [ 973] obj=3195.51    act=13523    err= 0.02%/35.94% time=51.58s/31534.97s
+  [ 974] obj=3195.30    act=13513    err= 0.02%/32.81% time=52.28s/31587.24s
+  [ 975] obj=3195.18    act=13441    err= 0.02%/33.59% time=52.51s/31639.75s
+  [ 976] obj=3194.98    act=13508    err= 0.02%/32.81% time=51.77s/31691.52s
+  [ 977] obj=3194.89    act=13412    err= 0.02%/32.81% time=51.85s/31743.37s
+  [ 978] obj=3194.66    act=13498    err= 0.02%/30.47% time=52.11s/31795.48s
+  [ 979] obj=3194.51    act=13514    err= 0.02%/32.03% time=52.11s/31847.59s
+  [ 980] obj=3194.27    act=13464    err= 0.02%/31.25% time=52.04s/31899.63s
+  [ 981] obj=3194.17    act=13438    err= 0.02%/32.81% time=52.21s/31951.83s
+  [ 982] obj=3194.00    act=13498    err= 0.02%/32.81% time=52.34s/32004.17s
+  [ 983] obj=3193.70    act=13584    err= 0.02%/32.03% time=52.29s/32056.46s
+  [ 984] obj=3193.62    act=13491    err= 0.02%/32.03% time=52.15s/32108.61s
+  [ 985] obj=3193.59    act=13464    err= 0.02%/33.59% time=30.22s/32138.83s
+  [ 986] obj=3193.44    act=13581    err= 0.02%/31.25% time=29.95s/32168.78s
+  [ 987] obj=3193.06    act=13638    err= 0.02%/32.03% time=53.49s/32222.27s
+  [ 988] obj=3192.83    act=14134    err= 0.02%/32.03% time=74.02s/32296.29s
+  [ 989] obj=3192.70    act=13884    err= 0.02%/31.25% time=29.85s/32326.14s
+  [ 990] obj=3192.46    act=13719    err= 0.02%/29.69% time=53.88s/32380.02s
+  [ 991] obj=3192.33    act=13703    err= 0.02%/30.47% time=30.15s/32410.17s
+  [ 992] obj=3192.25    act=13834    err= 0.02%/31.25% time=29.48s/32439.65s
+  [ 993] obj=3191.79    act=14123    err= 0.02%/32.81% time=52.37s/32492.02s
+  [ 994] obj=3191.47    act=14035    err= 0.02%/31.25% time=52.03s/32544.06s
+  [ 995] obj=3191.36    act=13679    err= 0.02%/30.47% time=74.51s/32618.57s
+  [ 996] obj=3191.13    act=13862    err= 0.02%/33.59% time=52.48s/32671.05s
+  [ 997] obj=3190.84    act=13804    err= 0.02%/30.47% time=74.68s/32745.73s
+  [ 998] obj=3190.71    act=13715    err= 0.02%/32.03% time=52.31s/32798.03s
+  [ 999] obj=3190.55    act=13949    err= 0.02%/31.25% time=52.26s/32850.30s
+  [1000] obj=3190.29    act=13650    err= 0.02%/31.25% time=52.19s/32902.49s
+  [1001] obj=3190.16    act=13690    err= 0.02%/29.69% time=52.31s/32954.80s
+  [1002] obj=3189.94    act=13739    err= 0.02%/31.25% time=52.32s/33007.12s
+  [1003] obj=3189.81    act=13560    err= 0.02%/30.47% time=52.38s/33059.50s
+  [1004] obj=3189.66    act=13594    err= 0.02%/32.81% time=52.18s/33111.68s
+  [1005] obj=3189.51    act=13615    err= 0.02%/31.25% time=52.02s/33163.70s
+  [1006] obj=3189.27    act=13599    err= 0.02%/35.16% time=52.15s/33215.85s
+  [1007] obj=3189.22    act=13695    err= 0.02%/35.16% time=52.39s/33268.24s
+  [1008] obj=3188.89    act=13728    err= 0.02%/34.38% time=52.70s/33320.94s
+  [1009] obj=3188.67    act=13753    err= 0.02%/34.38% time=51.74s/33372.69s
+  [1010] obj=3188.46    act=13706    err= 0.02%/34.38% time=52.00s/33424.69s
+  [1011] obj=3188.31    act=13739    err= 0.02%/34.38% time=52.29s/33476.98s
+  [1012] obj=3188.14    act=13798    err= 0.02%/34.38% time=52.10s/33529.08s
+  [1013] obj=3187.89    act=13823    err= 0.02%/35.16% time=53.02s/33582.10s
+  [1014] obj=3187.74    act=13697    err= 0.02%/34.38% time=51.91s/33634.01s
+  [1015] obj=3187.43    act=13731    err= 0.02%/34.38% time=52.15s/33686.16s
+  [1016] obj=3187.30    act=13481    err= 0.02%/35.16% time=29.89s/33716.05s
+  [1017] obj=3186.94    act=13749    err= 0.02%/35.16% time=53.36s/33769.41s
+  [1018] obj=3186.78    act=13679    err= 0.02%/34.38% time=52.45s/33821.87s
+  [1019] obj=3186.54    act=13605    err= 0.02%/35.16% time=73.82s/33895.69s
+  [1020] obj=3186.40    act=13505    err= 0.02%/34.38% time=74.77s/33970.46s
+  [1021] obj=3186.22    act=13452    err= 0.02%/33.59% time=52.62s/34023.08s
+  [1022] obj=3185.91    act=13618    err= 0.02%/34.38% time=53.07s/34076.14s
+  [1023] obj=3185.77    act=13804    err= 0.02%/34.38% time=53.05s/34129.19s
+  [1024] obj=3185.36    act=14032    err= 0.02%/33.59% time=52.87s/34182.06s
+  [1025] obj=3185.11    act=13759    err= 0.02%/34.38% time=52.83s/34234.89s
+  [1026] obj=3184.92    act=13686    err= 0.02%/33.59% time=52.11s/34287.00s
+  [1027] obj=3184.73    act=13651    err= 0.02%/34.38% time=52.10s/34339.10s
+  [1028] obj=3184.50    act=13656    err= 0.02%/33.59% time=52.39s/34391.49s
+  [1029] obj=3184.37    act=13552    err= 0.02%/34.38% time=51.94s/34443.44s
+  [1030] obj=3184.14    act=13649    err= 0.02%/33.59% time=52.14s/34495.57s
+  [1031] obj=3183.97    act=13556    err= 0.02%/33.59% time=52.30s/34547.88s
+  [1032] obj=3183.74    act=13531    err= 0.02%/34.38% time=53.08s/34600.95s
+  [1033] obj=3183.60    act=13413    err= 0.02%/33.59% time=52.42s/34653.37s
+  [1034] obj=3183.41    act=13436    err= 0.02%/34.38% time=52.51s/34705.88s
+  [1035] obj=3183.29    act=13472    err= 0.02%/35.16% time=52.53s/34758.41s
+  [1036] obj=3183.09    act=13458    err= 0.02%/33.59% time=53.29s/34811.70s
+  [1037] obj=3182.93    act=13442    err= 0.02%/33.59% time=52.20s/34863.90s
+  [1038] obj=3182.72    act=13440    err= 0.02%/33.59% time=52.83s/34916.74s
+  [1039] obj=3182.64    act=13391    err= 0.02%/32.81% time=51.91s/34968.64s
+  [1040] obj=3182.32    act=13401    err= 0.02%/33.59% time=52.44s/35021.08s
+  [1041] obj=3182.22    act=13327    err= 0.02%/33.59% time=52.64s/35073.73s
+  [1042] obj=3181.97    act=13495    err= 0.02%/33.59% time=52.62s/35126.35s
+  [1043] obj=3181.81    act=13417    err= 0.02%/33.59% time=51.97s/35178.32s
+  [1044] obj=3181.64    act=13334    err= 0.02%/34.38% time=52.24s/35230.56s
+  [1045] obj=3181.47    act=13347    err= 0.02%/33.59% time=52.63s/35283.19s
+  [1046] obj=3181.24    act=13408    err= 0.02%/35.16% time=51.90s/35335.09s
+  [1047] obj=3181.22    act=13378    err= 0.02%/33.59% time=52.04s/35387.12s
+  [1048] obj=3180.89    act=13487    err= 0.02%/35.16% time=51.84s/35438.96s
+  [1049] obj=3180.76    act=13509    err= 0.02%/35.94% time=52.15s/35491.11s
+  [1050] obj=3180.52    act=13516    err= 0.02%/35.94% time=52.40s/35543.51s
+  [1051] obj=3180.38    act=13529    err= 0.02%/35.94% time=52.69s/35596.21s
+  [1052] obj=3180.17    act=13454    err= 0.02%/35.94% time=53.16s/35649.37s
+  [1053] obj=3180.04    act=13529    err= 0.02%/36.72% time=52.92s/35702.29s
+  [1054] obj=3179.82    act=13478    err= 0.02%/36.72% time=53.64s/35755.93s
+  [1055] obj=3179.67    act=13454    err= 0.02%/37.50% time=53.01s/35808.94s
+  [1056] obj=3179.55    act=13477    err= 0.02%/36.72% time=52.88s/35861.82s
+  [1057] obj=3179.26    act=13476    err= 0.02%/38.28% time=51.63s/35913.45s
+  [1058] obj=3179.10    act=13352    err= 0.02%/36.72% time=53.58s/35967.03s
+  [1059] obj=3178.90    act=13505    err= 0.02%/37.50% time=52.42s/36019.45s
+  [1060] obj=3178.73    act=13330    err= 0.02%/36.72% time=52.80s/36072.24s
+  [1061] obj=3178.59    act=13281    err= 0.02%/36.72% time=52.63s/36124.87s
+  [1062] obj=3178.38    act=13279    err= 0.02%/37.50% time=52.84s/36177.71s
+  [1063] obj=3178.23    act=13283    err= 0.02%/35.94% time=52.39s/36230.11s
+  [1064] obj=3178.02    act=13281    err= 0.02%/36.72% time=52.20s/36282.31s
+  [1065] obj=3177.92    act=13219    err= 0.02%/37.50% time=52.37s/36334.68s
+  [1066] obj=3177.90    act=13236    err= 0.02%/34.38% time=29.92s/36364.60s
+  [1067] obj=3177.70    act=13410    err= 0.02%/35.94% time=30.06s/36394.66s
+  [1068] obj=3177.30    act=13482    err= 0.02%/35.16% time=29.92s/36424.58s
+  [1069] obj=3177.11    act=13427    err= 0.02%/35.94% time=30.02s/36454.59s
+  [1070] obj=3176.81    act=13663    err= 0.02%/35.94% time=29.62s/36484.22s
+  [1071] obj=3176.70    act=13523    err= 0.02%/35.16% time=29.81s/36514.02s
+  [1072] obj=3176.47    act=13517    err= 0.02%/35.16% time=30.29s/36544.32s
+  [1073] obj=3176.31    act=13563    err= 0.02%/34.38% time=51.73s/36596.04s
+  [1074] obj=3176.23    act=13433    err= 0.02%/35.16% time=29.93s/36625.98s
+  [1075] obj=3175.93    act=13716    err= 0.02%/33.59% time=52.10s/36678.08s
+  [1076] obj=3175.92    act=13489    err= 0.02%/34.38% time=29.79s/36707.87s
+  [1077] obj=3175.47    act=13869    err= 0.02%/33.59% time=51.49s/36759.36s
+  [1078] obj=3175.32    act=13688    err= 0.02%/34.38% time=52.97s/36812.33s
+  [1079] obj=3175.17    act=13678    err= 0.02%/33.59% time=52.76s/36865.09s
+  [1080] obj=3174.87    act=13612    err= 0.02%/33.59% time=53.70s/36918.79s
+  [1081] obj=3174.69    act=13556    err= 0.02%/34.38% time=55.48s/36974.27s
+  [1082] obj=3174.63    act=13591    err= 0.02%/35.16% time=52.31s/37026.58s
+  [1083] obj=3174.29    act=13688    err= 0.02%/33.59% time=52.42s/37079.00s
+  [1084] obj=3174.20    act=13429    err= 0.02%/34.38% time=52.32s/37131.32s
+  [1085] obj=3173.96    act=13452    err= 0.02%/34.38% time=52.34s/37183.66s
+  [1086] obj=3173.88    act=13398    err= 0.02%/33.59% time=52.20s/37235.85s
+  [1087] obj=3173.62    act=13332    err= 0.02%/35.16% time=52.79s/37288.65s
+  [1088] obj=3173.45    act=13376    err= 0.02%/34.38% time=52.73s/37341.37s
+  [1089] obj=3173.37    act=13514    err= 0.02%/33.59% time=52.51s/37393.88s
+  [1090] obj=3173.05    act=13317    err= 0.02%/33.59% time=51.98s/37445.86s
+  [1091] obj=3172.92    act=13457    err= 0.02%/33.59% time=74.15s/37520.01s
+  [1092] obj=3172.78    act=13282    err= 0.02%/33.59% time=53.11s/37573.12s
+  [1093] obj=3172.68    act=13262    err= 0.02%/33.59% time=52.66s/37625.78s
+  [1094] obj=3172.42    act=13360    err= 0.02%/32.03% time=52.08s/37677.86s
+  [1095] obj=3172.30    act=13218    err= 0.02%/33.59% time=51.96s/37729.82s
+  [1096] obj=3172.11    act=13368    err= 0.02%/32.81% time=52.31s/37782.13s
+  [1097] obj=3171.93    act=13184    err= 0.02%/32.81% time=52.32s/37834.45s
+  [1098] obj=3171.77    act=13292    err= 0.02%/32.03% time=52.15s/37886.60s
+  [1099] obj=3171.66    act=13331    err= 0.02%/32.03% time=51.56s/37938.17s
+  [1100] obj=3171.46    act=13228    err= 0.02%/32.81% time=52.74s/37990.91s
+  [1101] obj=3171.37    act=13268    err= 0.02%/31.25% time=51.74s/38042.64s
+  [1102] obj=3171.15    act=13223    err= 0.02%/32.81% time=52.73s/38095.37s
+  [1103] obj=3171.02    act=13191    err= 0.02%/31.25% time=52.49s/38147.86s
+  [1104] obj=3170.88    act=13222    err= 0.02%/32.03% time=52.03s/38199.89s
+  [1105] obj=3170.76    act=13175    err= 0.02%/32.03% time=51.73s/38251.62s
+  [1106] obj=3170.63    act=13265    err= 0.02%/32.03% time=52.48s/38304.11s
+  [1107] obj=3170.55    act=13277    err= 0.02%/32.03% time=51.78s/38355.89s
+  [1108] obj=3170.36    act=13202    err= 0.02%/32.03% time=51.93s/38407.82s
+  [1109] obj=3170.26    act=13224    err= 0.02%/32.81% time=51.68s/38459.50s
+  [1110] obj=3170.09    act=13236    err= 0.02%/32.81% time=52.06s/38511.56s
+  [1111] obj=3170.05    act=13174    err= 0.02%/32.81% time=29.61s/38541.16s
+  [1112] obj=3169.80    act=13439    err= 0.02%/33.59% time=30.42s/38571.59s
+  [1113] obj=3169.66    act=13578    err= 0.02%/35.16% time=30.30s/38601.89s
+  [1114] obj=3169.37    act=13723    err= 0.02%/34.38% time=29.89s/38631.78s
+  [1115] obj=3169.11    act=13700    err= 0.02%/34.38% time=29.66s/38661.44s
+  [1116] obj=3169.05    act=13487    err= 0.02%/33.59% time=30.12s/38691.56s
+  [1117] obj=3168.78    act=13452    err= 0.02%/34.38% time=30.12s/38721.68s
+  [1118] obj=3168.66    act=13420    err= 0.02%/33.59% time=30.28s/38751.96s
+  [1119] obj=3168.62    act=13360    err= 0.02%/35.94% time=30.18s/38782.13s
+  [1120] obj=3168.36    act=13451    err= 0.02%/35.16% time=30.05s/38812.19s
+  [1121] obj=3168.24    act=13404    err= 0.02%/35.16% time=52.66s/38864.85s
+  [1122] obj=3168.12    act=13285    err= 0.02%/35.16% time=30.23s/38895.08s
+  [1123] obj=3167.92    act=13487    err= 0.02%/35.94% time=52.13s/38947.21s
+  [1124] obj=3167.82    act=13348    err= 0.02%/35.94% time=53.49s/39000.70s
+  [1125] obj=3167.73    act=13349    err= 0.02%/35.16% time=53.56s/39054.26s
+  [1126] obj=3167.51    act=13365    err= 0.02%/35.16% time=51.98s/39106.24s
+  [1127] obj=3167.44    act=13293    err= 0.02%/35.16% time=52.42s/39158.66s
+  [1128] obj=3167.25    act=13286    err= 0.02%/35.94% time=53.04s/39211.70s
+  [1129] obj=3167.12    act=13233    err= 0.02%/35.16% time=52.45s/39264.15s
+  [1130] obj=3166.97    act=13378    err= 0.02%/33.59% time=52.62s/39316.77s
+  [1131] obj=3166.84    act=13371    err= 0.02%/35.16% time=52.05s/39368.82s
+  [1132] obj=3166.72    act=13323    err= 0.02%/32.81% time=51.73s/39420.55s
+  [1133] obj=3166.54    act=13270    err= 0.02%/35.16% time=53.22s/39473.77s
+  [1134] obj=3166.37    act=13358    err= 0.02%/33.59% time=52.84s/39526.61s
+  [1135] obj=3166.24    act=13300    err= 0.02%/35.16% time=52.04s/39578.65s
+  [1136] obj=3166.21    act=13154    err= 0.02%/35.94% time=30.23s/39608.88s
+  [1137] obj=3165.99    act=13210    err= 0.02%/37.50% time=29.70s/39638.58s
+  [1138] obj=3165.83    act=13197    err= 0.02%/35.16% time=29.89s/39668.47s
+  [1139] obj=3165.74    act=13157    err= 0.02%/36.72% time=29.59s/39698.05s
+  [1140] obj=3165.54    act=13167    err= 0.02%/35.94% time=29.71s/39727.76s
+  [1141] obj=3165.42    act=13156    err= 0.02%/35.94% time=30.67s/39758.43s
+  [1142] obj=3165.24    act=13131    err= 0.02%/35.94% time=30.40s/39788.83s
+  [1143] obj=3165.09    act=13151    err= 0.02%/34.38% time=53.64s/39842.47s
+  [1144] obj=3165.00    act=12999    err= 0.02%/34.38% time=29.46s/39871.93s
+  [1145] obj=3164.95    act=13338    err= 0.02%/35.16% time=29.83s/39901.76s
+  [1146] obj=3164.72    act=13357    err= 0.02%/34.38% time=29.66s/39931.42s
+  [1147] obj=3164.61    act=13310    err= 0.02%/34.38% time=29.83s/39961.26s
+  [1148] obj=3164.19    act=13453    err= 0.02%/33.59% time=29.85s/39991.11s
+  [1149] obj=3164.09    act=13414    err= 0.02%/33.59% time=30.71s/40021.82s
+  [1150] obj=3163.88    act=13292    err= 0.02%/36.72% time=29.80s/40051.61s
+  [1151] obj=3163.78    act=13285    err= 0.02%/34.38% time=29.61s/40081.23s
+  [1152] obj=3163.67    act=13336    err= 0.02%/35.94% time=29.69s/40110.92s
+  [1153] obj=3163.47    act=13313    err= 0.02%/35.16% time=30.52s/40141.44s
+  [1154] obj=3163.36    act=13226    err= 0.02%/34.38% time=30.62s/40172.06s
+  [1155] obj=3163.14    act=13269    err= 0.02%/33.59% time=29.60s/40201.66s
+  [1156] obj=3163.00    act=13236    err= 0.02%/33.59% time=30.26s/40231.93s
+  [1157] obj=3162.94    act=13372    err= 0.02%/32.81% time=29.80s/40261.73s
+  [1158] obj=3162.64    act=13287    err= 0.02%/34.38% time=29.95s/40291.68s
+  [1159] obj=3162.49    act=13274    err= 0.02%/32.81% time=52.69s/40344.36s
+  [1160] obj=3162.46    act=13122    err= 0.02%/33.59% time=29.71s/40374.07s
+  [1161] obj=3162.43    act=13197    err= 0.02%/29.69% time=29.98s/40404.05s
+  [1162] obj=3162.03    act=13197    err= 0.02%/32.03% time=30.17s/40434.23s
+  [1163] obj=3161.98    act=13145    err= 0.02%/29.69% time=30.01s/40464.24s
+  [1164] obj=3161.80    act=13228    err= 0.02%/32.81% time=30.06s/40494.30s
+  [1165] obj=3161.60    act=13079    err= 0.02%/30.47% time=30.08s/40524.38s
+  [1166] obj=3161.49    act=13062    err= 0.02%/32.81% time=30.09s/40554.47s
+  [1167] obj=3161.37    act=13116    err= 0.02%/30.47% time=29.58s/40584.05s
+  [1168] obj=3161.27    act=13032    err= 0.02%/35.16% time=29.84s/40613.89s
+  [1169] obj=3161.16    act=13123    err= 0.02%/33.59% time=29.92s/40643.81s
+  [1170] obj=3160.99    act=13014    err= 0.02%/35.94% time=31.05s/40674.85s
+  [1171] obj=3160.92    act=13043    err= 0.02%/33.59% time=29.75s/40704.60s
+  [1172] obj=3160.72    act=13024    err= 0.02%/35.94% time=29.87s/40734.47s
+  [1173] obj=3160.66    act=12982    err= 0.02%/33.59% time=30.66s/40765.14s
+  [1174] obj=3160.49    act=12952    err= 0.02%/35.94% time=30.73s/40795.86s
+  [1175] obj=3160.46    act=13054    err= 0.02%/32.81% time=30.57s/40826.44s
+  [1176] obj=3160.25    act=12966    err= 0.02%/33.59% time=31.06s/40857.49s
+  [1177] obj=3160.19    act=13018    err= 0.02%/32.03% time=29.81s/40887.30s
+  [1178] obj=3160.01    act=13034    err= 0.02%/33.59% time=29.79s/40917.10s
+  [1179] obj=3159.97    act=13007    err= 0.02%/31.25% time=29.60s/40946.70s
+  [1180] obj=3159.80    act=12992    err= 0.02%/35.16% time=30.03s/40976.72s
+  [1181] obj=3159.72    act=12982    err= 0.02%/34.38% time=29.98s/41006.70s
+  [1182] obj=3159.61    act=12897    err= 0.02%/35.94% time=29.88s/41036.58s
+  [1183] obj=3159.55    act=12996    err= 0.02%/35.16% time=30.10s/41066.68s
+  [1184] obj=3159.39    act=12947    err= 0.02%/35.94% time=29.66s/41096.34s
+  [1185] obj=3159.34    act=13004    err= 0.02%/34.38% time=30.17s/41126.51s
+  [1186] obj=3159.17    act=12912    err= 0.02%/35.16% time=30.11s/41156.62s
+  [1187] obj=3159.17    act=12898    err= 0.02%/34.38% time=30.10s/41186.72s
+  [1188] obj=3158.98    act=12867    err= 0.02%/35.16% time=30.57s/41217.29s
+  [1189] obj=3158.96    act=12856    err= 0.02%/35.16% time=29.76s/41247.04s
+  [1190] obj=3158.82    act=12863    err= 0.02%/35.16% time=31.16s/41278.20s
+  [1191] obj=3158.74    act=12995    err= 0.02%/35.16% time=29.95s/41308.15s
+  [1192] obj=3158.63    act=12927    err= 0.02%/34.38% time=29.94s/41338.09s
+  [1193] obj=3158.52    act=12962    err= 0.02%/34.38% time=30.76s/41368.85s
+  [1194] obj=3158.39    act=12865    err= 0.02%/35.16% time=30.02s/41398.87s
+  [1195] obj=3158.32    act=12870    err= 0.02%/34.38% time=29.88s/41428.75s
+  [1196] obj=3158.17    act=12830    err= 0.02%/34.38% time=30.28s/41459.02s
+  [1197] obj=3158.13    act=12811    err= 0.02%/32.03% time=29.89s/41488.91s
+  [1198] obj=3157.96    act=12774    err= 0.02%/34.38% time=30.22s/41519.14s
+  [1199] obj=3157.93    act=12733    err= 0.02%/32.81% time=30.45s/41549.59s
+  [1200] obj=3157.79    act=12746    err= 0.02%/33.59% time=29.74s/41579.33s
+  [1201] obj=3157.76    act=12849    err= 0.02%/34.38% time=29.96s/41609.29s
+  [1202] obj=3157.59    act=12708    err= 0.02%/33.59% time=30.48s/41639.76s
+  [1203] obj=3157.55    act=12820    err= 0.02%/33.59% time=29.92s/41669.68s
+  [1204] obj=3157.36    act=12697    err= 0.02%/33.59% time=30.17s/41699.86s
+  [1205] obj=3157.34    act=12662    err= 0.02%/32.03% time=30.33s/41730.18s
+  [1206] obj=3157.16    act=12656    err= 0.02%/35.16% time=30.42s/41760.60s
+  [1207] obj=3157.07    act=12742    err= 0.02%/31.25% time=30.19s/41790.80s
+  [1208] obj=3157.04    act=12678    err= 0.02%/33.59% time=29.72s/41820.51s
+* Save the model
+* Done
+Model for fulltext created in 41843658 ms
+sourceTEIPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/fulltext/evaluation/tei
+sourceRawPathLabel: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/fulltext/evaluation/raw
+trainingOutputPath: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-home/tmp/fulltext12445721200691075449.test
+evalOutputPath: null
+22 tei files
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4902-9064-2-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5775-14115-2-RV.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5964-15795-1-LE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1899-3121-1-LE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5122-9761-1-CE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1649-1978-1-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5203-10149-1-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 64 : patients <paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 111 : problems <paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 165 : +LINE+ <paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 246 : . I-<paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 308 : of <paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 323 : of <paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 335 : patient <paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 895 : All I-<paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1029 : been <paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1046 : . I-<paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5203-10149-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1134 : emergent <paragraph>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5252-11228-1-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5755-13862-1-LE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5489-11927-1-CE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2057-4715-1-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5566-14438-1-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+WARNING: 5566-14438-1-ED.training.fulltext.tei.xml / Fulltext trainer: TEI and raw file unsynchronized at raw line 1664 : of <figure>
+
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5294-10625-2-RV.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4620-7929-4-LE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5862-14779-1-LE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5380-11143-2-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:39 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 2123-5025-1-LE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:40 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 1958-3686-1-LE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:40 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4848-8366-1-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:40 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4862-8461-2-ED.training.fulltext.tei.xml
+Oct 29, 2019 7:59:40 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 5693-13609-1-CE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:40 AM org.grobid.trainer.FulltextTrainer addFeaturesFulltext
+INFO: Processing: 4637-8014-1-LE.training.fulltext.tei.xml
+Oct 29, 2019 7:59:40 AM org.grobid.core.jni.WapitiModel init
+INFO: Loading model: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/models/fulltext/model.wapiti (size: 23339959)
+[Wapiti] Loading model: "/home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/models/fulltext/model.wapiti"
+Model path: /home/doc/Grobid/grobid-pkp-corpus-only/grobid_line_numbers/grobid-trainer/../grobid-home/models/fulltext/model.wapiti
+Labeling took: 3040 ms
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+<citation_marker>    96.63        89.64        88.93        89.29        253    
+<equation>           99.81        50           66.67        57.14        3      
+<equation_label>     100          100          100          100          2      
+<equation_marker>    99.94        50           100          66.67        1      
+<figure>             98.32        70           53.85        60.87        39     
+<figure_marker>      98.57        69.44        67.57        68.49        37     
+<item_bulleted>      97.32        46.15        29.27        35.82        41     
+<note_marker>        99           71.88        76.67        74.19        30     
+<paragraph>          75.69        71.71        73.54        72.61        703    
+<quote>              99           0            0            0            14     
+<section>            97.26        67.47        76.71        71.79        73     
+<subsection>         97.82        30           39.13        33.96        23     
+<table>              99.19        55           73.33        62.86        15     
+<table_marker>       98.94        65.22        62.5         63.83        24     
+
+all (micro avg.)     96.96        72.82        73.05        72.94        1258   
+all (macro avg.)     96.96        59.75        64.87        61.25        1258   
+
+===== Instance-level results =====
+
+Total expected instances:   22
+Correct instances:          3
+Instance-level recall:      13.64
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 11h 37m 31s
+6 actionable tasks: 1 executed, 5 up-to-date

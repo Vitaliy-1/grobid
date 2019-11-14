@@ -1606,12 +1606,12 @@ public class FullTextParser extends AbstractParser {
                 }
                 if (!output) {
                     output = writeField(buffer, s1, lastTag0, s2, "<section>",
-						"<head>", addSpace, 3, false);
+						"<head level=\"1\">", addSpace, 3, false);
                 }
-                /*if (!output) {
+                if (!output) {
                     output = writeField(buffer, s1, lastTag0, s2, "<subsection>", 
-						"<head>", addSpace, 3, false);
-                }*/
+						"<head level=\"2\">", addSpace, 3, false);
+                }
                 if (!output) {
                     output = writeField(buffer, s1, lastTag0, s2, "<equation>",
 						"<formula>", addSpace, 4, false);
@@ -1624,6 +1624,10 @@ public class FullTextParser extends AbstractParser {
                     output = writeField(buffer, s1, lastTag0, s2, "<figure_marker>",
 						"<ref type=\"figure\">", addSpace, 3, false);
                 }
+	            if (!output) {
+		            output = writeField(buffer, s1, lastTag0, s2, "<note_marker>",
+				            "<ref type=\"note\">", addSpace, 3, false);
+	            }
 				if (!output) {
                     output = writeField(buffer, s1, lastTag0, s2, "<figure>",
 						"<figure>", addSpace, 3, false);
@@ -1634,9 +1638,27 @@ public class FullTextParser extends AbstractParser {
                 }
                 // for item we must distinguish starting and closing tags
                 if (!output) {
-                    output = writeFieldBeginEnd(buffer, s1, lastTag, s2, "<item>",
-						"<item>", addSpace, 3, false);
+	                if (closeParagraph) {
+		                output = writeFieldBeginEnd(buffer, s1, "", s2, "<item_bulleted>",
+				                "<item_bulleted>", addSpace, 3, false);
+	                } else {
+		                output = writeFieldBeginEnd(buffer, s1, lastTag0, s2, "<item_bulleted>",
+				                "<item_bulleted>", addSpace, 3, false);
+	                }
                 }
+	            if (!output) {
+		            if (closeParagraph) {
+			            output = writeFieldBeginEnd(buffer, s1, "", s2, "<item_numbered>",
+					            "<item_numbered>", addSpace, 3, false);
+		            } else {
+			            output = writeFieldBeginEnd(buffer, s1, lastTag0, s2, "<item_numbered>",
+					            "<item_numbered>", addSpace, 3, false);
+		            }
+	            }
+	            if (!output) {
+		            output = writeField(buffer, s1, lastTag0, s2, "<quote>",
+				            "<quote>", addSpace, 3, false);
+	            }
 
                 lastTag = s1;
 
@@ -1723,6 +1745,11 @@ public class FullTextParser extends AbstractParser {
                     buffer.append(" ").append(outField).append(s2);
                 else
                     buffer.append(outField).append(s2);
+            } else if (field.equals("<note_marker>")) {
+	            if (addSpace)
+		            buffer.append(" ").append(outField).append(s2);
+	            else
+		            buffer.append(outField).append(s2);
             } /*else if (field.equals("<label>")) {
                 if (addSpace)
                     buffer.append(" ").append(outField).append(s2);
@@ -1747,6 +1774,7 @@ public class FullTextParser extends AbstractParser {
             } else if (!lastTag0.equals("<citation_marker>") 
             	&& !lastTag0.equals("<figure_marker>")
             	&& !lastTag0.equals("<equation_marker>")
+	            && !lastTag0.equals("<note_marker>")
                     //&& !lastTag0.equals("<figure>")
                     ) {
                 for (int i = 0; i < nbIndent; i++) {
@@ -1811,7 +1839,7 @@ public class FullTextParser extends AbstractParser {
                 else
                     buffer.append(s2);
             } else if (!lastTag0.equals("<citation_marker>") && !lastTag0.equals("<figure_marker>")
-                    && !lastTag0.equals("<table_marker>") && !lastTag0.equals("<equation_marker>")) {
+                    && !lastTag0.equals("<table_marker>") && !lastTag0.equals("<equation_marker>") && !lastTag0.equals("<note_marker>")) {
                 for (int i = 0; i < nbIndent; i++) {
                     buffer.append("\t");
                 }
@@ -1841,10 +1869,9 @@ public class FullTextParser extends AbstractParser {
                                    String currentTag) {
         boolean res = false;
         // reference_marker and citation_marker are two exceptions because they can be embedded
-
-        if (!currentTag0.equals(lastTag0) || currentTag.equals("I-<paragraph>") || currentTag.equals("I-<item>")) {
+        if (!currentTag0.equals(lastTag0) || currentTag.equals("I-<paragraph>") || currentTag.equals("I-<item_bulleted>") || currentTag.equals("I-<item_numbered>")) {
             if (currentTag0.equals("<citation_marker>") || currentTag0.equals("<equation_marker>") ||
-				currentTag0.equals("<figure_marker>") || currentTag0.equals("<table_marker>")) {
+				currentTag0.equals("<figure_marker>") || currentTag0.equals("<table_marker>") || currentTag0.equals("<note_marker>")) {
                 return res;
             }
 
@@ -1857,7 +1884,8 @@ public class FullTextParser extends AbstractParser {
 						!currentTag0.equals("<citation_marker>") &&
 						!currentTag0.equals("<table_marker>") &&
 						!currentTag0.equals("<equation_marker>") &&
-						!currentTag0.equals("<figure_marker>")
+						!currentTag0.equals("<figure_marker>") &&
+		                !currentTag0.equals("<note_marker>")
 				) {
                 buffer.append("</p>\n\n");
                 res = true;
@@ -1874,7 +1902,7 @@ public class FullTextParser extends AbstractParser {
                 buffer.append("</figure>\n\n");
             } else if (lastTag0.equals("<figure>")) {
                 buffer.append("</figure>\n\n");
-            } else if (lastTag0.equals("<item>")) {
+            } else if (lastTag0.equals("<item_bulleted>") || lastTag0.equals("<item_numbered>")) {
                 buffer.append("</item>\n\n");
             } /*else if (lastTag0.equals("<label>")) {
                 buffer.append("</label>\n\n");
@@ -1882,6 +1910,9 @@ public class FullTextParser extends AbstractParser {
 			else if (lastTag0.equals("<content>")) {
                 buffer.append("</content>\n\n");
             } */
+            else if (lastTag0.equals("<quote>")) {
+	            buffer.append("</quote>\n\n");
+            }
 			else if (lastTag0.equals("<citation_marker>")) {
                 buffer.append("</ref>");
 
@@ -1891,16 +1922,13 @@ public class FullTextParser extends AbstractParser {
                 buffer.append("</ref>");
             } else if (lastTag0.equals("<equation_marker>")) {
                 buffer.append("</ref>");
+			} else if (lastTag0.equals("<note_marker>")) {
+	            buffer.append("</ref>");
             } else {
                 res = false;
             }
 
 			// Make sure that paragraph is closed when markers are at the end of it
-	        if (lastTag0.equals("<citation_marker>") || lastTag0.equals("<figure_marker>") || lastTag0.equals("<table_marker>") || lastTag0.equals("<equation_marker>")) {
-		        if (!currentTag0.equals("<paragraph>") && (!currentTag0.equals("<citation_marker>") || (!currentTag0.equals("<figure_marker>") || !currentTag0.equals("<table_marker>") || !currentTag0.equals("<equation_marker>")))) {
-			        buffer.append("</p>\n\n");
-		        }
-	        }
 
         }
         return res;
