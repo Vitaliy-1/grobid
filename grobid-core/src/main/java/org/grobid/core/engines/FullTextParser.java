@@ -16,11 +16,7 @@ import org.grobid.core.data.Table;
 import org.grobid.core.data.Equation;
 import org.grobid.core.data.Metadata;
 import org.grobid.core.data.Person;
-import org.grobid.core.document.Document;
-import org.grobid.core.document.DocumentPiece;
-import org.grobid.core.document.DocumentPointer;
-import org.grobid.core.document.DocumentSource;
-import org.grobid.core.document.TEIFormatter;
+import org.grobid.core.document.*;
 import org.grobid.core.engines.citations.LabeledReferenceResult;
 import org.grobid.core.engines.citations.ReferenceSegmenter;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
@@ -93,6 +89,8 @@ public class FullTextParser extends AbstractParser {
 
 	// projection scale for line length
 	private static final int LINESCALE = 10;
+	
+	private static final int  PROCESS_TO_JATS = 1;
 
     private EngineParsers parsers;
 
@@ -104,6 +102,14 @@ public class FullTextParser extends AbstractParser {
         this.parsers = parsers;
         tmpPath = GrobidProperties.getTempPath();
     }
+
+	public Document processing(File inputPdf,
+	                           GrobidAnalysisConfig config, boolean toJats) throws Exception {
+		DocumentSource documentSource =
+				DocumentSource.fromPdf(inputPdf, config.getStartPage(), config.getEndPage(),
+						config.getPdfAssetPath() != null, true, false);
+		return processing(documentSource, config, PROCESS_TO_JATS);
+	}
 
 	public Document processing(File inputPdf,
 							   GrobidAnalysisConfig config) throws Exception {
@@ -121,7 +127,12 @@ public class FullTextParser extends AbstractParser {
      * @return the document object with built TEI
      */
     public Document processing(DocumentSource documentSource,
-                               GrobidAnalysisConfig config) {
+                               GrobidAnalysisConfig config, int... adtValues) {
+	    boolean toJats = false;
+    	if (adtValues.length > 0 && adtValues[0] == PROCESS_TO_JATS) {
+    		toJats = true;
+	    }
+
         if (tmpPath == null) {
             throw new GrobidResourceException("Cannot process pdf file, because temp path is null.");
         }
@@ -308,12 +319,21 @@ public class FullTextParser extends AbstractParser {
 			}
 
             // final combination
-            toTEI(doc, // document
-				rese, rese2, // labeled data for body and annex
-				layoutTokenization, tokenizationsBody2, // tokenization for body and annex
-				resHeader, // header 
-				figures, tables, equations, 
-				config);
+	        if (toJats) {
+		        toJATS(doc, // document
+				        rese, rese2, // labeled data for body and annex
+				        layoutTokenization, tokenizationsBody2, // tokenization for body and annex
+				        resHeader, // header
+				        figures, tables, equations,
+				        config);
+	        } else {
+		        toTEI(doc, // document
+				        rese, rese2, // labeled data for body and annex
+				        layoutTokenization, tokenizationsBody2, // tokenization for body and annex
+				        resHeader, // header
+				        figures, tables, equations,
+				        config);
+	        }
             return doc;
         } catch (GrobidException e) {
 			throw e;
@@ -2387,6 +2407,64 @@ public class FullTextParser extends AbstractParser {
 //						XmlBuilderUtils.fromString(tei.toString())
 //				)
 //		);
+	}
+
+	private void toJATS(Document doc,
+	                   String reseBody,
+	                   String reseAnnex,
+	                   LayoutTokenization layoutTokenization,
+	                   List<LayoutToken> tokenizationsAnnex,
+	                   BiblioItem resHeader,
+	                   List<Figure> figures,
+	                   List<Table> tables,
+	                   List<Equation> equations,
+	                   GrobidAnalysisConfig config) {
+		if (doc.getBlocks() == null) {
+			return;
+		}
+		List<BibDataSet> resCitations = doc.getBibDataSets();
+		JATSFormatter jatsFormatter = new JATSFormatter(doc, this);
+		StringBuilder jats;
+		try {
+			jats = jatsFormatter.toJATSHeader(resHeader, resCitations, config);
+
+			//System.out.println(rese);
+			//int mode = config.getFulltextProcessingMode();
+
+			jats = jatsFormatter.toJATSBody(jats, reseBody, resHeader, resCitations,
+					layoutTokenization, figures, tables, equations, doc, config);
+
+			jats.append("\t\t<back>\n");
+
+
+			SortedSet<DocumentPiece> documentAcknowledgementParts =
+					doc.getDocumentPart(SegmentationLabels.ACKNOWLEDGEMENT);
+			Pair<String, LayoutTokenization> featSeg =
+					getBodyTextFeatured(doc, documentAcknowledgementParts);
+			List<LayoutToken> tokenizationsAcknowledgement;
+			if (featSeg != null) {
+				String acknowledgementText = featSeg.getLeft();
+				tokenizationsAcknowledgement = featSeg.getRight().getTokenization();
+				String reseAcknowledgement = null;
+				if ( (acknowledgementText != null) && (acknowledgementText.length() >0) )
+					reseAcknowledgement = label(acknowledgementText);
+				jats = jatsFormatter.toJATSAcknowledgement(jats, reseAcknowledgement,
+						tokenizationsAcknowledgement, resCitations, config);
+			}
+
+			jats = jatsFormatter.toJATSAnnex(jats, reseAnnex, resHeader, resCitations,
+					tokenizationsAnnex, doc, config);
+
+			jats = jatsFormatter.toJATSReferences(jats, resCitations, config);
+			doc.calculateTeiIdToBibDataSets();
+
+			jats.append("\t\t</back>\n");
+			jats.append("</article>");
+		} catch (Exception e) {
+			throw new GrobidException("An exception occurred while running Grobid.", e);
+		}
+
+		doc.setTei(jats.toString());
 	}
 
 	private static List<TaggingLabel> inlineFullTextLabels = Arrays.asList(TaggingLabels.CITATION_MARKER, TaggingLabels.TABLE_MARKER, 
