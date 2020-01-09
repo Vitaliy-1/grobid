@@ -295,6 +295,8 @@ public class JATSFormatter {
 		if ((abstractText != null) && (abstractText.length() != 0)) {
 			if ( (biblio.getLabeledAbstract() != null) && (biblio.getLabeledAbstract().length() > 0) ) {
 				StringBuilder buffer = new StringBuilder();
+
+				String tabs = "\t\t\t\t";
 				try {
 					buffer = toJATSTextPiece(buffer,
 							biblio.getLabeledAbstract(),
@@ -306,12 +308,11 @@ public class JATSFormatter {
 							null,
 							null,
 							doc,
-							config, "\t\t\t"); // no figure, no table, no equation
+							config, tabs); // no figure, no table, no equation
 				} catch(Exception e) {
 					throw new GrobidException("An exception occurred while serializing TEI.", e);
 				}
-				jats.append("\t\t");
-				jats.append(buffer.toString().replace("\n", "\n\t\t"));
+				jats.append(buffer.toString());
 				jats.append("\t</abstract>\n");
 			} else {
 				jats.append("\t\t\t\t<p");
@@ -354,8 +355,9 @@ public class JATSFormatter {
 		}
 		buffer.append("\t<body>\n");
 
+		String tabs = "\t\t";
 		buffer = toJATSTextPiece(buffer, result, biblio, bds, true,
-				layoutTokenization, figures, tables, equations, doc, config, "\t\t");
+				layoutTokenization, figures, tables, equations, doc, config, tabs);
 
 		// notes are still in the body
 		/*
@@ -601,12 +603,13 @@ public class JATSFormatter {
 
 	private void toPrettyXML(StringBuilder buffer, List<Element> divResults, String tabs) throws IOException {
 		buffer.append(tabs);
+		int restrictLength = (tabs.length() - 4) * 2;
 		for (Element divResult: divResults) {
 			OutputStream outputStream = new ByteArrayOutputStream();
 			nu.xom.Document xomDocument = new nu.xom.Document(divResult);
 			Serializer serializer = new Serializer(outputStream);
 			serializer.setIndent(4);
-			serializer.setMaxLength(128);
+			serializer.setMaxLength(88 - restrictLength);
 			serializer.write(xomDocument);
 			String xomDocumentString = outputStream.toString();
 			xomDocumentString = xomDocumentString.substring(xomDocumentString.indexOf('\n')+1);
@@ -1338,8 +1341,10 @@ public class JATSFormatter {
 		buffer.append("\t\t\t<ack>\n");
 		StringBuilder buffer2 = new StringBuilder();
 
+		String tabs = "\t\t\t\t";
+
 		buffer2 = toJATSTextPiece(buffer2, reseAcknowledgement, null, bds, false,
-				new LayoutTokenization(tokenizationsAcknowledgement), null, null, null, doc, config, "\t\t\t\t");
+				new LayoutTokenization(tokenizationsAcknowledgement), null, null, null, doc, config, tabs);
 		buffer2.append("\t</ack>\n");
 		buffer.append(buffer2);
 
@@ -1359,8 +1364,11 @@ public class JATSFormatter {
 
 		buffer.append("\t\t\t<app-group>\n");
 		buffer.append("\t\t\t\t<app>\n");
+
+		String tabs = "\t\t\t\t\t";
+
 		buffer = toJATSTextPiece(buffer, result, biblio, bds, true,
-				new LayoutTokenization(tokenizations), null, null, null, doc, config, "\t\t\t\t\t");
+				new LayoutTokenization(tokenizations), null, null, null, doc, config, tabs);
 		buffer.append("\t\t\t\t</app>\n");
 		buffer.append("\t\t\t</app-group>\n");
 
