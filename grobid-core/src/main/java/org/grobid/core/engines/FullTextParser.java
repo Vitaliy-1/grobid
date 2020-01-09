@@ -89,8 +89,6 @@ public class FullTextParser extends AbstractParser {
 
 	// projection scale for line length
 	private static final int LINESCALE = 10;
-	
-	private static final int  PROCESS_TO_JATS = 1;
 
     private EngineParsers parsers;
 
@@ -108,7 +106,7 @@ public class FullTextParser extends AbstractParser {
 		DocumentSource documentSource =
 				DocumentSource.fromPdf(inputPdf, config.getStartPage(), config.getEndPage(),
 						config.getPdfAssetPath() != null, true, false);
-		return processing(documentSource, config, PROCESS_TO_JATS);
+		return processing(documentSource, config, toJats);
 	}
 
 	public Document processing(File inputPdf,
@@ -127,10 +125,12 @@ public class FullTextParser extends AbstractParser {
      * @return the document object with built TEI
      */
     public Document processing(DocumentSource documentSource,
-                               GrobidAnalysisConfig config, int... adtValues) {
+                               GrobidAnalysisConfig config, boolean... adtValues) {
 	    boolean toJats = false;
-    	if (adtValues.length > 0 && adtValues[0] == PROCESS_TO_JATS) {
-    		toJats = true;
+	    if (adtValues.length > 0) {
+	    	if (adtValues[0]) {
+	    		toJats = true;
+		    }
 	    }
 
         if (tmpPath == null) {
@@ -2430,7 +2430,7 @@ public class FullTextParser extends AbstractParser {
 
 			//System.out.println(rese);
 			//int mode = config.getFulltextProcessingMode();
-
+			String tabs;
 			jats = jatsFormatter.toJATSBody(jats, reseBody, resHeader, resCitations,
 					layoutTokenization, figures, tables, equations, doc, config);
 
