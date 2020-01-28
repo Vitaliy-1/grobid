@@ -93,26 +93,26 @@ public class JATSFormatter {
 				if (biblio.getJournal() != null) {
 					jats.append("\t\t\t\t<journal-title>");
 					TextUtilities.HTMLEncode(biblio.getJournal());
-					jats.append("\t\t\t<journal-title>\n");
+					jats.append("\t\t\t</journal-title>\n");
 				}
 				if (biblio.getJournalAbbrev() != null) {
 					jats.append("\t\t\t\t<abbrev-journal-title>");
 					TextUtilities.HTMLEncode(biblio.getJournalAbbrev());
-					jats.append("<abbrev-journal-title>\n");
+					jats.append("</abbrev-journal-title>\n");
 				}
-				jats.append("\t\t\t<journal-title-group>\n");
+				jats.append("\t\t\t</journal-title-group>\n");
 			}
 
 			if (biblio.getISSN() != null) {
 				jats.append("\t\t\t<issn publication-format=\"print\">");
 				TextUtilities.HTMLEncode(biblio.getISSN());
-				jats.append("<issn>\n");
+				jats.append("</issn>\n");
 			}
 
 			if (biblio.getISSNe() != null) {
 				jats.append("\t\t\t<issn publication-format=\"electronic\">");
 				TextUtilities.HTMLEncode(biblio.getISSNe());
-				jats.append("<issn>\n");
+				jats.append("</issn>\n");
 			}
 
 			jats.append("\t\t</journal-meta>\n");
