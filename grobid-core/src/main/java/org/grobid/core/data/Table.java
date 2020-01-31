@@ -31,6 +31,15 @@ import static org.grobid.core.document.xml.XmlBuilderUtils.teiElement;
 import static org.grobid.core.document.xml.XmlBuilderUtils.addXmlId;
 import static org.grobid.core.document.xml.XmlBuilderUtils.textNode;
 
+import org.apache.pdfbox.pdmodel.PDDocument;
+import java.io.File;
+import java.io.IOException;
+import technology.tabula.ObjectExtractor;
+import technology.tabula.RectangularTextContainer;
+import technology.tabula.detectors.SpreadsheetDetectionAlgorithm;
+import technology.tabula.extractors.BasicExtractionAlgorithm;
+import technology.tabula.extractors.SpreadsheetExtractionAlgorithm;
+
 /**
  * Class for representing a table.
  *
@@ -179,7 +188,78 @@ public class Table extends Figure {
 //        return theTable.toString();
     }
 
-    private String cleanString(String input) {
+	private String[][] tabulaRes = null;
+
+	public String[][] getTabulaRes() {
+		return this.tabulaRes;
+	}
+
+	public void tabulaExtract(File pdfFile) throws IOException {
+		PDDocument document = PDDocument.load(pdfFile);
+		ObjectExtractor objectExtractor = new ObjectExtractor(document);
+		technology.tabula.Page page = objectExtractor.extract(getPage());
+		technology.tabula.Page pageArea = page.getArea((float)getY(), (float)getX(), (float)(getY()+getHeight()), (float)(getX()+getWidth()));
+		SpreadsheetExtractionAlgorithm nda = new SpreadsheetExtractionAlgorithm();
+
+		// Determine the best algorithm
+		List<technology.tabula.Table> tables;
+		if (nda.isTabular(pageArea)) {
+			tables = nda.extract(pageArea);
+		} else {
+			BasicExtractionAlgorithm bea = new BasicExtractionAlgorithm();
+			tables = bea.extract(pageArea);
+		}
+
+		technology.tabula.Table table;
+		if (tables.size() > 0) {
+			table = tables.get(0);
+		} else {
+			document.close();
+			return;
+		}
+
+		List<List<RectangularTextContainer>> tableRows = table.getRows();
+		int maxColCount = 0;
+		for (int i = 0; i < tableRows.size(); i++) {
+			List<RectangularTextContainer> row = tableRows.get(i);
+			if (maxColCount < row.size()) {
+				maxColCount = row.size();
+			}
+		}
+
+		document.close();
+
+		tabulaRes = new String[tableRows.size()][maxColCount];
+		for (int i=0; i<tableRows.size(); i++) {
+			List<RectangularTextContainer> row = tableRows.get(i);
+			for (int j=0; j<row.size(); j++) {
+				tabulaRes[i][j] = table.getCell(i, j).getText();
+			}
+		}
+	}
+
+	public Element tabulaResToJats() {
+		Element tableEl = new Element ("table");
+
+		if (tabulaRes != null) {
+			for (int r=0; r<tabulaRes.length; r++) {
+				Element rowEl = new Element("tr");
+
+				for (int c=0; c<tabulaRes[r].length; c++) {
+					Element cellEl = new Element("td");
+					cellEl.appendChild(tabulaRes[r][c]);
+					rowEl.appendChild(cellEl);
+				}
+
+				tableEl.appendChild(rowEl);
+			}
+		}
+
+		return tableEl;
+	}
+
+
+	private String cleanString(String input) {
     	return input.replace("\n", " ").replace("  ", " ").trim();
     }
 

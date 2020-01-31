@@ -1032,9 +1032,19 @@ public class JATSFormatter {
 				captionEl.appendChild(desc);
 			}
 
-			Element contentEl = jatsElement("table");
-			contentEl.appendChild(LayoutTokensUtil.toText(table.getContentTokens()));
+			/*
+			Element contentEl = new Element("table");
+			processTableCells(contentEl, table);
 			tableElement.appendChild(contentEl);
+			*/
+
+			Element contentEl;
+			if (table.getTabulaRes() != null) {
+				contentEl = table.tabulaResToJats();
+				tableElement.appendChild(contentEl);
+			}
+
+
 		}
 
 		return tableElement;
