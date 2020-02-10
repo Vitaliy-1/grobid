@@ -6,6 +6,10 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.*;
+import org.grobid.core.data.table.Cell;
+import org.grobid.core.data.table.Line;
+import org.grobid.core.data.table.LinePart;
+import org.grobid.core.data.table.Row;
 import org.grobid.core.document.xml.XmlBuilderUtils;
 import org.grobid.core.engines.Engine;
 import org.grobid.core.engines.FullTextParser;
@@ -14,6 +18,7 @@ import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.lang.Language;
+import org.grobid.core.layout.Block;
 import org.grobid.core.layout.GraphicObject;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.layout.LayoutTokenization;
@@ -1033,11 +1038,48 @@ public class JATSFormatter {
 			}
 
 			Element contentEl = jatsElement("table");
-			contentEl.appendChild(LayoutTokensUtil.toText(table.getContentTokens()));
+			processTableContent(contentEl, table.getContentTokens());
 			tableElement.appendChild(contentEl);
 		}
 
 		return tableElement;
+	}
+
+	/**
+	 *
+	 * @param contentEl table element to append parsed rows and cells.
+	 * @param contentTokens tokens that are used to build cells
+	 * Line-based algorithm for parsing tables, uses tokens' coordinates to identify lines
+	 */
+	void processTableContent(Element contentEl, List<LayoutToken> contentTokens) {
+		// Join Layout Tokens into cell lines originally created by PDFAlto
+		List<LinePart> lineParts = Line.extractLineParts(contentTokens);
+
+		// Build lines by comparing borders
+		List<Line> lines = Line.extractLines(lineParts);
+
+		// Build rows and cells
+		List<Row> rows = Row.extractRows(lines);
+
+		int columnCount = Row.columnCount(rows);
+
+		Row.insertEmptyCells(rows, columnCount);
+
+		Row.mergeMulticolumnCells(rows);
+
+		for (Row row: rows) {
+			Element tr = jatsElement("tr");
+			contentEl.appendChild(tr);
+			List<Cell> cells = row.getContent();
+			for (Cell cell: cells) {
+				Element td = jatsElement("td");
+				tr.appendChild(td);
+				if (cell.getColspan() > 1) {
+					td.addAttribute(new Attribute("colspan", Integer.toString(cell.getColspan())));
+				}
+				td.appendChild(cell.getText().trim());
+			}
+		}
 	}
 
 	public StringBuilder toJATSReferences(StringBuilder jats,
