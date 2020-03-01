@@ -467,7 +467,6 @@ public class JATSFormatter {
 				}
 			} else if (clusterLabel.equals(TaggingLabels.ITEM_BULLETED) || clusterLabel.equals(TaggingLabels.ITEM_NUMBERED)) {
 				String clusterContent = LayoutTokensUtil.normalizeText(cluster.concatTokens());
-				//curDiv.appendChild(teiElement("item", clusterContent));
 				Element itemNode = jatsElement("list-item");
 				Element parNode = jatsElement("p");
 				parNode.appendChild(clusterContent);
@@ -511,14 +510,12 @@ public class JATSFormatter {
 				Element parent;
 				if (curParagraph != null) {
 					parent = curParagraph;
-					// Can it really happen?
-				} else if (curSecType == JATS_SECTION_TYPE_SECTION) {
-					parent = curSec;
+					parent.appendChild(new Text(" "));
 				} else {
-					parent = curSubSec;
+					curParagraph = jatsElement("p");
+					insertChild(divResults, curSec, curSubSec, curSecType, curParagraph);
+					parent = curParagraph;
 				}
-
-				parent.appendChild(new Text(" "));
 
 				List<Node> refNodes;
 				if (clusterLabel.equals(TaggingLabels.CITATION_MARKER)) {
