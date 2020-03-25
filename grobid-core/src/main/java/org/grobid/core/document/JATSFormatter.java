@@ -131,7 +131,7 @@ public class JATSFormatter {
 		jats.append("\t\t\t</title-group>\n");
 
 		if (biblio.getFullAuthors() != null) {
-			List<StringBuilder> affiliations = new ArrayList<>();
+			HashMap<String, Affiliation> affData = new LinkedHashMap<>();
 			jats.append("\t\t\t<contrib-group content-type=\"author\">\n");
 			for (Person author: biblio.getFullAuthors()) {
 				jats.append("\t\t\t\t<contrib contrib-type=\"person\">\n");
@@ -152,10 +152,14 @@ public class JATSFormatter {
 				}
 
 				if (author.getAffiliations() != null) {
-					int affilNumber = 1;
-					StringBuilder affilString = new StringBuilder();
 					for (Affiliation affil : author.getAffiliations()) {
-						jats.append("\t\t\t\t\t<xref ref-type=\"aff\" rid=\"aff-").append(affilNumber).append("\"/>\n");
+						if (affil.getKey() != null) {
+							jats.append("\t\t\t\t\t<xref ref-type=\"aff\" rid=\"").append(affil.getKey()).append("\"/>\n");
+							if (!affData.containsKey(affil.getKey())) {
+								affData.put(affil.getKey(), affil);
+							}
+						}
+						/*
 						if (affil.getInstitutions() != null) {
 							for(String inst: affil.getInstitutions()) {
 								affilString.append("\t\t\t\t<institution content-type=\"orgname\">");
@@ -190,10 +194,12 @@ public class JATSFormatter {
 							affilString.append(TextUtilities.HTMLEncode(affil.getCountry()));
 							affilString.append("</country>\n");
 						}
+						*/
 
 						/*
 						 * Isn't supported by Texture
 						 */
+						/*
 						if (affil.getSettlement() != null) {
 							affilString.append("\t\t\t\t<city>");
 							affilString.append(TextUtilities.HTMLEncode(affil.getSettlement()));
@@ -209,6 +215,7 @@ public class JATSFormatter {
 						affiliations.add(affilString);
 
 						affilNumber++;
+						 */
 					}
 				}
 				jats.append("\t\t\t\t</contrib>\n");
@@ -217,10 +224,11 @@ public class JATSFormatter {
 			jats.append("\t\t\t</contrib-group>\n");
 
 			// Affiliations
-			if (affiliations.size() > 0) {
-				for (int i = 0; i < affiliations.size(); i++) {
-					jats.append("\t\t\t<aff id=\"aff-").append(i+1).append("\">\n");
-					jats.append(affiliations.get(i));
+			if (!affData.isEmpty()) {
+				for (Map.Entry<String, Affiliation> entry: affData.entrySet()) {
+					Affiliation affiliation = entry.getValue();
+					jats.append("\t\t\t<aff id=\"").append(entry.getKey()).append("\">\n");
+					jats.append(toJATSAuthorBlock(affiliation, "\t\t\t\t"));
 					jats.append("\t\t\t</aff>\n");
 				}
 			}
@@ -510,7 +518,7 @@ public class JATSFormatter {
 				Element parent;
 				if (curParagraph != null) {
 					parent = curParagraph;
-					parent.appendChild(new Text(" "));
+					//parent.appendChild(new Text(" "));
 				} else {
 					curParagraph = jatsElement("p");
 					insertChild(divResults, curSec, curSubSec, curSecType, curParagraph);
@@ -1368,6 +1376,64 @@ public class JATSFormatter {
 				new LayoutTokenization(tokenizations), null, null, null, doc, config, tabs);
 		buffer.append("\t\t\t\t</app>\n");
 		buffer.append("\t\t\t</app-group>\n");
+
+		return buffer;
+	}
+
+	public StringBuilder toJATSAuthorBlock(Affiliation affiliation, String tabs) {
+		StringBuilder buffer = new StringBuilder();
+		if (affiliation.getInstitutions() != null) {
+			for(String inst: affiliation.getInstitutions()) {
+				buffer.append(tabs).append("<institution content-type=\"orgname\">");
+				buffer.append(TextUtilities.HTMLEncode(inst));
+				buffer.append("</institution>\n");
+			}
+		}
+		if (affiliation.getLaboratories() != null) {
+			for(String labs: affiliation.getLaboratories()) {
+				buffer.append(tabs).append("<institution content-type=\"orgname\">");
+				buffer.append(TextUtilities.HTMLEncode(labs));
+				buffer.append("</institution>\n");
+			}
+		}
+
+		if (affiliation.getDepartments() != null) {
+			for(int z = 0; z < affiliation.getDepartments().size(); z++) {
+				buffer.append(tabs).append("<institution content-type=\"orgdiv").append(z+1).append("\">");
+				buffer.append(TextUtilities.HTMLEncode(affiliation.getDepartments().get(z)));
+				buffer.append("</institution>\n");
+			}
+		}
+
+		if (affiliation.getAddressString() != null) {
+			buffer.append(tabs).append("<addr-line>");
+			buffer.append(TextUtilities.HTMLEncode(affiliation.getAddressString()));
+			buffer.append("</addr-line>\n");
+		}
+
+		if (affiliation.getCountry() != null) {
+			buffer.append(tabs).append("<country>");
+			buffer.append(TextUtilities.HTMLEncode(affiliation.getCountry()));
+			buffer.append("</country>\n");
+		}
+
+		if (affiliation.getSettlement() != null) {
+			buffer.append(tabs).append("<city>");
+			buffer.append(TextUtilities.HTMLEncode(affiliation.getSettlement()));
+			buffer.append("</city>\n");
+		}
+
+		if (affiliation.getAddressString() != null) {
+			buffer.append(tabs).append("<addr-line content-type=\"street-address\">");
+			buffer.append(TextUtilities.HTMLEncode(affiliation.getAddressString()));
+			buffer.append("</addr-line>\n");
+		}
+
+		if (affiliation.getPostCode() != null) {
+			buffer.append(tabs).append("<postal-code>");
+			buffer.append(TextUtilities.HTMLEncode(affiliation.getPostCode()));
+			buffer.append("</postal-code>\n");
+		}
 
 		return buffer;
 	}
